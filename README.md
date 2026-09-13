@@ -1,5 +1,5 @@
 # One Faith Musics
-
+ 
 Site statique préparé pour un dépôt GitHub nommé `One Faith Musics`. Aucun outil de compilation ni dépendance à installer.
 
 ## Aperçu
