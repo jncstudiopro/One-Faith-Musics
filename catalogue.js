@@ -87,12 +87,7 @@ window.JEHOVAH_CATALOGUE = [
         "releaseDate": "2026-09-08",
         "youtube": null,
         "audio": null,
-<<<<<<< HEAD
         "audioId": "2-repose-toi-mon-ami",
-=======
-        "audioId": "repose-toi-fr",
-        "r2Path": "fr/une-meme-foi/2-Repose-toi, mon ami.mp3",
->>>>>>> 1f213e38db471cdfce91069408598f89ad129dd3
         "karaokeYoutube": null,
         "karaokeAudio": null,
         "lyrics": null,
