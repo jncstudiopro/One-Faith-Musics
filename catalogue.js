@@ -25,7 +25,7 @@ window.JEHOVAH_CATALOGUE = [
         "timing": "lyrics/nous-sommes-fr.json",
         "downloads": {
           "mp4": null,
-          "mp3": "https://drive.google.com/file/d/1yooUXpEDHNn4YtqU3Ev6t6o5J1nSq0E3/view",
+          "mp3": null,
           "score": null
         },
         "karaokeTiming": "lyrics/nous-sommes-fr.json",
