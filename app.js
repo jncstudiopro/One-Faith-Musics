@@ -6,12 +6,16 @@ const names={fr:'Français',en:'English',es:'Español'};
 const CONTENT_LANGUAGE_KEY='one-faith-musics-content-language';
 const PAGE_SIZE_KEY='one-faith-musics-page-size';
 const COLUMNS_KEY='one-faith-musics-columns';
+const PLAYLIST_KEY='one-faith-musics-playlist';
+const SHUFFLE_KEY='one-faith-musics-shuffle';
+const REPEAT_KEY='one-faith-musics-repeat';
 const readPreference=(key,fallback)=>{try{return localStorage.getItem(key)||fallback;}catch{return fallback;}};
 const savePreference=(key,value)=>{try{localStorage.setItem(key,value);}catch{}}
 const preferredLanguage=readPreference(CONTENT_LANGUAGE_KEY,'fr');
 const preferredSize=readPreference(PAGE_SIZE_KEY,'6');
 const preferredColumns=readPreference(COLUMNS_KEY,'2');
 const state={theme:'Toutes',language:['all','fr','en','es'].includes(preferredLanguage)?preferredLanguage:'fr',size:preferredSize==='all'?'all':([6,12,24].includes(Number(preferredSize))?Number(preferredSize):6),columns:['2','3'].includes(preferredColumns)?preferredColumns:'2',page:1};
+let pageSongs=[];
 const dateLabel=date=>date?new Intl.DateTimeFormat(document.documentElement.lang,{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(date+'T12:00:00Z')):'';
 const today=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'America/Toronto',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 const released=v=>v&&v.releaseDate&&v.releaseDate<=today();
@@ -41,7 +45,8 @@ function render(){
   const pages=Math.max(1,Math.ceil(filtered.length/size));state.page=Math.min(state.page,pages);
   $('result-count').textContent=`${filtered.length} chanson${filtered.length===1?'':'s'}`;
   $('empty').hidden=filtered.length>0;
-  $('song-grid').innerHTML=filtered.slice((state.page-1)*size,state.page*size).map(card).join('');
+  pageSongs=filtered.slice((state.page-1)*size,state.page*size);
+  $('song-grid').innerHTML=pageSongs.map(card).join('');
   $('pagination').innerHTML=pages>1?`<button data-page="${state.page-1}" ${state.page===1?'disabled':''}>Précédent</button><span>${state.page} / ${pages}</span><button data-page="${state.page+1}" ${state.page===pages?'disabled':''}>Suivant</button>`:'';
   window.translatePage?.();
 }
@@ -55,7 +60,7 @@ function renderLatest(){
   $('latest-title').textContent=latest.song.title;$('latest-date').dateTime=latest.date;$('latest-date').textContent=dateLabel(latest.date);
   $('latest-link').onclick=()=>{state.theme='Toutes';state.language=latest.lang;savePreference(CONTENT_LANGUAGE_KEY,latest.lang);$('language').value=latest.lang;state.page=1;render();requestAnimationFrame(()=>document.querySelector(`[data-song="${latest.song.id}"]`)?.scrollIntoView({block:'center'}));};
 }
-function card(s){const {lang,version:v}=versionOf(s);const available=!!(youtubeId(v.youtube)||audioSourceAvailable(v));return `<article class="song-card" data-song="${esc(s.id)}"><button class="cover ${s.portrait?'portrait':''}" data-action="play" aria-label="Écouter ${esc(s.title)}" ${available?'':'disabled'}><img src="${esc(s.image)}" alt="${esc(s.title)}" width="1672" height="941" loading="lazy">${available?'<span class="play-icon" aria-hidden="true">▶</span>':''}<span class="cover-status">${available?'Écouter la chanson':'À découvrir bientôt'}</span></button><div class="song-body"><div class="song-meta"><time datetime="${esc(v.releaseDate)}">${esc(dateLabel(v.releaseDate))}</time></div><h3>${esc(s.title)}</h3><p class="description">${esc(s.description)}</p><div class="song-tags">${s.tags.map(t=>`<button class="song-tag" data-theme="${esc(t)}"># ${esc(t)}</button>`).join('')}</div><div class="actions"><button class="action" data-action="karaoke" aria-expanded="false" aria-controls="karaoke-${s.id}" ${youtubeId(v.karaokeYoutube)||youtubeId(v.karaokeProYoutube)||((safeUrl(v.karaokeAudio)||v.karaokeAudioId)&&safeUrl(v.karaokeTiming||v.timing))||((safeUrl(v.karaokeProAudio)||v.karaokeProAudioId)&&safeUrl(v.karaokeProTiming||v.timing))?'':'disabled title="Version karaoké à venir"'}>♫ Karaoké</button><button class="action" data-action="lyrics" aria-expanded="false" aria-controls="lyrics-${s.id}">≡ Paroles</button><button class="action" data-action="languages" aria-expanded="false" aria-controls="languages-${s.id}">◎ Langues</button><button class="action" data-action="downloads" aria-expanded="false" aria-controls="downloads-${s.id}">↓ Téléchargements</button></div><div class="panel karaoke-options" id="karaoke-${s.id}" hidden>${karaokeChoices(s,v)}</div><div class="panel" id="lyrics-${s.id}" hidden>${v.lyrics?`<div class="lyrics" lang="${lang}">${esc(v.lyrics)}</div>`:'<p>Les paroles écrites seront ajoutées prochainement.</p>'}</div><div class="panel language-options" id="languages-${s.id}" hidden>${languageChoices(s,lang)}</div><div class="panel downloads" id="downloads-${s.id}" hidden>${[['mp4','Vidéo MP4'],['mp3','Audio MP3'],['score','Partition PDF']].map(([key,label])=>{const url=safeUrl(v.downloads?.[key]);return `<div class="download-row"><span>${label}</span>${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Télécharger ↗</a>`:'<small>À venir</small>'}</div>`;}).join('')}</div></div></article>`;}
+function card(s){const {lang,version:v}=versionOf(s);const audioReady=audioSourceAvailable(v);const available=!!(youtubeId(v.youtube)||audioReady);return `<article class="song-card" data-song="${esc(s.id)}"><button class="cover ${s.portrait?'portrait':''}" data-action="play" aria-label="Écouter ${esc(s.title)}" ${available?'':'disabled'}><img src="${esc(s.image)}" alt="${esc(s.title)}" width="1672" height="941" loading="lazy">${available?'<span class="play-icon" aria-hidden="true">▶</span>':''}<span class="cover-status">${available?'Écouter la chanson':'À découvrir bientôt'}</span></button><div class="song-body"><div class="song-meta"><time datetime="${esc(v.releaseDate)}">${esc(dateLabel(v.releaseDate))}</time></div><h3>${esc(s.title)}</h3><p class="description">${esc(s.description)}</p><div class="song-tags">${s.tags.map(t=>`<button class="song-tag" data-theme="${esc(t)}"># ${esc(t)}</button>`).join('')}</div><div class="actions"><button class="action" data-action="queue" ${audioReady?'':'disabled'}>＋ Ma liste</button><button class="action" data-action="karaoke" aria-expanded="false" aria-controls="karaoke-${s.id}" ${youtubeId(v.karaokeYoutube)||youtubeId(v.karaokeProYoutube)||((safeUrl(v.karaokeAudio)||v.karaokeAudioId)&&safeUrl(v.karaokeTiming||v.timing))||((safeUrl(v.karaokeProAudio)||v.karaokeProAudioId)&&safeUrl(v.karaokeProTiming||v.timing))?'':'disabled title="Version karaoké à venir"'}>♫ Karaoké</button><button class="action" data-action="lyrics" aria-expanded="false" aria-controls="lyrics-${s.id}">≡ Paroles</button><button class="action" data-action="languages" aria-expanded="false" aria-controls="languages-${s.id}">◎ Langues</button><button class="action" data-action="downloads" aria-expanded="false" aria-controls="downloads-${s.id}">↓ Téléchargements</button></div><div class="panel karaoke-options" id="karaoke-${s.id}" hidden>${karaokeChoices(s,v)}</div><div class="panel" id="lyrics-${s.id}" hidden>${v.lyrics?`<div class="lyrics" lang="${lang}">${esc(v.lyrics)}</div>`:'<p>Les paroles écrites seront ajoutées prochainement.</p>'}</div><div class="panel language-options" id="languages-${s.id}" hidden>${languageChoices(s,lang)}</div><div class="panel downloads" id="downloads-${s.id}" hidden>${[['mp4','Vidéo MP4'],['mp3','Audio MP3'],['score','Partition PDF']].map(([key,label])=>{const url=safeUrl(v.downloads?.[key]);return `<div class="download-row"><span>${label}</span>${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Télécharger ↗</a>`:'<small>À venir</small>'}</div>`;}).join('')}</div></div></article>`;}
 function languageChoices(song,currentLanguage){const languages=Object.entries(song.versions).filter(([,version])=>released(version)).map(([language])=>language);return languages.map(language=>language===currentLanguage?`<span class="language-current" lang="${esc(language)}">${esc(names[language]||language)} · Version actuelle</span>`:`<button class="language-link" data-song-language="${esc(language)}" lang="${esc(language)}">${esc(names[language]||language)} →</button>`).join('')+(languages.length===1?'<small>Une seule langue disponible pour le moment.</small>':'');}
 document.addEventListener('click',event=>{
   const theme=event.target.closest('[data-theme]');if(theme){state.theme=theme.dataset.theme;state.page=1;render();$('clear-theme').focus({preventScroll:true});$('catalogue').scrollIntoView();return;}
@@ -63,7 +68,9 @@ document.addEventListener('click',event=>{
   const languageLink=event.target.closest('[data-song-language]');if(languageLink){const songCard=languageLink.closest('[data-song]');state.language=languageLink.dataset.songLanguage;savePreference(CONTENT_LANGUAGE_KEY,state.language);$('language').value=state.language;state.page=1;render();requestAnimationFrame(()=>document.querySelector(`[data-song="${songCard.dataset.song}"]`)?.scrollIntoView({block:'center'}));return;}
   const button=event.target.closest('[data-action]');if(!button)return;
   const song=songs.find(s=>s.id===button.closest('[data-song]').dataset.song);const action=button.dataset.action;
-  if(['play','karaoke-youtube','karaoke-mp3','karaoke-pro-youtube','karaoke-pro-mp3'].includes(action)){openPlayer(song,action);return;}
+  if(action==='play'){const {version}=versionOf(song);if(audioSourceAvailable(version))startPagePlaylist(song);else openPlayer(song,action);return;}
+  if(action==='queue'){addSongToPlaylist(song);return;}
+  if(['karaoke-youtube','karaoke-mp3','karaoke-pro-youtube','karaoke-pro-mp3'].includes(action)){openPlayer(song,action);return;}
   const panel=$(`${action}-${song.id}`);panel.hidden=!panel.hidden;button.setAttribute('aria-expanded',String(!panel.hidden));window.translatePage?.();
 });
 $('language').value=state.language;
@@ -75,6 +82,53 @@ $('page-size').addEventListener('change',e=>{state.size=e.target.value==='all'?'
 $('columns').addEventListener('change',e=>{state.columns=e.target.value;savePreference(COLUMNS_KEY,state.columns);$('song-grid').classList.toggle('three',state.columns==='3');});
 $('clear-theme').addEventListener('click',()=>{state.theme='Toutes';state.page=1;render();$('collection-title').focus({preventScroll:true});});
 $('reset-filters').addEventListener('click',()=>{state.language='fr';savePreference(CONTENT_LANGUAGE_KEY,'fr');state.theme='Toutes';state.page=1;$('language').value='fr';render();});
+
+const playlistAudio=$('playlist-audio');
+let playlistAbort=null;
+let playlistIndex=-1;
+let playlist=readPlaylist();
+let shuffle=readPreference(SHUFFLE_KEY,'false')==='true';
+let repeat=['off','all','one'].includes(readPreference(REPEAT_KEY,'off'))?readPreference(REPEAT_KEY,'off'):'off';
+function readPlaylist(){try{const value=JSON.parse(localStorage.getItem(PLAYLIST_KEY)||'[]');return Array.isArray(value)?value.filter(entry=>entry&&songs.some(song=>song.id===entry.songId)&&Object.hasOwn(names,entry.lang)):[];}catch{return [];}}
+function playlistEntry(song,lang=versionOf(song).lang){const version=song.versions[lang];return version&&audioSourceAvailable(version)?{songId:song.id,lang}:null;}
+function playlistSong(entry){return songs.find(song=>song.id===entry?.songId);}
+function savePlaylist(){try{localStorage.setItem(PLAYLIST_KEY,JSON.stringify(playlist));}catch{}renderPlaylist();}
+function playlistLabel(){return repeat==='one'?'Répétition : une':repeat==='all'?'Répétition : toutes':'Répétition : non';}
+function renderPlaylist(){
+  const current=playlistSong(playlist[playlistIndex]);
+  $('playlist-count').textContent=playlist.length;$('queue-count').textContent=playlist.length;$('show-playlist').disabled=!playlist.length;
+  $('playlist-player').hidden=!playlist.length;
+  $('playlist-shuffle').setAttribute('aria-pressed',String(shuffle));$('playlist-repeat').dataset.mode=repeat;$('playlist-repeat').textContent=playlistLabel();
+  if(current){$('playlist-cover').src=current.image;$('playlist-cover').alt=current.title;$('playlist-title').textContent=current.title;}
+  $('queue-items').innerHTML=playlist.map((entry,index)=>{const song=playlistSong(entry);return `<li class="${index===playlistIndex?'current':''}"><button data-queue-index="${index}"><span>${index===playlistIndex?'▶':'♫'}</span>${esc(song?.title||entry.songId)} <small>${esc(names[entry.lang]||entry.lang)}</small></button><button data-queue-remove="${index}" aria-label="Retirer ${esc(song?.title||entry.songId)}">×</button></li>`;}).join('');
+  window.translatePage?.();
+}
+function replacePlaylist(entries,start=0){playlist=entries.filter(Boolean);playlistIndex=playlist.length?Math.max(0,Math.min(start,playlist.length-1)):-1;savePlaylist();if(playlist.length)loadPlaylistTrack(playlistIndex);}
+function addSongToPlaylist(song){const entry=playlistEntry(song);if(!entry)return;const existing=playlist.findIndex(item=>item.songId===entry.songId&&item.lang===entry.lang);if(existing<0){playlist.push(entry);if(playlistIndex<0)playlistIndex=playlist.length-1;savePlaylist();$('playlist-status').textContent='Ajoutée à votre liste.';}else{$('playlist-status').textContent='Cette chanson est déjà dans votre liste.';}}
+function startPagePlaylist(song){const entry=playlistEntry(song);if(!entry)return;if(playlist.length){let selected=playlist.findIndex(item=>item.songId===entry.songId&&item.lang===entry.lang);if(selected<0){playlist.push(entry);selected=playlist.length-1;savePlaylist();}loadPlaylistTrack(selected);return;}const entries=pageSongs.map(item=>playlistEntry(item)).filter(Boolean);const selected=entries.findIndex(item=>item.songId===song.id&&item.lang===entry.lang);replacePlaylist(entries,selected<0?0:selected);}
+async function loadPlaylistTrack(index,autoplay=true){
+  if(index<0||index>=playlist.length)return;playlistIndex=index;const entry=playlist[index];const song=playlistSong(entry);const version=song?.versions[entry.lang];if(!song||!version)return;
+  playlistAbort?.abort();playlistAbort=new AbortController();playlistAudio.pause();playlistAudio.removeAttribute('src');playlistAudio.load();$('playlist-status').textContent='Préparation de la piste…';renderPlaylist();
+  try{const source=safeUrl(version.audio)||await signedAudioUrl(version.audioId,entry.lang,version.albumId,playlistAbort.signal);if(playlistAbort.signal.aborted)return;playlistAudio.src=source;playlistAudio.load();$('playlist-status').textContent='';if(autoplay){try{await playlistAudio.play();}catch(error){if(error.name==='NotAllowedError')$('playlist-status').textContent='La piste est prête. Appuyez sur Lecture.';else throw error;}}}catch(error){if(error.name!=='AbortError')$('playlist-status').textContent='Impossible de préparer cette piste.';}
+}
+function nextPlaylist(manual=false){if(!playlist.length)return;if(shuffle&&playlist.length>1){let next=playlistIndex;while(next===playlistIndex)next=Math.floor(Math.random()*playlist.length);loadPlaylistTrack(next);return;}if(playlistIndex<playlist.length-1){loadPlaylistTrack(playlistIndex+1);return;}if(repeat==='all'||manual)loadPlaylistTrack(0);}
+function previousPlaylist(){if(!playlist.length)return;if(playlistAudio.currentTime>4){playlistAudio.currentTime=0;return;}loadPlaylistTrack(playlistIndex>0?playlistIndex-1:playlist.length-1);}
+$('play-visible').addEventListener('click',()=>{const entries=pageSongs.map(song=>playlistEntry(song)).filter(Boolean);if(entries.length)replacePlaylist(entries);});
+$('show-playlist').addEventListener('click',()=>{if(!playlist.length)return;$('playlist-player').hidden=false;const open=$('playlist-queue').hidden;$('playlist-queue').hidden=!open;$('queue-toggle').setAttribute('aria-expanded',String(open));});
+$('queue-toggle').addEventListener('click',()=>{const open=$('playlist-queue').hidden;$('playlist-queue').hidden=!open;$('queue-toggle').setAttribute('aria-expanded',String(open));});
+$('playlist-toggle').addEventListener('click',()=>{if(!playlist.length)return;if(!playlistAudio.src){loadPlaylistTrack(Math.max(0,playlistIndex));return;}playlistAudio.paused?playlistAudio.play():playlistAudio.pause();});
+$('playlist-next').addEventListener('click',()=>nextPlaylist(true));
+$('playlist-previous').addEventListener('click',previousPlaylist);
+$('playlist-shuffle').addEventListener('click',()=>{shuffle=!shuffle;savePreference(SHUFFLE_KEY,String(shuffle));renderPlaylist();});
+$('playlist-repeat').addEventListener('click',()=>{repeat=repeat==='off'?'all':repeat==='all'?'one':'off';savePreference(REPEAT_KEY,repeat);renderPlaylist();});
+$('clear-playlist').addEventListener('click',()=>{playlistAbort?.abort();playlistAudio.pause();playlistAudio.removeAttribute('src');playlist=[];playlistIndex=-1;savePlaylist();});
+$('queue-items').addEventListener('click',event=>{const play=event.target.closest('[data-queue-index]');if(play){loadPlaylistTrack(Number(play.dataset.queueIndex));return;}const remove=event.target.closest('[data-queue-remove]');if(!remove)return;const index=Number(remove.dataset.queueRemove);playlist.splice(index,1);if(!playlist.length){playlistAudio.pause();playlistAudio.removeAttribute('src');playlistIndex=-1;}else if(index===playlistIndex){playlistIndex=Math.min(index,playlist.length-1);loadPlaylistTrack(playlistIndex);}else if(index<playlistIndex)playlistIndex--;savePlaylist();});
+playlistAudio.addEventListener('play',()=>{$('playlist-toggle').textContent='❚❚';$('playlist-toggle').setAttribute('aria-label','Pause');});
+playlistAudio.addEventListener('pause',()=>{$('playlist-toggle').textContent='▶';$('playlist-toggle').setAttribute('aria-label','Lecture');});
+playlistAudio.addEventListener('ended',()=>{if(repeat==='one'){playlistAudio.currentTime=0;playlistAudio.play();}else nextPlaylist(false);});
+playlistAudio.addEventListener('error',()=>{$('playlist-status').textContent='La piste ne peut pas être lue.';});
+renderPlaylist();
+
 async function openPlayer(song,mode='play'){
   const karaoke=mode!=='play';
   $('player-dialog').classList.toggle('singing-mode',mode.endsWith('mp3'));
