@@ -22,7 +22,7 @@ const translations={
 'LE CATALOGUE':['THE COLLECTION','EL CATÁLOGO'],
 'À chaque instant, une chanson.':['A song for every moment.','Una canción para cada momento.'],
 'Toutes les chansons ×':['All songs ×','Todas las canciones ×'],
-'Langue des paroles':['Lyrics language','Idioma de la letra'],
+'Langue des chansons':['Song language','Idioma de las canciones'],
 'Toutes les langues':['All languages','Todos los idiomas'],
 'Par page':['Per page','Por página'],
 'Toutes':['All','Todas'],
@@ -33,7 +33,10 @@ const translations={
 'À découvrir bientôt':['Available soon','Disponible próximamente'],
 '♫ Karaoké':['♫ Karaoke','♫ Karaoke'],
 '≡ Paroles':['≡ Lyrics','≡ Letra'],
+'◎ Langues':['◎ Languages','◎ Idiomas'],
 '↓ Téléchargements':['↓ Downloads','↓ Descargas'],
+'Version actuelle':['Current version','Versión actual'],
+'Une seule langue disponible pour le moment.':['Only one language is available for now.','Por ahora solo hay un idioma disponible.'],
 'Les paroles écrites seront ajoutées prochainement.':['Written lyrics will be added soon.','La letra se añadirá próximamente.'],
 'Vidéo MP4':['MP4 video','Vídeo MP4'],
 'Audio MP3':['MP3 audio','Audio MP3'],
@@ -61,13 +64,14 @@ const translations={
 'La piste ne peut pas être lue. Vérifiez son lien ou réessayez plus tard.':['This track cannot be played. Check its link or try again later.','No se puede reproducir esta pista. Comprueba el enlace o inténtalo más tarde.'],
 'Les paroles synchronisées sont indisponibles. La lecture reste accessible.':['Synchronized lyrics are unavailable. Playback is still available.','La letra sincronizada no está disponible. Puedes seguir escuchando.']
 };
-const translatedTags={'Unité':['Unity','Unidad'],'Espérance':['Hope','Esperanza'],'Foi':['Faith','Fe'],'Réconfort':['Comfort','Consuelo']};
+const translatedTags={'Unité':['Unity','Unidad'],'Espérance':['Hope','Esperanza'],'Foi':['Faith','Fe'],'Réconfort':['Comfort','Consuelo'],'Une même foi':['One shared faith','Una misma fe']};
 const originalText=new WeakMap();
 function translateText(value,language){
   if(language==='fr')return value;const i=language==='en'?0:1;
   if(translations[value])return translations[value][i];
   const count=value.match(/^(\d+) chansons?$/);if(count)return `${count[1]} ${language==='en'?(count[1]==='1'?'song':'songs'):(count[1]==='1'?'canción':'canciones')}`;
   if(value.startsWith('# '))return '# '+(translatedTags[value.slice(2)]?.[i]||value.slice(2));
+  if(value.endsWith(' · Version actuelle'))return value.slice(0,-' · Version actuelle'.length)+' · '+translations['Version actuelle'][i];
   if(value.startsWith('Thème : '))return (language==='en'?'Theme: ':'Tema: ')+(translatedTags[value.slice(8)]?.[i]||value.slice(8));
   if(value.startsWith('Écouter '))return (language==='en'?'Listen to ':'Escuchar ')+value.slice(8);
   return value;
@@ -85,5 +89,9 @@ window.translatePage=()=>{
   document.querySelectorAll('[aria-label],[title]').forEach(el=>{for(const attr of ['aria-label','title']){if(!el.hasAttribute(attr))continue;const key='original-'+attr;if(!el.hasAttribute('data-'+key))el.setAttribute('data-'+key,el.getAttribute(attr));el.setAttribute(attr,translateText(el.getAttribute('data-'+key),language));}});
   document.title={fr:'One Faith Musics — Des mélodies pour la foi',en:'One Faith Musics — Melodies of faith',es:'One Faith Musics — Melodías de fe'}[language];
 };
-document.getElementById('site-language').addEventListener('change',event=>{document.documentElement.lang=event.target.value;render();});
+const SITE_LANGUAGE_KEY='one-faith-musics-site-language';
+const savedSiteLanguage=(()=>{try{return localStorage.getItem(SITE_LANGUAGE_KEY);}catch{return null;}})();
+if(['fr','en','es'].includes(savedSiteLanguage)){document.documentElement.lang=savedSiteLanguage;document.getElementById('site-language').value=savedSiteLanguage;}
+document.getElementById('site-language').addEventListener('change',event=>{document.documentElement.lang=event.target.value;try{localStorage.setItem(SITE_LANGUAGE_KEY,event.target.value);}catch{}render();});
+if(['fr','en','es'].includes(savedSiteLanguage))render();
 window.translatePage();
