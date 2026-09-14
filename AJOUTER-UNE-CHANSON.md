@@ -5,20 +5,22 @@ Double-cliquer sur `Ouvrir-Gestionnaire.cmd` pour ouvrir le gestionnaire local. 
 Tout se renseigne dans catalogue.js, pour chaque version fr, en ou es.
 
 - youtube / audio : vidéo ou URL MP3 chantée publique, seulement si nécessaire.
-- audioId : nom technique du MP3 chanté dans R2. Le bouton **Générer** du gestionnaire le crée automatiquement.
+- albumId : nom du dossier d’album dans R2 pour cette langue, par exemple `une-meme-foi` ou `a-same-faith`.
+- audioId : nom du MP3 sans l’extension `.mp3`. Le bouton **Générer** ajoute automatiquement le numéro de piste et le titre.
 - timing : chemin du JSON Easy Kara pour le MP3 chanté.
 - karaokeYoutube / karaokeAudio : vidéo ou MP3 karaoké normal, avec voix basse.
 - karaokeTiming : JSON du karaoké normal. null utilise timing.
 - karaokeProYoutube / karaokeProAudio : vidéo ou MP3 karaoké pro, sans voix.
 - karaokeProTiming : JSON du karaoké pro. null utilise timing.
 
-Les liens YouTube complets sont acceptés. Les JSON restent dans lyrics, par exemple lyrics/chanson-fr.json. Les MP3 publiés vont dans le bucket R2 privé, jamais dans GitHub. Le Worker construit désormais leur chemin automatiquement à partir de l'identifiant.
+Les liens YouTube complets sont acceptés. Les JSON restent dans lyrics, par exemple lyrics/chanson-fr.json. Les MP3 publiés vont dans le bucket R2 privé, jamais dans GitHub. Le Worker construit leur chemin à partir de la langue, du dossier d’album et de l’identifiant audio fournis par le catalogue.
 
-La convention R2 est toujours `audio/IDENTIFIANT.mp3`. Après avoir cliqué sur **Générer** dans le gestionnaire, téléverser le fichier sous le nom affiché. Exemples :
+La convention R2 est toujours `LANGUE/ALBUM/IDENTIFIANT.mp3`. Après avoir indiqué le numéro de piste et cliqué sur **Générer**, téléverser le fichier sous le chemin affiché au bas du gestionnaire. Exemples :
 
-- chanson : `audio/nous-sommes-fr.mp3`
-- karaoké normal : `audio/nous-sommes-fr-karaoke.mp3`
-- karaoké pro : `audio/nous-sommes-fr-karaoke-pro.mp3`
+- chanson : `fr/une-meme-foi/1-nous-sommes-a-toi-jehovah.mp3`
+- karaoké normal : `fr/une-meme-foi/1-nous-sommes-a-toi-jehovah-karaoke.mp3`
+- karaoké pro : `fr/une-meme-foi/1-nous-sommes-a-toi-jehovah-karaoke-pro.mp3`
+- version anglaise : `en/a-same-faith/1-we-belong-to-you-jehovah.mp3`
 
 Laisser le champ vide tant que le MP3 correspondant n'est pas présent dans R2. Il n'est plus nécessaire de modifier le Worker pour ajouter une chanson. Réutiliser le JSON uniquement si le minutage correspond. Le lecteur ne modifie pas les voix : fournir le bon mixage.
 
