@@ -3,6 +3,8 @@ const songs=window.JEHOVAH_CATALOGUE;
 const $=id=>document.getElementById(id);
 const AUDIO_WORKER_URL='https://one-faith-musics-audio.jnc-studiopro.workers.dev/audio-url';
 const names={fr:'Français',en:'English',es:'Español'};
+const SITE_VERSION=document.querySelector('meta[name="site-version"]')?.content||'1.0000';
+const CURRENT_YEAR=new Date().getFullYear();
 const CONTENT_LANGUAGE_KEY='one-faith-musics-content-language';
 const PAGE_SIZE_KEY='one-faith-musics-page-size';
 const COLUMNS_KEY='one-faith-musics-columns';
@@ -21,6 +23,8 @@ const today=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'America/Toronto',year
 const released=v=>v&&v.releaseDate&&v.releaseDate<=today();
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeUrl=url=>{if(!url)return null;try{const u=new URL(url,location.href);return ['https:','http:'].includes(u.protocol)?u.href:null;}catch{return null;}};
+const versionedStaticUrl=value=>{const source=safeUrl(value);if(!source)return value;const url=new URL(source);if(url.origin===location.origin)url.searchParams.set('v',SITE_VERSION);return url.href;};
+songs.forEach(song=>{song.image=versionedStaticUrl(song.image);});
 const r2Part=value=>typeof value==='string'&&(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).test(value);
 const r2SourceAvailable=(version,trackId)=>r2Part(trackId)&&r2Part(version.albumId);
 const audioSourceAvailable=version=>!!(safeUrl(version.audio)||r2SourceAvailable(version,version.audioId));
@@ -31,8 +35,25 @@ async function signedAudioUrl(trackId,language,albumId,signal){
   if(!response.ok)throw Error('Impossible d’obtenir l’URL audio.');
   const data=await response.json();const url=safeUrl(data?.url);
   if(!url)throw Error('Le Worker n’a pas renvoyé une URL audio valide.');
-  return url;
+  const source=new URL(url);source.hash=new URLSearchParams({ofm:`${language}|${albumId}|${trackId}|${Date.now()+Math.max(30,Number(data.expiresIn)||300)*1000}`});
+  return source.href;
 }
+const audioRenewals=new WeakMap();
+function signedAudioContext(player){try{const url=new URL(player.currentSrc||player.src);const value=new URLSearchParams(url.hash.slice(1)).get('ofm');if(!value)return null;const [language,albumId,trackId,expiresAt]=value.split('|');return {language,albumId,trackId,expiresAt:Number(expiresAt)};}catch{return null;}}
+async function waitForAudioMetadata(player,signal){if(player.readyState>=1)return;await new Promise((resolve,reject)=>{const done=()=>{cleanup();resolve();},failed=()=>{cleanup();reject(Error('Audio unavailable'));},aborted=()=>{cleanup();reject(new DOMException('Aborted','AbortError'));},timer=setTimeout(failed,15000),cleanup=()=>{clearTimeout(timer);player.removeEventListener('loadedmetadata',done);player.removeEventListener('error',failed);signal?.removeEventListener('abort',aborted);};player.addEventListener('loadedmetadata',done,{once:true});player.addEventListener('error',failed,{once:true});signal?.addEventListener('abort',aborted,{once:true});});}
+async function renewSignedAudio(player,force=false){
+  const context=signedAudioContext(player);if(!context||(!force&&Date.now()<context.expiresAt-10000))return;
+  if(audioRenewals.has(player))return audioRenewals.get(player);
+  const position=Number.isFinite(player.currentTime)?player.currentTime:0;const resume=!player.paused;const status=player.closest('#player-content')?.querySelector('#audio-status')||$('playlist-status');player.pause();if(status)status.textContent='Renouvellement de l’accès audio…';
+  const task=(async()=>{const source=await signedAudioUrl(context.trackId,context.language,context.albumId);player.src=source;player.load();await waitForAudioMetadata(player);if(position>0&&Number.isFinite(player.duration))player.currentTime=Math.min(position,Math.max(0,player.duration-.1));if(status)status.textContent='';if(resume)await player.play();})().catch(()=>{if(status)status.textContent='Impossible de renouveler l’accès audio. Réessayez.';}).finally(()=>audioRenewals.delete(player));
+  audioRenewals.set(player,task);return task;
+}
+for(const eventName of ['play','seeking'])document.addEventListener(eventName,event=>{if(event.target instanceof HTMLAudioElement)renewSignedAudio(event.target);},true);
+document.addEventListener('error',event=>{if(event.target instanceof HTMLAudioElement){const context=signedAudioContext(event.target);if(context&&Date.now()>=context.expiresAt-10000)renewSignedAudio(event.target,true);}},true);
+function copyrightNotice(){return `<p class="copyright-notice">${CURRENT_YEAR} © One Faith Musics — Tous droits réservés. Écoute en ligne uniquement. Aucun téléchargement, enregistrement, copie, redistribution ou réutilisation n’est autorisé (<a href="conditions.html">voir conditions d’utilisation</a>).</p>`;}
+document.querySelectorAll('.current-year').forEach(element=>{element.textContent=CURRENT_YEAR;});
+const playerNoticeObserver=new MutationObserver(()=>{const audio=$('player-content')?.querySelector('audio');if(audio&&!$('player-content').querySelector('.copyright-notice'))audio.insertAdjacentHTML('afterend',copyrightNotice());});
+playerNoticeObserver.observe($('player-content'),{childList:true,subtree:true});
 const youtubeId=value=>{if(typeof value!=='string')return null;const text=value.trim();if(/^[\w-]{11}$/.test(text))return text;try{const url=new URL(text);if(!['https:','http:'].includes(url.protocol))return null;const host=url.hostname.toLowerCase();const id=host==='youtu.be'?url.pathname.slice(1).split('/')[0]:['youtube.com','www.youtube.com','m.youtube.com','www.youtube-nocookie.com'].includes(host)?url.searchParams.get('v')||url.pathname.match(/^\/(?:embed|shorts)\/([\w-]{11})/)?.[1]:null;return id&&/^[\w-]{11}$/.test(id)?id:null;}catch{return null;}};
 const versionOf=s=>{const lang=state.language==='all'?Object.keys(s.versions).filter(l=>released(s.versions[l])).sort((a,b)=>s.versions[b].releaseDate.localeCompare(s.versions[a].releaseDate))[0]:state.language;return {lang,version:s.versions[lang]};};
 let playerAbort=null;
@@ -141,7 +162,7 @@ async function openPlayer(song,mode='play'){
   $('player-dialog').showModal();window.translatePage?.();
 }
 async function loadTiming(player,url,signal){
-  try{const source=safeUrl(url);if(!source)throw Error();const response=await fetch(source,{signal});if(!response.ok)throw Error();const json=await response.json();if(!Array.isArray(json.lines))throw Error();
+  try{const source=versionedStaticUrl(url);if(!safeUrl(source))throw Error();const response=await fetch(source,{signal});if(!response.ok)throw Error();const json=await response.json();if(!Array.isArray(json.lines))throw Error();
     const lines=json.lines;const clean=text=>String(text||'').replace(/\[[^\]]*\]/g,'').replace(/\/\//g,'').trim();
     if(signal.aborted)return;
     const singing=$('player-dialog').classList.contains('singing-mode');

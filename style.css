@@ -47,3 +47,19 @@ body:has(.playlist-player:not([hidden])){padding-bottom:155px}
 
 /* Discreet song information. */
 .info-button{width:24px;height:24px;display:grid;place-items:center;flex:0 0 auto;padding:0;border:1px solid #e3bd7770;border-radius:50%;background:transparent;color:var(--gold);font:600 13px/1 Georgia,serif;text-transform:none;letter-spacing:0}.info-button:hover,.info-button[aria-expanded=true]{background:var(--gold);color:var(--bg)}.song-info{padding:0 0 18px}.song-info dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0}.song-info dl>div{padding:10px 12px;border:1px solid var(--line);border-radius:4px;background:#ffffff04}.song-info dt{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--gold)}.song-info dd{margin:3px 0 0;color:var(--text);font-size:13px;line-height:1.4}@media(max-width:650px){.song-info dl{grid-template-columns:1fr}}
+
+/* Copyright notice and terms page. */
+.copyright-notice{margin:4px 0 0;color:#91a0aa;font-size:10px;line-height:1.35}
+.copyright-notice a{color:#c8ab76;text-decoration:underline;text-underline-offset:2px}
+.playlist-player>.copyright-notice{grid-column:1/-1;text-align:center;margin-top:-8px}
+.legal-page{width:min(900px,90%);margin:50px auto 90px}
+.legal-page header{margin-bottom:45px;padding-bottom:25px;border-bottom:1px solid var(--line)}
+.legal-page h1{font-size:clamp(38px,6vw,64px);line-height:1.05}
+.legal-page h2{margin:44px 0 14px;color:var(--gold);font:600 25px/1.25 var(--serif);letter-spacing:.3px}
+.legal-page p,.legal-page li{color:#d4dce1;line-height:1.8}
+.legal-page ul{padding-left:25px}
+.legal-page .legal-date,.legal-page .legal-note{color:var(--muted)}
+.legal-page .legal-contact{padding:20px;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+.legal-back{display:inline-block;margin-bottom:28px;color:var(--gold)}
+@media(max-width:1050px){.playlist-player>.copyright-notice{grid-row:3;margin-top:0}}
+@media(max-width:650px){body:has(.playlist-player:not([hidden])){padding-bottom:275px}.playlist-player>.copyright-notice{grid-row:auto;font-size:9px}.legal-page{margin-top:28px}.legal-page h2{font-size:22px}}
