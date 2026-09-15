@@ -106,5 +106,47 @@ window.JEHOVAH_CATALOGUE = [
                                     "karaokeProTiming":  null
                                 }
                      }
+    },
+    {
+        "id":  "tu-l-avais-promis",
+        "title":  "Tu l\u0027avais promis",
+        "image":  "assets/tu-l-avais-promis.webp",
+        "portrait":  false,
+        "description":  "Une vision lumineuse du monde nouveau promis par Jéhovah, où la paix, la santé, la résurrection et la joie remplacent enfin la douleur et les larmes.",
+        "album":  "Une même foi",
+        "tags":  [
+                     "Paradis",
+                     "Résurrection",
+                     "Espérance",
+                     "Vie éternelle",
+                     "Une même foi"
+                 ],
+        "versions":  {
+                         "fr":  {
+                                    "albumId":  "une-meme-foi",
+                                    "releaseDate":  "2026-09-07",
+                                    "lastUpdated":  "2026-09-14",
+                                    "youtube":  null,
+                                    "audio":  null,
+                                    "audioId":  null,
+                                    "karaokeYoutube":  null,
+                                    "karaokeAudio":  null,
+                                    "karaokeAudioId":  null,
+                                    "karaokeProYoutube":  null,
+                                    "karaokeProAudio":  null,
+                                    "karaokeProAudioId":  null,
+                                    "lyrics":  null,
+                                    "timing":  null,
+                                    "karaokeTiming":  null,
+                                    "karaokeProTiming":  null,
+                                    "downloads":  {
+                                                      "mp4":  null,
+                                                      "mp3":  null,
+                                                      "score":  null
+                                                  }
+                                }
+                     },
+        "style":  "Rétro-pop française yéyé",
+        "trackNumber":  1
     }
 ];
