@@ -32,6 +32,7 @@ const translations={
 'Écouter la chanson':['Listen to the song','Escuchar la canción'],
 'Style musical':['Musical style','Estilo musical'],
 'Dernière mise à jour':['Last updated','Última actualización'],
+'Version audio mise à jour le':['Audio version updated on','Versión de audio actualizada el'],
 'Album':['Album','Álbum'],
 'Non précisé':['Not specified','No especificado'],
 'Non indiquée':['Not provided','No indicada'],
