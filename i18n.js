@@ -42,6 +42,8 @@ const translations={
 '＋ Ma liste':['＋ My playlist','＋ Mi lista'],
 'Ma liste d’écoute':['My playlist','Mi lista de reproducción'],
 'Liste d’écoute':['Playlist','Lista de reproducción'],
+'Fermer':['Close','Cerrar'],
+'Fermer la liste d’écoute':['Close playlist','Cerrar la lista de reproducción'],
 'Vider la liste':['Clear playlist','Vaciar la lista'],
 'Aléatoire':['Shuffle','Aleatorio'],
 'Répétition : non':['Repeat: off','Repetición: no'],
