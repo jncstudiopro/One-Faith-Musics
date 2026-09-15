@@ -124,7 +124,7 @@ window.JEHOVAH_CATALOGUE = [
         "versions":  {
                          "fr":  {
                                     "albumId":  "une-meme-foi",
-                                    "releaseDate":  "2026-09-07",
+                                    "releaseDate":  "2026-09-15",
                                     "lastUpdated":  "2026-09-14",
                                     "youtube":  null,
                                     "audio":  null,
