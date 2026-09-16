@@ -56,6 +56,12 @@ const playerNoticeObserver=new MutationObserver(()=>{const audio=$('player-conte
 playerNoticeObserver.observe($('player-content'),{childList:true,subtree:true});
 const youtubeId=value=>{if(typeof value!=='string')return null;const text=value.trim();if(/^[\w-]{11}$/.test(text))return text;try{const url=new URL(text);if(!['https:','http:'].includes(url.protocol))return null;const host=url.hostname.toLowerCase();const id=host==='youtu.be'?url.pathname.slice(1).split('/')[0]:['youtube.com','www.youtube.com','m.youtube.com','www.youtube-nocookie.com'].includes(host)?url.searchParams.get('v')||url.pathname.match(/^\/(?:embed|shorts)\/([\w-]{11})/)?.[1]:null;return id&&/^[\w-]{11}$/.test(id)?id:null;}catch{return null;}};
 const versionOf=s=>{const lang=state.language==='all'?Object.keys(s.versions).filter(l=>released(s.versions[l])).sort((a,b)=>s.versions[b].releaseDate.localeCompare(s.versions[a].releaseDate))[0]:state.language;return {lang,version:s.versions[lang]};};
+const deepLinkParams=new URLSearchParams(location.search);
+const deepLinkSongId=deepLinkParams.get('song');
+const deepLinkLanguage=deepLinkParams.get('lang');
+const deepLinkSong=songs.find(song=>song.id===deepLinkSongId)||null;
+let deepLinkPending=!!deepLinkSong;
+if(deepLinkSong&&Object.hasOwn(names,deepLinkLanguage)&&released(deepLinkSong.versions?.[deepLinkLanguage]))state.language=deepLinkLanguage;
 let playerAbort=null;
 function render(){
   renderLatest();
@@ -63,6 +69,11 @@ function render(){
   $('active-theme-name').textContent=`Thème : ${state.theme}`;
   const filtered=songs.filter(s=>(state.theme==='Toutes'||s.tags.includes(state.theme))&&(state.language==='all'?Object.values(s.versions).some(released):released(s.versions[state.language]))).sort((a,b)=>versionOf(b).version.releaseDate.localeCompare(versionOf(a).version.releaseDate));
   const size=state.size==='all'?Math.max(1,filtered.length):state.size;
+  if(deepLinkPending){
+    const deepLinkIndex=filtered.findIndex(song=>song.id===deepLinkSong?.id);
+    if(deepLinkIndex>=0)state.page=Math.floor(deepLinkIndex/size)+1;
+    else deepLinkPending=false;
+  }
   const pages=Math.max(1,Math.ceil(filtered.length/size));state.page=Math.min(state.page,pages);
   $('result-count').textContent=`${filtered.length} chanson${filtered.length===1?'':'s'}`;
   $('empty').hidden=filtered.length>0;
@@ -70,6 +81,13 @@ function render(){
   $('song-grid').innerHTML=pageSongs.map(card).join('');
   $('pagination').innerHTML=pages>1?`<button data-page="${state.page-1}" ${state.page===1?'disabled':''}>Précédent</button><span>${state.page} / ${pages}</span><button data-page="${state.page+1}" ${state.page===pages?'disabled':''}>Suivant</button>`:'';
   window.translatePage?.();
+  if(deepLinkPending){
+    deepLinkPending=false;
+    requestAnimationFrame(()=>{
+      const target=[...document.querySelectorAll('[data-song]')].find(element=>element.dataset.song===deepLinkSong?.id);
+      target?.scrollIntoView({block:'center',behavior:'smooth'});
+    });
+  }
 }
 function renderLatest(){
   const candidates=songs.flatMap(song=>Object.entries(song.versions).filter(([,v])=>released(v)).map(([lang,v])=>({song,lang,date:v.releaseDate})));
