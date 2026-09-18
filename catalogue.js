@@ -201,5 +201,46 @@ window.JEHOVAH_CATALOGUE = [
                                 }
                      },
         "style":  "Rock orchestral"
+    },
+    {
+        "id":  "je-te-choisirai-encore",
+        "title":  "Je te choisirai encore",
+        "image":  "assets/je-te-choisirai-encore.png",
+        "portrait":  false,
+        "description":  "Un amour qui se construit dans le temps, avec ses détours, ses imperfections et ses pardons. Une promesse simple : continuer à se choisir, jour après jour, avec tendresse, respect et fidélité.",
+        "album":  "Une même foi",
+        "tags":  [
+                     "Amour",
+                     "Couple",
+                     "Fidélité",
+                     "Une même foi"
+                 ],
+        "versions":  {
+                         "fr":  {
+                                    "albumId":  "une-meme-foi",
+                                    "releaseDate":  "2026-09-18",
+                                    "lastUpdated":  "2026-09-17",
+                                    "youtube":  null,
+                                    "audio":  null,
+                                    "audioId":  null,
+                                    "karaokeYoutube":  null,
+                                    "karaokeAudio":  null,
+                                    "karaokeAudioId":  null,
+                                    "karaokeProYoutube":  null,
+                                    "karaokeProAudio":  null,
+                                    "karaokeProAudioId":  null,
+                                    "lyrics":  null,
+                                    "timing":  null,
+                                    "karaokeTiming":  null,
+                                    "karaokeProTiming":  null,
+                                    "downloads":  {
+                                                      "mp4":  null,
+                                                      "mp3":  null,
+                                                      "score":  null
+                                                  }
+                                }
+                     },
+        "style":  "Chanson romantique engagée",
+        "trackNumber":  1
     }
 ];
