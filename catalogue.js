@@ -222,7 +222,7 @@ window.JEHOVAH_CATALOGUE = [
                                     "lastUpdated":  "2026-09-17",
                                     "youtube":  null,
                                     "audio":  null,
-                                    "audioId":  null,
+                                    "audioId":  "6-je-te-choisirai-encore",
                                     "karaokeYoutube":  null,
                                     "karaokeAudio":  null,
                                     "karaokeAudioId":  null,
@@ -241,7 +241,7 @@ window.JEHOVAH_CATALOGUE = [
                                 }
                      },
         "style":  "Chanson romantique engagée",
-        "trackNumber":  1
+        "trackNumber":  6
     },
     {
         "id":  "on-vous-doit-tant",
