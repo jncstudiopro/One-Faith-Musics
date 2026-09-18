@@ -248,7 +248,7 @@ window.JEHOVAH_CATALOGUE = [
         "title":  "On vous doit tant",
         "image":  "assets/on-vous-doit-tant.webp",
         "portrait":  false,
-        "description":  "",
+        "description":  "Un regard tendre et humoristique sur plusieurs personnages bibliques, leurs réactions très humaines, leurs qualités et les leçons que leur foi continue de nous transmettre aujourd’hui.",
         "album":  "Une même foi",
         "tags":  [
                      "Personnages bibliques",
