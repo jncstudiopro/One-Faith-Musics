@@ -266,7 +266,7 @@ window.JEHOVAH_CATALOGUE = [
                                     "lastUpdated":  "2026-09-19",
                                     "youtube":  null,
                                     "audio":  null,
-                                    "audioId":  null,
+                                    "audioId":  "7-on-vous-doit-tant",
                                     "karaokeYoutube":  null,
                                     "karaokeAudio":  null,
                                     "karaokeAudioId":  null,
