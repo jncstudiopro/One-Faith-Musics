@@ -1,2673 +1,2814 @@
 {
   "version": "1.3",
+  "lyricsInput": "Quand tout devient silence,\nQuand la nuit couvre l’horizon,\nIl reste une espérance,\nPlus forte encore que nos prisons.\n\nQuand les portes se referment,\nQuand on veut ébranler ma foi,\nJe sais qu’au loin des frères veillent,\nEt qu’ils prient encore avec moi.\n\nMême séparés,\nNous marchons d’un même pas.\nMême dans la nuit,\nJéhovah ne nous quitte pas.\n\n[Refrain]\nNous sommes à toi, Jéhovah,\nDans la lumière ou dans le froid.\nQuand tout vacille autour de nous,\nTon nom nous garde encore debout.\n\nNous sommes à toi, Jéhovah,\nNul ne pourra briser cela.\nUn même espoir, un même cœur,\nUne seule foi plus forte que la peur.\n\nOn peut nous prendre nos chemins,\nNous éloigner de ceux qu’on aime,\n\nMais nul ne peut fermer nos mains\nSur l’espérance que tu sèmes.\n\nQuand l’un de nous tombe à genoux,\n\nDes milliers se lèvent partout.\n\nEt d’une rive à l’autre rive,\nLa même foi demeure vive.\n\nNous connaissons ta voix.\nNous savons où nous allons.\nNous sommes ton peuple,\nEt ton nom, nous le porterons.\n\n[Refrain]\nNous sommes à toi, Jéhovah,\nDans la lumière ou dans le froid.\nQuand tout vacille autour de nous,\nTon nom nous garde encore debout.\n\nNous sommes à toi, Jéhovah,\nNul ne pourra briser cela.\nUn même espoir, un même cœur,\nUne seule foi plus forte que la peur.\n\n[Pont]\n\nSi je dois marcher dans la nuit,\n\nJe marcherai sans fuir.\n\nSi ma voix devient plus petite,\n\nAlors nous chanterons plus fort.\n\n\n\nNous chanterons encore.\n\nSi l’on veut nous faire taire,\n\nNotre foi saura répondre.\n\nCar même au cœur de l’épreuve,\nNotre amour ne peut se rompre.\n\nUn peuple.\nUne foi.\nUne espérance.\n\nUn cœur.\nUne voix.\nUne confiance.\n\nNous sommes à toi, Jéhovah,\nDans la lumière ou dans le froid.\nQuand tout vacille autour de nous,\nTon nom nous garde encore debout.\n\nNous sommes à toi, Jéhovah,\nNul ne pourra briser cela.\nD’une extrémité de la terre à l’autre,\nNous chanterons encore pour toi.\n\nNous sommes à toi, Jéhovah (Jéhovah)…\n\nDans la lumière (lumière),\ndans le froid (le froid)…\n\nAujourd’hui,\ndemain,\ntoujours à toi.",
+  "lines": [
+    {
+      "id": "line-0-6apai84hd",
+      "text": "Quand tout devient silence,",
+      "syllables": [
+        {
+          "id": "syl-0-0-ju5nks3fi",
+          "text": "Quand",
+          "startTime": 13.953,
+          "endTime": 14.416
+        },
+        {
+          "id": "syl-0-1-ypaaozyz7",
+          "text": "tout",
+          "startTime": 14.416,
+          "endTime": 14.773
+        },
+        {
+          "id": "syl-0-2-1mebvekbr",
+          "text": "devient",
+          "startTime": 14.773,
+          "endTime": 15.444
+        },
+        {
+          "id": "syl-0-3-ysmdac7rz",
+          "text": "silence,",
+          "startTime": 15.444,
+          "endTime": 16.057
+        }
+      ],
+      "startTime": 13.953,
+      "endTime": 16.057,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-1-tvbhgk8vy",
+      "text": "Quand la nuit couvre l’horizon,",
+      "syllables": [
+        {
+          "id": "syl-1-0-qzg0a35jf",
+          "text": "Quand",
+          "startTime": 17.434,
+          "endTime": 17.976
+        },
+        {
+          "id": "syl-1-1-fios45kz5",
+          "text": "la",
+          "startTime": 17.976,
+          "endTime": 18.223
+        },
+        {
+          "id": "syl-1-2-529ptm7ru",
+          "text": "nuit",
+          "startTime": 18.223,
+          "endTime": 18.436
+        },
+        {
+          "id": "syl-1-3-o08phjeyr",
+          "text": "couvre",
+          "startTime": 18.436,
+          "endTime": 18.962
+        },
+        {
+          "id": "syl-1-4-hsem06tk3",
+          "text": "l’horizon,",
+          "startTime": 18.962,
+          "endTime": 19.682
+        }
+      ],
+      "startTime": 17.434,
+      "endTime": 19.682,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-2-331bshc9p",
+      "text": "Il reste une espérance,",
+      "syllables": [
+        {
+          "id": "syl-2-0-v53xuayge",
+          "text": "Il",
+          "startTime": 21.369,
+          "endTime": 21.753
+        },
+        {
+          "id": "syl-2-1-l79wxb522",
+          "text": "reste",
+          "startTime": 21.753,
+          "endTime": 22.144
+        },
+        {
+          "id": "syl-2-2-4520m4tys",
+          "text": "une",
+          "startTime": 22.144,
+          "endTime": 22.574
+        },
+        {
+          "id": "syl-2-3-n7m2vdbd2",
+          "text": "espérance,",
+          "startTime": 22.574,
+          "endTime": 22.949
+        }
+      ],
+      "startTime": 21.369,
+      "endTime": 22.949,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-3-2ttf2jicd",
+      "text": "Plus forte encore que nos prisons.",
+      "syllables": [
+        {
+          "id": "syl-3-0-lfiiidgxr",
+          "text": "Plus",
+          "startTime": 24.537,
+          "endTime": 24.816
+        },
+        {
+          "id": "syl-3-1-yh54c9f5d",
+          "text": "forte",
+          "startTime": 24.816,
+          "endTime": 25.142
+        },
+        {
+          "id": "syl-3-2-i6757f2dg",
+          "text": "encore",
+          "startTime": 25.142,
+          "endTime": 25.344
+        },
+        {
+          "id": "syl-3-3-wki1t1617",
+          "text": "que",
+          "startTime": 25.344,
+          "endTime": 26.164
+        },
+        {
+          "id": "syl-3-4-oamsd96tu",
+          "text": "nos",
+          "startTime": 26.164,
+          "endTime": 26.657
+        },
+        {
+          "id": "syl-3-5-erfr7bps0",
+          "text": "prisons.",
+          "startTime": 26.657,
+          "endTime": 27.106
+        }
+      ],
+      "startTime": 24.537,
+      "endTime": 27.106,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-5-hma7ip0i9",
+      "text": "Quand les portes se referment,",
+      "syllables": [
+        {
+          "id": "syl-5-0-m3efqxez2",
+          "text": "Quand",
+          "startTime": 28.419,
+          "endTime": 28.761
+        },
+        {
+          "id": "syl-5-1-szdiqmag2",
+          "text": "les",
+          "startTime": 28.761,
+          "endTime": 29.073
+        },
+        {
+          "id": "syl-5-2-mlv76upbd",
+          "text": "portes",
+          "startTime": 29.073,
+          "endTime": 29.422
+        },
+        {
+          "id": "syl-5-3-s89j7p3o1",
+          "text": "se",
+          "startTime": 29.422,
+          "endTime": 29.785
+        },
+        {
+          "id": "syl-5-4-uadhc91bq",
+          "text": "referment,",
+          "startTime": 29.785,
+          "endTime": 30.242
+        }
+      ],
+      "startTime": 28.419,
+      "endTime": 30.242,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-6-dk117fccn",
+      "text": "Quand on veut ébranler ma foi,",
+      "syllables": [
+        {
+          "id": "syl-6-0-2lxyut9bo",
+          "text": "Quand",
+          "startTime": 31.664,
+          "endTime": 32.02
+        },
+        {
+          "id": "syl-6-1-fquhdpu8k",
+          "text": "on",
+          "startTime": 32.02,
+          "endTime": 32.309
+        },
+        {
+          "id": "syl-6-2-k6147f9pu",
+          "text": "veut",
+          "startTime": 32.309,
+          "endTime": 32.664
+        },
+        {
+          "id": "syl-6-3-3neoh75b5",
+          "text": "ébranler",
+          "startTime": 32.664,
+          "endTime": 33.201
+        },
+        {
+          "id": "syl-6-4-3anv3hw6k",
+          "text": "ma",
+          "startTime": 33.201,
+          "endTime": 33.546
+        },
+        {
+          "id": "syl-6-5-b66p7sy2s",
+          "text": "foi,",
+          "startTime": 33.546,
+          "endTime": 33.968
+        }
+      ],
+      "startTime": 31.664,
+      "endTime": 33.968,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-7-0liyavsib",
+      "text": "Je sais qu’au loin des frères veillent,",
+      "syllables": [
+        {
+          "id": "syl-7-0-nzzmiycj1",
+          "text": "Je",
+          "startTime": 34.967,
+          "endTime": 35.203
+        },
+        {
+          "id": "syl-7-1-zxz2j517e",
+          "text": "sais",
+          "startTime": 35.203,
+          "endTime": 35.558
+        },
+        {
+          "id": "syl-7-2-acz4r5o2o",
+          "text": "qu’au",
+          "startTime": 35.558,
+          "endTime": 35.899
+        },
+        {
+          "id": "syl-7-3-qtdpmt08w",
+          "text": "loin",
+          "startTime": 35.899,
+          "endTime": 36.302
+        },
+        {
+          "id": "syl-7-4-518tlfkzv",
+          "text": "des",
+          "startTime": 36.302,
+          "endTime": 36.618
+        },
+        {
+          "id": "syl-7-5-y0cl6y2k7",
+          "text": "frères",
+          "startTime": 36.618,
+          "endTime": 36.975
+        },
+        {
+          "id": "syl-7-6-cc5xfjqm6",
+          "text": "veillent,",
+          "startTime": 36.975,
+          "endTime": 37.432
+        }
+      ],
+      "startTime": 34.967,
+      "endTime": 37.432,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-8-7o2eqv4ly",
+      "text": "Et qu’ils prient encore avec moi.",
+      "syllables": [
+        {
+          "id": "syl-8-0-ucgxlqrjy",
+          "text": "Et",
+          "startTime": 38.141,
+          "endTime": 38.701
+        },
+        {
+          "id": "syl-8-1-0mb7tqqt7",
+          "text": "qu’ils",
+          "startTime": 38.701,
+          "endTime": 39.179
+        },
+        {
+          "id": "syl-8-2-le4w4tqrk",
+          "text": "prient",
+          "startTime": 39.179,
+          "endTime": 39.536
+        },
+        {
+          "id": "syl-8-3-9hil18015",
+          "text": "encore",
+          "startTime": 39.536,
+          "endTime": 40.115
+        },
+        {
+          "id": "syl-8-4-yonifssuw",
+          "text": "avec",
+          "startTime": 40.115,
+          "endTime": 40.511
+        },
+        {
+          "id": "syl-8-5-h3eng4f74",
+          "text": "moi.",
+          "startTime": 40.511,
+          "endTime": 40.884
+        }
+      ],
+      "startTime": 38.141,
+      "endTime": 40.884,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-10-rqmskesya",
+      "text": "Même séparés,",
+      "syllables": [
+        {
+          "id": "syl-10-0-ae3og2qql",
+          "text": "Même",
+          "startTime": 41.955,
+          "endTime": 42.423
+        },
+        {
+          "id": "syl-10-1-570wuezi8",
+          "text": "séparés,",
+          "startTime": 42.423,
+          "endTime": 43.263
+        }
+      ],
+      "startTime": 41.955,
+      "endTime": 43.263,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-11-u10nck0ju",
+      "text": "Nous marchons d’un même pas.",
+      "syllables": [
+        {
+          "id": "syl-11-0-t48qpouy8",
+          "text": "Nous",
+          "startTime": 44.836,
+          "endTime": 45.274
+        },
+        {
+          "id": "syl-11-1-95r09zwzu",
+          "text": "marchons",
+          "startTime": 45.274,
+          "endTime": 45.941
+        },
+        {
+          "id": "syl-11-2-lyagn45rm",
+          "text": "d’un",
+          "startTime": 45.941,
+          "endTime": 46.347
+        },
+        {
+          "id": "syl-11-3-0vhoktjvo",
+          "text": "même",
+          "startTime": 46.347,
+          "endTime": 46.926
+        },
+        {
+          "id": "syl-11-4-5l1zke4sd",
+          "text": "pas.",
+          "startTime": 46.926,
+          "endTime": 47.229
+        }
+      ],
+      "startTime": 44.836,
+      "endTime": 47.229,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-12-9133waum2",
+      "text": "Même dans la nuit,",
+      "syllables": [
+        {
+          "id": "syl-12-0-km7unxy18",
+          "text": "Même",
+          "startTime": 49.19,
+          "endTime": 49.606
+        },
+        {
+          "id": "syl-12-1-nc4b47vm5",
+          "text": "dans",
+          "startTime": 49.606,
+          "endTime": 49.925
+        },
+        {
+          "id": "syl-12-2-cuq7eb9pq",
+          "text": "la",
+          "startTime": 49.925,
+          "endTime": 50.141
+        },
+        {
+          "id": "syl-12-3-afwwihllm",
+          "text": "nuit,",
+          "startTime": 50.141,
+          "endTime": 50.585
+        }
+      ],
+      "startTime": 49.19,
+      "endTime": 50.585,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-13-kz1jchz9h",
+      "text": "Jéhovah ne nous quitte pas.",
+      "syllables": [
+        {
+          "id": "syl-13-0-bc7pu3p9m",
+          "text": "Jéhovah",
+          "startTime": 51.818,
+          "endTime": 52.486
+        },
+        {
+          "id": "syl-13-1-n4oslutv4",
+          "text": "ne",
+          "startTime": 52.486,
+          "endTime": 52.839
+        },
+        {
+          "id": "syl-13-2-w5mescoua",
+          "text": "nous",
+          "startTime": 52.839,
+          "endTime": 53.203
+        },
+        {
+          "id": "syl-13-3-9z0qk9kn9",
+          "text": "quitte",
+          "startTime": 53.203,
+          "endTime": 53.506
+        },
+        {
+          "id": "syl-13-4-px7pzgqk1",
+          "text": "pas.",
+          "startTime": 53.506,
+          "endTime": 53.833
+        }
+      ],
+      "startTime": 51.818,
+      "endTime": 53.833,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-15-7pbpm6yct",
+      "text": "[Refrain]",
+      "syllables": [
+        {
+          "id": "syl-15-0-fgo20d0q5",
+          "text": "[Refrain]",
+          "startTime": 55.72,
+          "endTime": 55.798
+        }
+      ],
+      "startTime": 55.72,
+      "endTime": 55.798,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-16-ebvt521mi",
+      "text": "Nous sommes à toi, Jéhovah,",
+      "syllables": [
+        {
+          "id": "syl-16-0-qdlb4hg6y",
+          "text": "Nous",
+          "startTime": 55.98,
+          "endTime": 56.379
+        },
+        {
+          "id": "syl-16-1-ppigfppsu",
+          "text": "sommes",
+          "startTime": 56.379,
+          "endTime": 56.916
+        },
+        {
+          "id": "syl-16-2-171jfipxb",
+          "text": "à",
+          "startTime": 56.916,
+          "endTime": 57.354
+        },
+        {
+          "id": "syl-16-3-8y0fw4tah",
+          "text": "toi,",
+          "startTime": 57.354,
+          "endTime": 58.26
+        },
+        {
+          "id": "syl-16-4-n1ll1gbcd",
+          "text": "Jéhovah,",
+          "startTime": 58.26,
+          "endTime": 58.644
+        }
+      ],
+      "startTime": 55.98,
+      "endTime": 58.644,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-17-4x767zstn",
+      "text": "Dans la lumière ou dans le froid.",
+      "syllables": [
+        {
+          "id": "syl-17-0-twfxfg5sy",
+          "text": "Dans",
+          "startTime": 59.812,
+          "endTime": 60.071
+        },
+        {
+          "id": "syl-17-1-q4qbky380",
+          "text": "la",
+          "startTime": 60.071,
+          "endTime": 60.313
+        },
+        {
+          "id": "syl-17-2-pi34khsxg",
+          "text": "lumière",
+          "startTime": 60.313,
+          "endTime": 60.725
+        },
+        {
+          "id": "syl-17-3-i3bk24rwr",
+          "text": "ou",
+          "startTime": 60.725,
+          "endTime": 61.515
+        },
+        {
+          "id": "syl-17-4-x4bg7hart",
+          "text": "dans",
+          "startTime": 61.515,
+          "endTime": 61.958
+        },
+        {
+          "id": "syl-17-5-faiwim6wh",
+          "text": "le",
+          "startTime": 61.958,
+          "endTime": 62.358
+        },
+        {
+          "id": "syl-17-6-kgw4u30k7",
+          "text": "froid.",
+          "startTime": 62.358,
+          "endTime": 62.763
+        }
+      ],
+      "startTime": 59.812,
+      "endTime": 62.763,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-18-8iwzp5wnm",
+      "text": "Quand tout vacille autour de nous,",
+      "syllables": [
+        {
+          "id": "syl-18-0-23qxctv7g",
+          "text": "Quand",
+          "startTime": 63.36,
+          "endTime": 63.701
+        },
+        {
+          "id": "syl-18-1-vqufow8zd",
+          "text": "tout",
+          "startTime": 63.701,
+          "endTime": 64.024
+        },
+        {
+          "id": "syl-18-2-zxe3knl15",
+          "text": "vacille",
+          "startTime": 64.024,
+          "endTime": 64.723
+        },
+        {
+          "id": "syl-18-3-awe0bvjd6",
+          "text": "autour",
+          "startTime": 64.723,
+          "endTime": 65.158
+        },
+        {
+          "id": "syl-18-4-cufxf8s1l",
+          "text": "de",
+          "startTime": 65.158,
+          "endTime": 65.587
+        },
+        {
+          "id": "syl-18-5-488jb14fy",
+          "text": "nous,",
+          "startTime": 65.587,
+          "endTime": 66.073
+        }
+      ],
+      "startTime": 63.36,
+      "endTime": 66.073,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-19-hj8kmf9lj",
+      "text": "Ton nom nous garde encore debout.",
+      "syllables": [
+        {
+          "id": "syl-19-0-8ldqb33ja",
+          "text": "Ton",
+          "startTime": 66.834,
+          "endTime": 67.116
+        },
+        {
+          "id": "syl-19-1-5dcvao93q",
+          "text": "nom",
+          "startTime": 67.116,
+          "endTime": 67.406
+        },
+        {
+          "id": "syl-19-2-1iri9pfpz",
+          "text": "nous",
+          "startTime": 67.406,
+          "endTime": 67.786
+        },
+        {
+          "id": "syl-19-3-6y2k0ug7i",
+          "text": "garde",
+          "startTime": 67.786,
+          "endTime": 68.241
+        },
+        {
+          "id": "syl-19-4-xkn1jrju5",
+          "text": "encore",
+          "startTime": 68.241,
+          "endTime": 68.787
+        },
+        {
+          "id": "syl-19-5-6csw1x3be",
+          "text": "debout.",
+          "startTime": 68.787,
+          "endTime": 69.621
+        }
+      ],
+      "startTime": 66.834,
+      "endTime": 69.621,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-21-68qama4tq",
+      "text": "Nous sommes à toi, Jéhovah,",
+      "syllables": [
+        {
+          "id": "syl-21-0-a25jn2amo",
+          "text": "Nous",
+          "startTime": 70.156,
+          "endTime": 70.563
+        },
+        {
+          "id": "syl-21-1-o5el56zq5",
+          "text": "sommes",
+          "startTime": 70.563,
+          "endTime": 70.962
+        },
+        {
+          "id": "syl-21-2-r95h0hzwc",
+          "text": "à",
+          "startTime": 70.962,
+          "endTime": 71.477
+        },
+        {
+          "id": "syl-21-3-1alzwg1on",
+          "text": "toi,",
+          "startTime": 71.477,
+          "endTime": 72.375
+        },
+        {
+          "id": "syl-21-4-43l49u8lk",
+          "text": "Jéhovah,",
+          "startTime": 72.375,
+          "endTime": 73.07
+        }
+      ],
+      "startTime": 70.156,
+      "endTime": 73.07,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-22-5x7up8ug1",
+      "text": "Nul ne pourra briser cela.",
+      "syllables": [
+        {
+          "id": "syl-22-0-wve6g0mx6",
+          "text": "Nul",
+          "startTime": 73.506,
+          "endTime": 74.111
+        },
+        {
+          "id": "syl-22-1-v0d85wc7e",
+          "text": "ne",
+          "startTime": 74.111,
+          "endTime": 74.543
+        },
+        {
+          "id": "syl-22-2-q4g1i8g53",
+          "text": "pourra",
+          "startTime": 74.543,
+          "endTime": 75.317
+        },
+        {
+          "id": "syl-22-3-ouw08rih2",
+          "text": "briser",
+          "startTime": 75.317,
+          "endTime": 76.067
+        },
+        {
+          "id": "syl-22-4-jytojsyty",
+          "text": "cela.",
+          "startTime": 76.067,
+          "endTime": 76.691
+        }
+      ],
+      "startTime": 73.506,
+      "endTime": 76.691,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-23-ybjrdmlas",
+      "text": "Un même espoir, un même cœur,",
+      "syllables": [
+        {
+          "id": "syl-23-0-qko2vx8vo",
+          "text": "Un",
+          "startTime": 77.489,
+          "endTime": 77.764
+        },
+        {
+          "id": "syl-23-1-fkku5xf26",
+          "text": "même",
+          "startTime": 77.764,
+          "endTime": 78.105
+        },
+        {
+          "id": "syl-23-2-c5zbo09s0",
+          "text": "espoir,",
+          "startTime": 78.105,
+          "endTime": 78.917
+        },
+        {
+          "id": "syl-23-3-4ro9aly9h",
+          "text": "un",
+          "startTime": 78.917,
+          "endTime": 79.289
+        },
+        {
+          "id": "syl-23-4-34nd69x08",
+          "text": "même",
+          "startTime": 79.289,
+          "endTime": 79.7
+        },
+        {
+          "id": "syl-23-5-unishn32k",
+          "text": "cœur,",
+          "startTime": 79.7,
+          "endTime": 80.121
+        }
+      ],
+      "startTime": 77.489,
+      "endTime": 80.121,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-24-vdffc9ldn",
+      "text": "Une seule foi plus forte que la peur.",
+      "syllables": [
+        {
+          "id": "syl-24-0-szk7wtv5g",
+          "text": "Une",
+          "startTime": 80.998,
+          "endTime": 81.34
+        },
+        {
+          "id": "syl-24-1-kbsmpwopr",
+          "text": "seule",
+          "startTime": 81.34,
+          "endTime": 81.548
+        },
+        {
+          "id": "syl-24-2-c7kt49rvf",
+          "text": "foi",
+          "startTime": 81.548,
+          "endTime": 81.912
+        },
+        {
+          "id": "syl-24-3-ujefq5k4z",
+          "text": "plus",
+          "startTime": 81.912,
+          "endTime": 82.138
+        },
+        {
+          "id": "syl-24-4-dtp4dgt5c",
+          "text": "forte",
+          "startTime": 82.138,
+          "endTime": 82.61
+        },
+        {
+          "id": "syl-24-5-1fa4bga0l",
+          "text": "que",
+          "startTime": 82.61,
+          "endTime": 83.152
+        },
+        {
+          "id": "syl-24-6-a20fji9g6",
+          "text": "la",
+          "startTime": 83.152,
+          "endTime": 83.574
+        },
+        {
+          "id": "syl-24-7-18ivjvx2f",
+          "text": "peur.",
+          "startTime": 83.574,
+          "endTime": 84.967
+        }
+      ],
+      "startTime": 80.998,
+      "endTime": 84.967,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-26-umn23uitx",
+      "text": "On peut nous prendre nos chemins,",
+      "syllables": [
+        {
+          "id": "syl-26-0-r44w57uv8",
+          "text": "On",
+          "startTime": 99.324,
+          "endTime": 99.518
+        },
+        {
+          "id": "syl-26-1-rggt646l9",
+          "text": "peut",
+          "startTime": 99.518,
+          "endTime": 99.761
+        },
+        {
+          "id": "syl-26-2-hokznb7np",
+          "text": "nous",
+          "startTime": 99.761,
+          "endTime": 99.953
+        },
+        {
+          "id": "syl-26-3-8zi2clz1o",
+          "text": "prendre",
+          "startTime": 99.953,
+          "endTime": 100.575
+        },
+        {
+          "id": "syl-26-4-kuhar4k36",
+          "text": "nos",
+          "startTime": 100.575,
+          "endTime": 100.788
+        },
+        {
+          "id": "syl-26-5-ryq1dfdug",
+          "text": "chemins,",
+          "startTime": 100.788,
+          "endTime": 101.588
+        }
+      ],
+      "startTime": 99.324,
+      "endTime": 101.588,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-27-mh2s6a16w",
+      "text": "Nous éloigner de ceux qu’on aime,",
+      "syllables": [
+        {
+          "id": "syl-27-0-7zihdilem",
+          "text": "Nous",
+          "startTime": 102.772,
+          "endTime": 103.106
+        },
+        {
+          "id": "syl-27-1-3mixtzzrm",
+          "text": "éloigner",
+          "startTime": 103.106,
+          "endTime": 103.889
+        },
+        {
+          "id": "syl-27-2-1wotjc7nf",
+          "text": "de",
+          "startTime": 103.889,
+          "endTime": 104.134
+        },
+        {
+          "id": "syl-27-3-plaa0aqcf",
+          "text": "ceux",
+          "startTime": 104.134,
+          "endTime": 104.52
+        },
+        {
+          "id": "syl-27-4-brrx9pl22",
+          "text": "qu’on",
+          "startTime": 104.52,
+          "endTime": 105.002
+        },
+        {
+          "id": "syl-27-5-2s57ucnyi",
+          "text": "aime,",
+          "startTime": 105.002,
+          "endTime": 105.236
+        }
+      ],
+      "startTime": 102.772,
+      "endTime": 105.236,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-29-g4479l7sw",
+      "text": "Mais nul ne peut fermer nos mains",
+      "syllables": [
+        {
+          "id": "syl-29-0-03zxjtfm1",
+          "text": "Mais",
+          "startTime": 105.934,
+          "endTime": 106.271
+        },
+        {
+          "id": "syl-29-1-rdhqjdjbb",
+          "text": "nul",
+          "startTime": 106.271,
+          "endTime": 106.732
+        },
+        {
+          "id": "syl-29-2-8bv47yeg6",
+          "text": "ne",
+          "startTime": 106.732,
+          "endTime": 106.969
+        },
+        {
+          "id": "syl-29-3-w5kjbbyr1",
+          "text": "peut",
+          "startTime": 106.969,
+          "endTime": 107.252
+        },
+        {
+          "id": "syl-29-4-6sj8tbq87",
+          "text": "fermer",
+          "startTime": 107.252,
+          "endTime": 107.789
+        },
+        {
+          "id": "syl-29-5-42mgtiz8z",
+          "text": "nos",
+          "startTime": 107.789,
+          "endTime": 108.38
+        },
+        {
+          "id": "syl-29-6-1agheomo6",
+          "text": "mains",
+          "startTime": 108.38,
+          "endTime": 108.722
+        }
+      ],
+      "startTime": 105.934,
+      "endTime": 108.722,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-30-p112q64wj",
+      "text": "Sur l’espérance que tu sèmes.",
+      "syllables": [
+        {
+          "id": "syl-30-0-wo4p1omdy",
+          "text": "Sur",
+          "startTime": 109.59,
+          "endTime": 109.948
+        },
+        {
+          "id": "syl-30-1-xx3zmirs7",
+          "text": "l’espérance",
+          "startTime": 109.948,
+          "endTime": 111.171
+        },
+        {
+          "id": "syl-30-2-li98puz63",
+          "text": "que",
+          "startTime": 111.171,
+          "endTime": 111.694
+        },
+        {
+          "id": "syl-30-3-2kkxlzi5i",
+          "text": "tu",
+          "startTime": 111.694,
+          "endTime": 112.106
+        },
+        {
+          "id": "syl-30-4-atb5kaghq",
+          "text": "sèmes.",
+          "startTime": 112.106,
+          "endTime": 112.615
+        }
+      ],
+      "startTime": 109.59,
+      "endTime": 112.615,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-32-5oojoeyfh",
+      "text": "Quand l’un de nous tombe à genoux,",
+      "syllables": [
+        {
+          "id": "syl-32-0-vy2psgtyb",
+          "text": "Quand",
+          "startTime": 112.84,
+          "endTime": 113.042
+        },
+        {
+          "id": "syl-32-1-c6fkmntxe",
+          "text": "l’un",
+          "startTime": 113.042,
+          "endTime": 113.253
+        },
+        {
+          "id": "syl-32-2-tastkdd81",
+          "text": "de",
+          "startTime": 113.253,
+          "endTime": 113.479
+        },
+        {
+          "id": "syl-32-3-asgelz0xg",
+          "text": "nous",
+          "startTime": 113.479,
+          "endTime": 113.71
+        },
+        {
+          "id": "syl-32-4-a22suwpaz",
+          "text": "tombe",
+          "startTime": 113.71,
+          "endTime": 113.894
+        },
+        {
+          "id": "syl-32-5-2t6zej842",
+          "text": "à",
+          "startTime": 113.894,
+          "endTime": 114.062
+        },
+        {
+          "id": "syl-32-6-sy4kwutcv",
+          "text": "genoux,",
+          "startTime": 114.062,
+          "endTime": 114.573
+        }
+      ],
+      "startTime": 112.84,
+      "endTime": 114.573,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-34-p8u6mrjtx",
+      "text": "Des milliers se lèvent partout.",
+      "syllables": [
+        {
+          "id": "syl-34-0-drtpfxa5w",
+          "text": "Des",
+          "startTime": 116.04,
+          "endTime": 116.468
+        },
+        {
+          "id": "syl-34-1-1lrao4xku",
+          "text": "milliers",
+          "startTime": 116.468,
+          "endTime": 116.717
+        },
+        {
+          "id": "syl-34-2-6urj9ppxk",
+          "text": "se",
+          "startTime": 116.717,
+          "endTime": 117.051
+        },
+        {
+          "id": "syl-34-3-feencpdvb",
+          "text": "lèvent",
+          "startTime": 117.051,
+          "endTime": 117.564
+        },
+        {
+          "id": "syl-34-4-b6dq5rk16",
+          "text": "partout.",
+          "startTime": 117.564,
+          "endTime": 118.917
+        }
+      ],
+      "startTime": 116.04,
+      "endTime": 118.917,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-36-dqe7sd2om",
+      "text": "Et d’une rive à l’autre rive,",
+      "syllables": [
+        {
+          "id": "syl-36-0-f3w5o722d",
+          "text": "Et",
+          "startTime": 119.592,
+          "endTime": 120.169
+        },
+        {
+          "id": "syl-36-1-woreiial3",
+          "text": "d’une",
+          "startTime": 120.169,
+          "endTime": 120.424
+        },
+        {
+          "id": "syl-36-2-91ohuvy8i",
+          "text": "rive",
+          "startTime": 120.424,
+          "endTime": 120.64
+        },
+        {
+          "id": "syl-36-3-ar6wnv2ck",
+          "text": "à",
+          "startTime": 120.64,
+          "endTime": 120.951
+        },
+        {
+          "id": "syl-36-4-19x6bv38x",
+          "text": "l’autre",
+          "startTime": 120.951,
+          "endTime": 121.264
+        },
+        {
+          "id": "syl-36-5-e662be6mg",
+          "text": "rive,",
+          "startTime": 121.264,
+          "endTime": 122.227
+        }
+      ],
+      "startTime": 119.592,
+      "endTime": 122.227,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-37-n67cqjqun",
+      "text": "La même foi demeure vive.",
+      "syllables": [
+        {
+          "id": "syl-37-0-zspb3oswg",
+          "text": "La",
+          "startTime": 123.483,
+          "endTime": 123.725
+        },
+        {
+          "id": "syl-37-1-0c3vyi537",
+          "text": "même",
+          "startTime": 123.725,
+          "endTime": 123.976
+        },
+        {
+          "id": "syl-37-2-3x5bhvatz",
+          "text": "foi",
+          "startTime": 123.976,
+          "endTime": 124.282
+        },
+        {
+          "id": "syl-37-3-ipxwrje3b",
+          "text": "demeure",
+          "startTime": 124.282,
+          "endTime": 124.683
+        },
+        {
+          "id": "syl-37-4-f3dskcozd",
+          "text": "vive.",
+          "startTime": 124.683,
+          "endTime": 125.51
+        }
+      ],
+      "startTime": 123.483,
+      "endTime": 125.51,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-39-4lvn1om3w",
+      "text": "Nous connaissons ta voix.",
+      "syllables": [
+        {
+          "id": "syl-39-0-o0guno4wj",
+          "text": "Nous",
+          "startTime": 127.266,
+          "endTime": 127.614
+        },
+        {
+          "id": "syl-39-1-swh0of5o6",
+          "text": "connaissons",
+          "startTime": 127.614,
+          "endTime": 128.338
+        },
+        {
+          "id": "syl-39-2-31ma9unaz",
+          "text": "ta",
+          "startTime": 128.338,
+          "endTime": 128.621
+        },
+        {
+          "id": "syl-39-3-h5elbw5au",
+          "text": "voix.",
+          "startTime": 128.621,
+          "endTime": 129.195
+        }
+      ],
+      "startTime": 127.266,
+      "endTime": 129.195,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-40-92qm8ed5d",
+      "text": "Nous savons où nous allons.",
+      "syllables": [
+        {
+          "id": "syl-40-0-54z23wgas",
+          "text": "Nous",
+          "startTime": 130.624,
+          "endTime": 130.863
+        },
+        {
+          "id": "syl-40-1-3psdcklj6",
+          "text": "savons",
+          "startTime": 130.863,
+          "endTime": 131.096
+        },
+        {
+          "id": "syl-40-2-4j8mbfwnb",
+          "text": "où",
+          "startTime": 131.096,
+          "endTime": 131.435
+        },
+        {
+          "id": "syl-40-3-336c4whdc",
+          "text": "nous",
+          "startTime": 131.435,
+          "endTime": 131.711
+        },
+        {
+          "id": "syl-40-4-hphal6c7l",
+          "text": "allons.",
+          "startTime": 131.711,
+          "endTime": 132.631
+        }
+      ],
+      "startTime": 130.624,
+      "endTime": 132.631,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-41-6m6oize47",
+      "text": "Nous sommes ton peuple,",
+      "syllables": [
+        {
+          "id": "syl-41-0-we9bzbj9w",
+          "text": "Nous",
+          "startTime": 134.779,
+          "endTime": 135.21
+        },
+        {
+          "id": "syl-41-1-t72zfih5q",
+          "text": "sommes",
+          "startTime": 135.21,
+          "endTime": 135.693
+        },
+        {
+          "id": "syl-41-2-9s9rvsb8t",
+          "text": "ton",
+          "startTime": 135.693,
+          "endTime": 135.918
+        },
+        {
+          "id": "syl-41-3-qscu433wn",
+          "text": "peuple,",
+          "startTime": 135.918,
+          "endTime": 136.193
+        }
+      ],
+      "startTime": 134.779,
+      "endTime": 136.193,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-42-l6r2lvcwx",
+      "text": "Et ton nom, nous le porterons.",
+      "syllables": [
+        {
+          "id": "syl-42-0-vtlc2dnmx",
+          "text": "Et",
+          "startTime": 137.177,
+          "endTime": 137.399
+        },
+        {
+          "id": "syl-42-1-n2mnw2xc8",
+          "text": "ton",
+          "startTime": 137.399,
+          "endTime": 137.596
+        },
+        {
+          "id": "syl-42-2-gr964kp8u",
+          "text": "nom,",
+          "startTime": 137.596,
+          "endTime": 138.023
+        },
+        {
+          "id": "syl-42-3-yjbq7xlg5",
+          "text": "nous",
+          "startTime": 138.023,
+          "endTime": 138.527
+        },
+        {
+          "id": "syl-42-4-nmsi5xwhd",
+          "text": "le",
+          "startTime": 138.527,
+          "endTime": 138.805
+        },
+        {
+          "id": "syl-42-5-xk8nnw61w",
+          "text": "porterons.",
+          "startTime": 138.805,
+          "endTime": 140.759
+        }
+      ],
+      "startTime": 137.177,
+      "endTime": 140.759,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-44-qquuxd5uu",
+      "text": "[Refrain]",
+      "syllables": [
+        {
+          "id": "syl-44-0-xuicz9yz2",
+          "text": "[Refrain]",
+          "startTime": 141.027,
+          "endTime": 141.561
+        }
+      ],
+      "startTime": 141.027,
+      "endTime": 141.561,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-45-kpavaqqqs",
+      "text": "Nous sommes à toi, Jéhovah,",
+      "syllables": [
+        {
+          "id": "syl-45-0-21f1aw26g",
+          "text": "Nous",
+          "startTime": 142.163,
+          "endTime": 142.47
+        },
+        {
+          "id": "syl-45-1-qj8i1daxr",
+          "text": "sommes",
+          "startTime": 142.47,
+          "endTime": 142.799
+        },
+        {
+          "id": "syl-45-2-a4dguc5qa",
+          "text": "à",
+          "startTime": 142.799,
+          "endTime": 143.272
+        },
+        {
+          "id": "syl-45-3-9qcdfc63g",
+          "text": "toi,",
+          "startTime": 143.272,
+          "endTime": 143.84
+        },
+        {
+          "id": "syl-45-4-bb8uit7zz",
+          "text": "Jéhovah,",
+          "startTime": 143.84,
+          "endTime": 144.578
+        }
+      ],
+      "startTime": 142.163,
+      "endTime": 144.578,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-46-py2cz6ivg",
+      "text": "Dans la lumière ou dans le froid.",
+      "syllables": [
+        {
+          "id": "syl-46-0-cm7ub7t5v",
+          "text": "Dans",
+          "startTime": 145.315,
+          "endTime": 145.572
+        },
+        {
+          "id": "syl-46-1-437s5n5l6",
+          "text": "la",
+          "startTime": 145.572,
+          "endTime": 145.772
+        },
+        {
+          "id": "syl-46-2-3tg2ecq1k",
+          "text": "lumière",
+          "startTime": 145.772,
+          "endTime": 146.889
+        },
+        {
+          "id": "syl-46-3-caoz8d2xn",
+          "text": "ou",
+          "startTime": 146.889,
+          "endTime": 147.246
+        },
+        {
+          "id": "syl-46-4-pxomoinj3",
+          "text": "dans",
+          "startTime": 147.246,
+          "endTime": 147.573
+        },
+        {
+          "id": "syl-46-5-7c74u3hzi",
+          "text": "le",
+          "startTime": 147.573,
+          "endTime": 147.81
+        },
+        {
+          "id": "syl-46-6-6afxnowv1",
+          "text": "froid.",
+          "startTime": 147.81,
+          "endTime": 147.951
+        }
+      ],
+      "startTime": 145.315,
+      "endTime": 147.951,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-47-rao2juo7o",
+      "text": "Quand tout vacille autour de nous,",
+      "syllables": [
+        {
+          "id": "syl-47-0-d4kc5t2r5",
+          "text": "Quand",
+          "startTime": 148.933,
+          "endTime": 149.237
+        },
+        {
+          "id": "syl-47-1-s2rwpyok1",
+          "text": "tout",
+          "startTime": 149.237,
+          "endTime": 149.55
+        },
+        {
+          "id": "syl-47-2-ez0ttu18n",
+          "text": "vacille",
+          "startTime": 149.55,
+          "endTime": 150.407
+        },
+        {
+          "id": "syl-47-3-d5rm9kv35",
+          "text": "autour",
+          "startTime": 150.407,
+          "endTime": 150.771
+        },
+        {
+          "id": "syl-47-4-kfmt9fqjv",
+          "text": "de",
+          "startTime": 150.771,
+          "endTime": 151.175
+        },
+        {
+          "id": "syl-47-5-gup0b8zkq",
+          "text": "nous,",
+          "startTime": 151.175,
+          "endTime": 151.661
+        }
+      ],
+      "startTime": 148.933,
+      "endTime": 151.661,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-48-mes54ail9",
+      "text": "Ton nom nous garde encore debout.",
+      "syllables": [
+        {
+          "id": "syl-48-0-t94d77cr9",
+          "text": "Ton",
+          "startTime": 152.66,
+          "endTime": 152.951
+        },
+        {
+          "id": "syl-48-1-eaacfqgia",
+          "text": "nom",
+          "startTime": 152.951,
+          "endTime": 153.344
+        },
+        {
+          "id": "syl-48-2-6jw7xq01t",
+          "text": "nous",
+          "startTime": 153.344,
+          "endTime": 153.567
+        },
+        {
+          "id": "syl-48-3-8hdrbvm40",
+          "text": "garde",
+          "startTime": 153.567,
+          "endTime": 153.99
+        },
+        {
+          "id": "syl-48-4-exv4hk8fb",
+          "text": "encore",
+          "startTime": 153.99,
+          "endTime": 154.677
+        },
+        {
+          "id": "syl-48-5-eelqgpe55",
+          "text": "debout.",
+          "startTime": 154.677,
+          "endTime": 154.902
+        }
+      ],
+      "startTime": 152.66,
+      "endTime": 154.902,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-50-wyr77xdlm",
+      "text": "Nous sommes à toi, Jéhovah,",
+      "syllables": [
+        {
+          "id": "syl-50-0-6vvg8cx8n",
+          "text": "Nous",
+          "startTime": 156.105,
+          "endTime": 156.369
+        },
+        {
+          "id": "syl-50-1-p8x3akf8e",
+          "text": "sommes",
+          "startTime": 156.369,
+          "endTime": 156.78
+        },
+        {
+          "id": "syl-50-2-2dllu4jsr",
+          "text": "à",
+          "startTime": 156.78,
+          "endTime": 157.204
+        },
+        {
+          "id": "syl-50-3-v378i3k0r",
+          "text": "toi,",
+          "startTime": 157.204,
+          "endTime": 157.972
+        },
+        {
+          "id": "syl-50-4-hgb4uz8nw",
+          "text": "Jéhovah,",
+          "startTime": 157.972,
+          "endTime": 158.922
+        }
+      ],
+      "startTime": 156.105,
+      "endTime": 158.922,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-51-9riobldsw",
+      "text": "Nul ne pourra briser cela.",
+      "syllables": [
+        {
+          "id": "syl-51-0-p7w72vdmm",
+          "text": "Nul",
+          "startTime": 159.98,
+          "endTime": 160.218
+        },
+        {
+          "id": "syl-51-1-arbeqyjhj",
+          "text": "ne",
+          "startTime": 160.218,
+          "endTime": 160.481
+        },
+        {
+          "id": "syl-51-2-rsea8uat3",
+          "text": "pourra",
+          "startTime": 160.481,
+          "endTime": 160.99
+        },
+        {
+          "id": "syl-51-3-gfihhhulo",
+          "text": "briser",
+          "startTime": 160.99,
+          "endTime": 161.773
+        },
+        {
+          "id": "syl-51-4-zwsuhx8v6",
+          "text": "cela.",
+          "startTime": 161.773,
+          "endTime": 162.441
+        }
+      ],
+      "startTime": 159.98,
+      "endTime": 162.441,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-52-e9fgtlkqc",
+      "text": "Un même espoir, un même cœur,",
+      "syllables": [
+        {
+          "id": "syl-52-0-w2xp1kjja",
+          "text": "Un",
+          "startTime": 163.201,
+          "endTime": 163.469
+        },
+        {
+          "id": "syl-52-1-5yr37hddc",
+          "text": "même",
+          "startTime": 163.469,
+          "endTime": 163.784
+        },
+        {
+          "id": "syl-52-2-cljv6j2dc",
+          "text": "espoir,",
+          "startTime": 163.784,
+          "endTime": 164.682
+        },
+        {
+          "id": "syl-52-3-nzxcbwh0e",
+          "text": "un",
+          "startTime": 164.682,
+          "endTime": 165.054
+        },
+        {
+          "id": "syl-52-4-cyatpuak9",
+          "text": "même",
+          "startTime": 165.054,
+          "endTime": 165.67
+        },
+        {
+          "id": "syl-52-5-71nfpwlq0",
+          "text": "cœur,",
+          "startTime": 165.67,
+          "endTime": 166.03
+        }
+      ],
+      "startTime": 163.201,
+      "endTime": 166.03,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-53-9hdicoaj8",
+      "text": "Une seule foi plus forte que la peur.",
+      "syllables": [
+        {
+          "id": "syl-53-0-yce4ut93i",
+          "text": "Une",
+          "startTime": 166.725,
+          "endTime": 167.084
+        },
+        {
+          "id": "syl-53-1-x83ktpj7x",
+          "text": "seule",
+          "startTime": 167.084,
+          "endTime": 167.396
+        },
+        {
+          "id": "syl-53-2-4woe3lse8",
+          "text": "foi",
+          "startTime": 167.396,
+          "endTime": 167.782
+        },
+        {
+          "id": "syl-53-3-up2t0kjdd",
+          "text": "plus",
+          "startTime": 167.782,
+          "endTime": 168.119
+        },
+        {
+          "id": "syl-53-4-xw23yitik",
+          "text": "forte",
+          "startTime": 168.119,
+          "endTime": 168.535
+        },
+        {
+          "id": "syl-53-5-obbvm386t",
+          "text": "que",
+          "startTime": 168.535,
+          "endTime": 168.795
+        },
+        {
+          "id": "syl-53-6-j077m7wd7",
+          "text": "la",
+          "startTime": 168.795,
+          "endTime": 169.389
+        },
+        {
+          "id": "syl-53-7-6pyyadv5r",
+          "text": "peur.",
+          "startTime": 169.389,
+          "endTime": 171.072
+        }
+      ],
+      "startTime": 166.725,
+      "endTime": 171.072,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-55-3o5p0mrmp",
+      "text": "[Pont]",
+      "syllables": [
+        {
+          "id": "syl-55-0-3rx668pbh",
+          "text": "[Pont]",
+          "startTime": 184.785,
+          "endTime": 185.675
+        }
+      ],
+      "startTime": 184.785,
+      "endTime": 185.675,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-57-m77rm2d29",
+      "text": "Si je dois marcher dans la nuit,",
+      "syllables": [
+        {
+          "id": "syl-57-0-pt1o6zs1g",
+          "text": "Si",
+          "startTime": 185.991,
+          "endTime": 186.214
+        },
+        {
+          "id": "syl-57-1-c62l8kt8r",
+          "text": "je",
+          "startTime": 186.214,
+          "endTime": 186.425
+        },
+        {
+          "id": "syl-57-2-s8g11z0li",
+          "text": "dois",
+          "startTime": 186.425,
+          "endTime": 186.64
+        },
+        {
+          "id": "syl-57-3-11349vo48",
+          "text": "marcher",
+          "startTime": 186.64,
+          "endTime": 187.004
+        },
+        {
+          "id": "syl-57-4-t9b6lnc1t",
+          "text": "dans",
+          "startTime": 187.004,
+          "endTime": 187.382
+        },
+        {
+          "id": "syl-57-5-c8fw54d3i",
+          "text": "la",
+          "startTime": 187.382,
+          "endTime": 187.538
+        },
+        {
+          "id": "syl-57-6-cpxi3xnsl",
+          "text": "nuit,",
+          "startTime": 187.538,
+          "endTime": 188.492
+        }
+      ],
+      "startTime": 185.991,
+      "endTime": 188.492,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-59-fk7k2nw5b",
+      "text": "Je marcherai sans fuir.",
+      "syllables": [
+        {
+          "id": "syl-59-0-u08zawvcl",
+          "text": "Je",
+          "startTime": 188.856,
+          "endTime": 189.211
+        },
+        {
+          "id": "syl-59-1-30nf6x0ut",
+          "text": "marcherai",
+          "startTime": 189.211,
+          "endTime": 190.309
+        },
+        {
+          "id": "syl-59-2-1q33z432l",
+          "text": "sans",
+          "startTime": 190.309,
+          "endTime": 190.916
+        },
+        {
+          "id": "syl-59-3-c8e3i7c7a",
+          "text": "fuir.",
+          "startTime": 190.916,
+          "endTime": 191.556
+        }
+      ],
+      "startTime": 188.856,
+      "endTime": 191.556,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-61-mggde6wkx",
+      "text": "Si ma voix devient plus petite,",
+      "syllables": [
+        {
+          "id": "syl-61-0-z0qjrz2w4",
+          "text": "Si",
+          "startTime": 192.613,
+          "endTime": 192.832
+        },
+        {
+          "id": "syl-61-1-jbgdro1yi",
+          "text": "ma",
+          "startTime": 192.832,
+          "endTime": 193.069
+        },
+        {
+          "id": "syl-61-2-y44dsm9h6",
+          "text": "voix",
+          "startTime": 193.069,
+          "endTime": 193.586
+        },
+        {
+          "id": "syl-61-3-hi5b8o2wy",
+          "text": "devient",
+          "startTime": 193.586,
+          "endTime": 194.009
+        },
+        {
+          "id": "syl-61-4-gdqk773mi",
+          "text": "plus",
+          "startTime": 194.009,
+          "endTime": 194.474
+        },
+        {
+          "id": "syl-61-5-5eacsde5t",
+          "text": "petite,",
+          "startTime": 194.474,
+          "endTime": 194.991
+        }
+      ],
+      "startTime": 192.613,
+      "endTime": 194.991,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-63-7n93u66w4",
+      "text": "Alors nous chanterons plus fort.",
+      "syllables": [
+        {
+          "id": "syl-63-0-i8bni5p1k",
+          "text": "Alors",
+          "startTime": 195.742,
+          "endTime": 195.949
+        },
+        {
+          "id": "syl-63-1-l43ly87dn",
+          "text": "nous",
+          "startTime": 195.949,
+          "endTime": 196.395
+        },
+        {
+          "id": "syl-63-2-9osi16yy2",
+          "text": "chanterons",
+          "startTime": 196.395,
+          "endTime": 197.421
+        },
+        {
+          "id": "syl-63-3-9dwynajwb",
+          "text": "plus",
+          "startTime": 197.421,
+          "endTime": 198.031
+        },
+        {
+          "id": "syl-63-4-04x0rlqje",
+          "text": "fort.",
+          "startTime": 198.031,
+          "endTime": 198.695
+        }
+      ],
+      "startTime": 195.742,
+      "endTime": 198.695,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-67-qb4skc21s",
+      "text": "Nous chanterons encore.",
+      "syllables": [
+        {
+          "id": "syl-67-0-4vkfe6jxq",
+          "text": "Nous",
+          "startTime": 198.866,
+          "endTime": 199.223
+        },
+        {
+          "id": "syl-67-1-g8jnompnm",
+          "text": "chanterons",
+          "startTime": 199.223,
+          "endTime": 199.666
+        },
+        {
+          "id": "syl-67-2-mdsoiyw60",
+          "text": "encore.",
+          "startTime": 199.666,
+          "endTime": 200.775
+        }
+      ],
+      "startTime": 198.866,
+      "endTime": 200.775,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-69-yxzwbk3yu",
+      "text": "Si l’on veut nous faire taire,",
+      "syllables": [
+        {
+          "id": "syl-69-0-s0ssqm0ws",
+          "text": "Si",
+          "startTime": 201.595,
+          "endTime": 201.836
+        },
+        {
+          "id": "syl-69-1-zmkuuh9hd",
+          "text": "l’on",
+          "startTime": 201.836,
+          "endTime": 202.128
+        },
+        {
+          "id": "syl-69-2-y6flr3bmd",
+          "text": "veut",
+          "startTime": 202.128,
+          "endTime": 202.447
+        },
+        {
+          "id": "syl-69-3-dgxuuzes8",
+          "text": "nous",
+          "startTime": 202.447,
+          "endTime": 202.865
+        },
+        {
+          "id": "syl-69-4-gkfjieyys",
+          "text": "faire",
+          "startTime": 202.865,
+          "endTime": 203.489
+        },
+        {
+          "id": "syl-69-5-3no6nk8uf",
+          "text": "taire,",
+          "startTime": 203.489,
+          "endTime": 204.171
+        }
+      ],
+      "startTime": 201.595,
+      "endTime": 204.171,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-71-fwujw2u51",
+      "text": "Notre foi saura répondre.",
+      "syllables": [
+        {
+          "id": "syl-71-0-01bblj1eu",
+          "text": "Notre",
+          "startTime": 204.697,
+          "endTime": 204.922
+        },
+        {
+          "id": "syl-71-1-oj8dq4lif",
+          "text": "foi",
+          "startTime": 204.922,
+          "endTime": 205.442
+        },
+        {
+          "id": "syl-71-2-2aapss4j2",
+          "text": "saura",
+          "startTime": 205.442,
+          "endTime": 206.096
+        },
+        {
+          "id": "syl-71-3-zhb8crrc4",
+          "text": "répondre.",
+          "startTime": 206.096,
+          "endTime": 206.834
+        }
+      ],
+      "startTime": 204.697,
+      "endTime": 206.834,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-73-z58c4njln",
+      "text": "Car même au cœur de l’épreuve,",
+      "syllables": [
+        {
+          "id": "syl-73-0-3ajfjsboo",
+          "text": "Car",
+          "startTime": 208.059,
+          "endTime": 208.283
+        },
+        {
+          "id": "syl-73-1-taxnjxy5j",
+          "text": "même",
+          "startTime": 208.283,
+          "endTime": 208.691
+        },
+        {
+          "id": "syl-73-2-3wdcc88ji",
+          "text": "au",
+          "startTime": 208.691,
+          "endTime": 209.077
+        },
+        {
+          "id": "syl-73-3-wyjw28klk",
+          "text": "cœur",
+          "startTime": 209.077,
+          "endTime": 209.474
+        },
+        {
+          "id": "syl-73-4-kpjhzmhiz",
+          "text": "de",
+          "startTime": 209.474,
+          "endTime": 209.969
+        },
+        {
+          "id": "syl-73-5-kk10wlxqf",
+          "text": "l’épreuve,",
+          "startTime": 209.969,
+          "endTime": 211.465
+        }
+      ],
+      "startTime": 208.059,
+      "endTime": 211.465,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-74-l1um9z9fw",
+      "text": "Notre amour ne peut se rompre.",
+      "syllables": [
+        {
+          "id": "syl-74-0-kmqg6dt8b",
+          "text": "Notre",
+          "startTime": 212.393,
+          "endTime": 212.592
+        },
+        {
+          "id": "syl-74-1-3tvfa16jl",
+          "text": "amour",
+          "startTime": 212.592,
+          "endTime": 213.038
+        },
+        {
+          "id": "syl-74-2-0tgirl2ad",
+          "text": "ne",
+          "startTime": 213.038,
+          "endTime": 213.42
+        },
+        {
+          "id": "syl-74-3-9iirhoebf",
+          "text": "peut",
+          "startTime": 213.42,
+          "endTime": 213.792
+        },
+        {
+          "id": "syl-74-4-r0jxpzcpd",
+          "text": "se",
+          "startTime": 213.792,
+          "endTime": 214.127
+        },
+        {
+          "id": "syl-74-5-wa8dk3787",
+          "text": "rompre.",
+          "startTime": 214.127,
+          "endTime": 214.682
+        }
+      ],
+      "startTime": 212.393,
+      "endTime": 214.682,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-76-76axxlpo3",
+      "text": "Un peuple.",
+      "syllables": [
+        {
+          "id": "syl-76-0-md4z13qb4",
+          "text": "Un",
+          "startTime": 217.584,
+          "endTime": 217.818
+        },
+        {
+          "id": "syl-76-1-iavybvhxs",
+          "text": "peuple.",
+          "startTime": 217.818,
+          "endTime": 218.218
+        }
+      ],
+      "startTime": 217.584,
+      "endTime": 218.218,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-77-bw66uthip",
+      "text": "Une foi.",
+      "syllables": [
+        {
+          "id": "syl-77-0-qxin43yex",
+          "text": "Une",
+          "startTime": 219.508,
+          "endTime": 219.735
+        },
+        {
+          "id": "syl-77-1-8dugthf98",
+          "text": "foi.",
+          "startTime": 219.735,
+          "endTime": 219.984
+        }
+      ],
+      "startTime": 219.508,
+      "endTime": 219.984,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-78-k7oo3s6w4",
+      "text": "Une espérance.",
+      "syllables": [
+        {
+          "id": "syl-78-0-3wxx7aj20",
+          "text": "Une",
+          "startTime": 220.433,
+          "endTime": 220.798
+        },
+        {
+          "id": "syl-78-1-p1dkj7qga",
+          "text": "espérance.",
+          "startTime": 220.798,
+          "endTime": 221.895
+        }
+      ],
+      "startTime": 220.433,
+      "endTime": 221.895,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-80-6zdo43o4t",
+      "text": "Un cœur.",
+      "syllables": [
+        {
+          "id": "syl-80-0-sh0q3vf46",
+          "text": "Un",
+          "startTime": 222.802,
+          "endTime": 223.374
+        },
+        {
+          "id": "syl-80-1-0mafg6fqd",
+          "text": "cœur.",
+          "startTime": 223.374,
+          "endTime": 223.926
+        }
+      ],
+      "startTime": 222.802,
+      "endTime": 223.926,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-81-c1x2p92wo",
+      "text": "Une voix.",
+      "syllables": [
+        {
+          "id": "syl-81-0-u3nss7t4o",
+          "text": "Une",
+          "startTime": 224.558,
+          "endTime": 224.884
+        },
+        {
+          "id": "syl-81-1-zyopkw1m2",
+          "text": "voix.",
+          "startTime": 224.884,
+          "endTime": 225.653
+        }
+      ],
+      "startTime": 224.558,
+      "endTime": 225.653,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-82-82h9zbw51",
+      "text": "Une confiance.",
+      "syllables": [
+        {
+          "id": "syl-82-0-u3e8r0zmi",
+          "text": "Une",
+          "startTime": 226.502,
+          "endTime": 227.801
+        },
+        {
+          "id": "syl-82-1-eb2n4dwn4",
+          "text": "confiance.",
+          "startTime": 227.801,
+          "endTime": 229.223
+        }
+      ],
+      "startTime": 226.502,
+      "endTime": 229.223,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-84-sqpz8vwy2",
+      "text": "Nous sommes à toi, Jéhovah,",
+      "syllables": [
+        {
+          "id": "syl-84-0-pzs9q9t28",
+          "text": "Nous",
+          "startTime": 231.232,
+          "endTime": 231.557
+        },
+        {
+          "id": "syl-84-1-628u1bizf",
+          "text": "sommes",
+          "startTime": 231.557,
+          "endTime": 231.947
+        },
+        {
+          "id": "syl-84-2-nc5g1ea6f",
+          "text": "à",
+          "startTime": 231.947,
+          "endTime": 232.363
+        },
+        {
+          "id": "syl-84-3-g9qnpt5la",
+          "text": "toi,",
+          "startTime": 232.363,
+          "endTime": 233.192
+        },
+        {
+          "id": "syl-84-4-4saxcn7tm",
+          "text": "Jéhovah,",
+          "startTime": 233.192,
+          "endTime": 234.205
+        }
+      ],
+      "startTime": 231.232,
+      "endTime": 234.205,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-85-mjk5g1d0p",
+      "text": "Dans la lumière ou dans le froid.",
+      "syllables": [
+        {
+          "id": "syl-85-0-47wla4lq1",
+          "text": "Dans",
+          "startTime": 234.858,
+          "endTime": 235.137
+        },
+        {
+          "id": "syl-85-1-8sznb4hl4",
+          "text": "la",
+          "startTime": 235.137,
+          "endTime": 235.358
+        },
+        {
+          "id": "syl-85-2-fqt6eb819",
+          "text": "lumière",
+          "startTime": 235.358,
+          "endTime": 236.153
+        },
+        {
+          "id": "syl-85-3-1gxu4i0wk",
+          "text": "ou",
+          "startTime": 236.153,
+          "endTime": 236.68
+        },
+        {
+          "id": "syl-85-4-859e5hd2w",
+          "text": "dans",
+          "startTime": 236.68,
+          "endTime": 237.181
+        },
+        {
+          "id": "syl-85-5-3pm0lp97i",
+          "text": "le",
+          "startTime": 237.181,
+          "endTime": 237.545
+        },
+        {
+          "id": "syl-85-6-8g752tceh",
+          "text": "froid.",
+          "startTime": 237.545,
+          "endTime": 237.986
+        }
+      ],
+      "startTime": 234.858,
+      "endTime": 237.986,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-86-jhfxbdwvs",
+      "text": "Quand tout vacille autour de nous,",
+      "syllables": [
+        {
+          "id": "syl-86-0-i4infouwc",
+          "text": "Quand",
+          "startTime": 238.458,
+          "endTime": 238.748
+        },
+        {
+          "id": "syl-86-1-2vdrcerdp",
+          "text": "tout",
+          "startTime": 238.748,
+          "endTime": 239.09
+        },
+        {
+          "id": "syl-86-2-5wsysjoca",
+          "text": "vacille",
+          "startTime": 239.09,
+          "endTime": 239.917
+        },
+        {
+          "id": "syl-86-3-i8vj08syd",
+          "text": "autour",
+          "startTime": 239.917,
+          "endTime": 240.653
+        },
+        {
+          "id": "syl-86-4-oxm9pp8n8",
+          "text": "de",
+          "startTime": 240.653,
+          "endTime": 241.026
+        },
+        {
+          "id": "syl-86-5-rs5urgser",
+          "text": "nous,",
+          "startTime": 241.026,
+          "endTime": 241.542
+        }
+      ],
+      "startTime": 238.458,
+      "endTime": 241.542,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-87-18gzkbm37",
+      "text": "Ton nom nous garde encore debout.",
+      "syllables": [
+        {
+          "id": "syl-87-0-q03y416zv",
+          "text": "Ton",
+          "startTime": 241.918,
+          "endTime": 242.257
+        },
+        {
+          "id": "syl-87-1-56maig43q",
+          "text": "nom",
+          "startTime": 242.257,
+          "endTime": 242.629
+        },
+        {
+          "id": "syl-87-2-jm8rrszdx",
+          "text": "nous",
+          "startTime": 242.629,
+          "endTime": 243.012
+        },
+        {
+          "id": "syl-87-3-hdht4wfst",
+          "text": "garde",
+          "startTime": 243.012,
+          "endTime": 243.467
+        },
+        {
+          "id": "syl-87-4-ra6vfknxj",
+          "text": "encore",
+          "startTime": 243.467,
+          "endTime": 243.838
+        },
+        {
+          "id": "syl-87-5-lfhbusafj",
+          "text": "debout.",
+          "startTime": 243.838,
+          "endTime": 245.06
+        }
+      ],
+      "startTime": 241.918,
+      "endTime": 245.06,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-89-7flavn297",
+      "text": "Nous sommes à toi, Jéhovah,",
+      "syllables": [
+        {
+          "id": "syl-89-0-ngizclz9e",
+          "text": "Nous",
+          "startTime": 245.488,
+          "endTime": 245.792
+        },
+        {
+          "id": "syl-89-1-aa9amoyum",
+          "text": "sommes",
+          "startTime": 245.792,
+          "endTime": 246.184
+        },
+        {
+          "id": "syl-89-2-1ufd5du7m",
+          "text": "à",
+          "startTime": 246.184,
+          "endTime": 246.559
+        },
+        {
+          "id": "syl-89-3-tx48d2fbe",
+          "text": "toi,",
+          "startTime": 246.559,
+          "endTime": 247.334
+        },
+        {
+          "id": "syl-89-4-iurpya8n8",
+          "text": "Jéhovah,",
+          "startTime": 247.334,
+          "endTime": 248.447
+        }
+      ],
+      "startTime": 245.488,
+      "endTime": 248.447,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-90-pv6s3e6vp",
+      "text": "Nul ne pourra briser cela.",
+      "syllables": [
+        {
+          "id": "syl-90-0-k2cpbv6tt",
+          "text": "Nul",
+          "startTime": 249.063,
+          "endTime": 249.331
+        },
+        {
+          "id": "syl-90-1-t5vbsomy4",
+          "text": "ne",
+          "startTime": 249.331,
+          "endTime": 249.607
+        },
+        {
+          "id": "syl-90-2-ityfo1kg3",
+          "text": "pourra",
+          "startTime": 249.607,
+          "endTime": 250.463
+        },
+        {
+          "id": "syl-90-3-urq441rhh",
+          "text": "briser",
+          "startTime": 250.463,
+          "endTime": 250.86
+        },
+        {
+          "id": "syl-90-4-892k0vg4p",
+          "text": "cela.",
+          "startTime": 250.86,
+          "endTime": 251.84
+        }
+      ],
+      "startTime": 249.063,
+      "endTime": 251.84,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-91-a12r1j86b",
+      "text": "D’une extrémité de la terre à l’autre,",
+      "syllables": [
+        {
+          "id": "syl-91-0-fg2mddbcp",
+          "text": "D’une",
+          "startTime": 252.427,
+          "endTime": 252.681
+        },
+        {
+          "id": "syl-91-1-yjovyyrm1",
+          "text": "extrémité",
+          "startTime": 252.681,
+          "endTime": 253.897
+        },
+        {
+          "id": "syl-91-2-vdcrg46jl",
+          "text": "de",
+          "startTime": 253.897,
+          "endTime": 254.24
+        },
+        {
+          "id": "syl-91-3-03whqts24",
+          "text": "la",
+          "startTime": 254.24,
+          "endTime": 254.468
+        },
+        {
+          "id": "syl-91-4-xvrw82309",
+          "text": "terre",
+          "startTime": 254.468,
+          "endTime": 254.888
+        },
+        {
+          "id": "syl-91-5-52vvfqlah",
+          "text": "à",
+          "startTime": 254.888,
+          "endTime": 255.18
+        },
+        {
+          "id": "syl-91-6-z6xrwjun5",
+          "text": "l’autre,",
+          "startTime": 255.18,
+          "endTime": 255.692
+        }
+      ],
+      "startTime": 252.427,
+      "endTime": 255.692,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-92-7vd4p8tbl",
+      "text": "Nous chanterons encore pour toi.",
+      "syllables": [
+        {
+          "id": "syl-92-0-9dm2zfrf8",
+          "text": "Nous",
+          "startTime": 256.072,
+          "endTime": 256.447
+        },
+        {
+          "id": "syl-92-1-7sdb13hkl",
+          "text": "chanterons",
+          "startTime": 256.447,
+          "endTime": 257.758
+        },
+        {
+          "id": "syl-92-2-mrbxxask0",
+          "text": "encore",
+          "startTime": 257.758,
+          "endTime": 258.107
+        },
+        {
+          "id": "syl-92-3-g39wcqcqx",
+          "text": "pour",
+          "startTime": 258.107,
+          "endTime": 258.847
+        },
+        {
+          "id": "syl-92-4-8h64cio3k",
+          "text": "toi.",
+          "startTime": 258.847,
+          "endTime": 259.491
+        }
+      ],
+      "startTime": 256.072,
+      "endTime": 259.491,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-94-89fxk0sg1",
+      "text": "Nous sommes à toi, Jéhovah (Jéhovah)…",
+      "syllables": [
+        {
+          "id": "syl-94-0-onz8xx2um",
+          "text": "Nous",
+          "startTime": 259.848,
+          "endTime": 260.19
+        },
+        {
+          "id": "syl-94-1-ylrndgtew",
+          "text": "sommes",
+          "startTime": 260.19,
+          "endTime": 260.531
+        },
+        {
+          "id": "syl-94-2-3hhy07w8r",
+          "text": "à",
+          "startTime": 260.531,
+          "endTime": 260.913
+        },
+        {
+          "id": "syl-94-3-4ss3zvamp",
+          "text": "toi,",
+          "startTime": 260.913,
+          "endTime": 261.671
+        },
+        {
+          "id": "syl-94-4-yqaae3shv",
+          "text": "Jéhovah",
+          "startTime": 261.671,
+          "endTime": 263.024
+        },
+        {
+          "id": "syl-94-5-mxrd7grw6",
+          "text": "(Jéhovah)…",
+          "startTime": 263.024,
+          "endTime": 265.167
+        }
+      ],
+      "startTime": 259.848,
+      "endTime": 265.167,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-96-gp2be7fav",
+      "text": "Dans la lumière (lumière),",
+      "syllables": [
+        {
+          "id": "syl-96-0-qoc9vr9c7",
+          "text": "Dans",
+          "startTime": 266.908,
+          "endTime": 267.19
+        },
+        {
+          "id": "syl-96-1-moezhnd55",
+          "text": "la",
+          "startTime": 267.19,
+          "endTime": 267.467
+        },
+        {
+          "id": "syl-96-2-05zk7trxl",
+          "text": "lumière",
+          "startTime": 267.467,
+          "endTime": 268.787
+        },
+        {
+          "id": "syl-96-3-stw06rsu3",
+          "text": "(lumière),",
+          "startTime": 268.787,
+          "endTime": 270.341
+        }
+      ],
+      "startTime": 266.908,
+      "endTime": 270.341,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-97-b5m5noyf2",
+      "text": "dans le froid (le froid)…",
+      "syllables": [
+        {
+          "id": "syl-97-0-17os4zfxr",
+          "text": "dans",
+          "startTime": 270.529,
+          "endTime": 270.929
+        },
+        {
+          "id": "syl-97-1-k7065sdw5",
+          "text": "le",
+          "startTime": 270.929,
+          "endTime": 271.181
+        },
+        {
+          "id": "syl-97-2-0b0pegb88",
+          "text": "froid",
+          "startTime": 271.181,
+          "endTime": 272.319
+        },
+        {
+          "id": "syl-97-3-120oennhf",
+          "text": "(le",
+          "startTime": 272.319,
+          "endTime": 272.836
+        },
+        {
+          "id": "syl-97-4-hmwjauoyh",
+          "text": "froid)…",
+          "startTime": 272.836,
+          "endTime": 274.54
+        }
+      ],
+      "startTime": 270.529,
+      "endTime": 274.54,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-99-t6q3fa4zm",
+      "text": "Aujourd’hui,",
+      "syllables": [
+        {
+          "id": "syl-99-0-3nh9yxqnf",
+          "text": "Aujourd’hui,",
+          "startTime": 281.614,
+          "endTime": 281.76
+        }
+      ],
+      "startTime": 281.614,
+      "endTime": 281.76,
+      "isVerseStart": true
+    },
+    {
+      "id": "line-100-uzo04t8ab",
+      "text": "demain,",
+      "syllables": [
+        {
+          "id": "syl-100-0-f85idcndf",
+          "text": "demain,",
+          "startTime": 283.696,
+          "endTime": 283.885
+        }
+      ],
+      "startTime": 283.696,
+      "endTime": 283.885,
+      "isVerseStart": false
+    },
+    {
+      "id": "line-101-d60qjx3d4",
+      "text": "toujours à toi.",
+      "syllables": [
+        {
+          "id": "syl-101-0-lb5vh9l2l",
+          "text": "toujours",
+          "startTime": 288.18,
+          "endTime": 288.688
+        },
+        {
+          "id": "syl-101-1-e3wci4ivs",
+          "text": "à",
+          "startTime": 288.688,
+          "endTime": 289.304
+        },
+        {
+          "id": "syl-101-2-ae85tlgzz",
+          "text": "toi.",
+          "startTime": 289.304,
+          "endTime": 289.847
+        }
+      ],
+      "startTime": 288.18,
+      "endTime": 289.847,
+      "isVerseStart": false
+    }
+  ],
+  "songMeta": {
+    "title": "",
+    "composer": "",
+    "note": ""
+  },
+  "styleConfig": {
+    "fontFamily": "system-ui",
+    "fontSize": 42,
+    "fillColor": "#f7f9fa",
+    "activeColor": "#34d59a",
+    "strokeColor": "#090909",
+    "strokeWidth": 3,
+    "bold": false,
+    "italic": false,
+    "uppercase": false,
+    "highlightMode": "sweep",
+    "alignment": "split",
+    "layoutMode": "two-rows",
+    "positionX": 0,
+    "positionY": 0,
+    "row1OffsetX": 0,
+    "row1OffsetY": 0,
+    "row2OffsetX": 0,
+    "row2OffsetY": 0,
+    "rowSpacing": 0,
+    "scrollVisibleLines": 7,
+    "bilingualDisplay": "primary",
+    "translationPosition": "below",
+    "translationScale": 0.55,
+    "bgType": "color",
+    "bgColor": "#090909",
+    "bgImage": null,
+    "bgImageName": null,
+    "bgVideo": null,
+    "bgBrightness": 100,
+    "shadowColor": "rgba(0, 0, 0, 0.6)",
+    "shadowBlur": 10,
+    "countdownDuration": 4,
+    "countdownStyle": "dots",
+    "exitEffect": "fade",
+    "exitFadePercent": 20,
+    "exitHandoverPercent": 10,
+    "aspectPreset": "source",
+    "customAspectW": 16,
+    "customAspectH": 9,
+    "introStyle": "center",
+    "introDuration": 8,
+    "introTitleSize": 80,
+    "introTitleColor": "",
+    "introSubColor": "",
+    "introBgColor": "#000000",
+    "introBgOpacity": 70
+  },
   "media": {
     "tracks": [
       {
-        "name": "Nous sommes à toi Jéhovah HQ.wav",
+        "name": "1-nous-sommes-a-toi-jehovah.mp3",
         "type": "audio",
         "offset": 0,
-        "duration": 299.456,
+        "duration": 304.4,
         "originalOffset": 0,
         "volume": 1
       }
     ],
-    "bgImageName": "sample:sample-1"
-  },
-  "lines": [
-    {
-      "id": "line-0-yzhp9ty4v",
-      "text": "Quand tout devient silence,",
-      "syllables": [
-        {
-          "id": "syl-0-0-7j9vbt8dz",
-          "text": "Quand",
-          "startTime": 14.015,
-          "endTime": 14.431
-        },
-        {
-          "id": "syl-0-1-pjermc7cd",
-          "text": "tout",
-          "startTime": 14.431,
-          "endTime": 14.757
-        },
-        {
-          "id": "syl-0-2-ht0furhuu",
-          "text": "devient",
-          "startTime": 14.757,
-          "endTime": 15.507
-        },
-        {
-          "id": "syl-0-3-b5l4h7xyv",
-          "text": "silence,",
-          "startTime": 15.507,
-          "endTime": 15.748
-        }
-      ],
-      "startTime": 14.015,
-      "endTime": 15.748,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-1-obah2vyhk",
-      "text": "Quand la nuit couvre l’horizon,",
-      "syllables": [
-        {
-          "id": "syl-1-0-ihxoa99ta",
-          "text": "Quand",
-          "startTime": 17.582,
-          "endTime": 17.933
-        },
-        {
-          "id": "syl-1-1-cmgrjnlcu",
-          "text": "la",
-          "startTime": 17.933,
-          "endTime": 18.297
-        },
-        {
-          "id": "syl-1-2-ayaq5x682",
-          "text": "nuit",
-          "startTime": 18.297,
-          "endTime": 18.689
-        },
-        {
-          "id": "syl-1-3-4hvntyzbz",
-          "text": "couvre",
-          "startTime": 18.689,
-          "endTime": 18.857
-        },
-        {
-          "id": "syl-1-4-s4j6gamli",
-          "text": "l’horizon,",
-          "startTime": 18.857,
-          "endTime": 19.615
-        }
-      ],
-      "startTime": 17.582,
-      "endTime": 19.615,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-2-gzgs8p1pn",
-      "text": "Il reste une espérance,",
-      "syllables": [
-        {
-          "id": "syl-2-0-vxblf8pa4",
-          "text": "Il",
-          "startTime": 21.27,
-          "endTime": 21.734
-        },
-        {
-          "id": "syl-2-1-7tk3gbjx8",
-          "text": "reste",
-          "startTime": 21.734,
-          "endTime": 22.135
-        },
-        {
-          "id": "syl-2-2-p4ppfc8pp",
-          "text": "une",
-          "startTime": 22.135,
-          "endTime": 22.462
-        },
-        {
-          "id": "syl-2-3-2fev7qcy9",
-          "text": "espérance,",
-          "startTime": 22.462,
-          "endTime": 23.209
-        }
-      ],
-      "startTime": 21.27,
-      "endTime": 23.209,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-3-3gfnff2qj",
-      "text": "Plus forte encore que nos prisons.",
-      "syllables": [
-        {
-          "id": "syl-3-0-kww13d5zd",
-          "text": "Plus",
-          "startTime": 24.553,
-          "endTime": 24.764
-        },
-        {
-          "id": "syl-3-1-2yyxjyjw2",
-          "text": "forte",
-          "startTime": 24.764,
-          "endTime": 24.986
-        },
-        {
-          "id": "syl-3-2-loq9mzlft",
-          "text": "encore",
-          "startTime": 24.986,
-          "endTime": 25.214
-        },
-        {
-          "id": "syl-3-3-jyrf60twa",
-          "text": "que",
-          "startTime": 25.214,
-          "endTime": 25.882
-        },
-        {
-          "id": "syl-3-4-2zv8ifhyy",
-          "text": "nos",
-          "startTime": 25.882,
-          "endTime": 26.354
-        },
-        {
-          "id": "syl-3-5-44d4o58a1",
-          "text": "prisons.",
-          "startTime": 26.354,
-          "endTime": 26.569
-        }
-      ],
-      "startTime": 24.553,
-      "endTime": 26.569,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-5-wfg14de8g",
-      "text": "Quand les portes se referment,",
-      "syllables": [
-        {
-          "id": "syl-5-0-wwkbxyct4",
-          "text": "Quand",
-          "startTime": 28.401,
-          "endTime": 28.712
-        },
-        {
-          "id": "syl-5-1-1ppi7qz8c",
-          "text": "les",
-          "startTime": 28.712,
-          "endTime": 28.846
-        },
-        {
-          "id": "syl-5-2-sgisd1iga",
-          "text": "portes",
-          "startTime": 28.846,
-          "endTime": 29.466
-        },
-        {
-          "id": "syl-5-3-tac2t0jts",
-          "text": "se",
-          "startTime": 29.466,
-          "endTime": 29.911
-        },
-        {
-          "id": "syl-5-4-ya1k7a5ej",
-          "text": "referment,",
-          "startTime": 29.911,
-          "endTime": 30.536
-        }
-      ],
-      "startTime": 28.401,
-      "endTime": 30.536,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-6-85dvlem1r",
-      "text": "Quand on veut ébranler ma foi,",
-      "syllables": [
-        {
-          "id": "syl-6-0-4ez3cgdll",
-          "text": "Quand",
-          "startTime": 31.668,
-          "endTime": 32.064
-        },
-        {
-          "id": "syl-6-1-ax5227z6x",
-          "text": "on",
-          "startTime": 32.064,
-          "endTime": 32.317
-        },
-        {
-          "id": "syl-6-2-3tjmltuwb",
-          "text": "veut",
-          "startTime": 32.317,
-          "endTime": 32.574
-        },
-        {
-          "id": "syl-6-3-s8xdobucy",
-          "text": "ébranler",
-          "startTime": 32.574,
-          "endTime": 33.327
-        },
-        {
-          "id": "syl-6-4-gykk6jmlt",
-          "text": "ma",
-          "startTime": 33.327,
-          "endTime": 33.669
-        },
-        {
-          "id": "syl-6-5-qpcdz7wzy",
-          "text": "foi,",
-          "startTime": 33.669,
-          "endTime": 34.134
-        }
-      ],
-      "startTime": 31.668,
-      "endTime": 34.134,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-7-tvh9ssjl7",
-      "text": "Je sais qu’au loin des frères veillent,",
-      "syllables": [
-        {
-          "id": "syl-7-0-rxqumjnhn",
-          "text": "Je",
-          "startTime": 35.177,
-          "endTime": 35.47
-        },
-        {
-          "id": "syl-7-1-ec23jbuqp",
-          "text": "sais",
-          "startTime": 35.47,
-          "endTime": 35.804
-        },
-        {
-          "id": "syl-7-2-7e10nz7hm",
-          "text": "qu’au",
-          "startTime": 35.804,
-          "endTime": 36.131
-        },
-        {
-          "id": "syl-7-3-sxonaxz2m",
-          "text": "loin",
-          "startTime": 36.131,
-          "endTime": 36.566
-        },
-        {
-          "id": "syl-7-4-onk4ob3i0",
-          "text": "des",
-          "startTime": 36.566,
-          "endTime": 36.776
-        },
-        {
-          "id": "syl-7-5-ntjkz16dh",
-          "text": "frères",
-          "startTime": 36.776,
-          "endTime": 37.056
-        },
-        {
-          "id": "syl-7-6-mg7t8dpjr",
-          "text": "veillent,",
-          "startTime": 37.056,
-          "endTime": 37.54
-        }
-      ],
-      "startTime": 35.177,
-      "endTime": 37.54,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-8-hya46d7b2",
-      "text": "Et qu’ils prient encore avec moi.",
-      "syllables": [
-        {
-          "id": "syl-8-0-9e4zpu63q",
-          "text": "Et",
-          "startTime": 38.461,
-          "endTime": 39.01
-        },
-        {
-          "id": "syl-8-1-4sq4usexf",
-          "text": "qu’ils",
-          "startTime": 39.01,
-          "endTime": 39.382
-        },
-        {
-          "id": "syl-8-2-dth5ht7zu",
-          "text": "prient",
-          "startTime": 39.382,
-          "endTime": 39.832
-        },
-        {
-          "id": "syl-8-3-4tuq9gmde",
-          "text": "encore",
-          "startTime": 39.832,
-          "endTime": 40.393
-        },
-        {
-          "id": "syl-8-4-3h9xhsvx5",
-          "text": "avec",
-          "startTime": 40.393,
-          "endTime": 40.644
-        },
-        {
-          "id": "syl-8-5-gwmpaxwpk",
-          "text": "moi.",
-          "startTime": 40.644,
-          "endTime": 41.102
-        }
-      ],
-      "startTime": 38.461,
-      "endTime": 41.102,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-10-8phtvwa2b",
-      "text": "Même séparés,",
-      "syllables": [
-        {
-          "id": "syl-10-0-rqo9fobek",
-          "text": "Même",
-          "startTime": 42.282,
-          "endTime": 42.706
-        },
-        {
-          "id": "syl-10-1-saumod9ei",
-          "text": "séparés,",
-          "startTime": 42.706,
-          "endTime": 43.537
-        }
-      ],
-      "startTime": 42.282,
-      "endTime": 43.537,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-11-g92yijaqj",
-      "text": "Nous marchons d’un même pas.",
-      "syllables": [
-        {
-          "id": "syl-11-0-hiz5j4s9v",
-          "text": "Nous",
-          "startTime": 45.249,
-          "endTime": 45.611
-        },
-        {
-          "id": "syl-11-1-16j5hd7z5",
-          "text": "marchons",
-          "startTime": 45.611,
-          "endTime": 46.338
-        },
-        {
-          "id": "syl-11-2-l9piq4ij9",
-          "text": "d’un",
-          "startTime": 46.338,
-          "endTime": 46.561
-        },
-        {
-          "id": "syl-11-3-zw9780px2",
-          "text": "même",
-          "startTime": 46.561,
-          "endTime": 47.319
-        },
-        {
-          "id": "syl-11-4-2ih5s3p7n",
-          "text": "pas.",
-          "startTime": 47.319,
-          "endTime": 47.812
-        }
-      ],
-      "startTime": 45.249,
-      "endTime": 47.812,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-12-adt9tjmg1",
-      "text": "Même dans la nuit,",
-      "syllables": [
-        {
-          "id": "syl-12-0-rtybc6dny",
-          "text": "Même",
-          "startTime": 48.819,
-          "endTime": 49.796
-        },
-        {
-          "id": "syl-12-1-pr8u8974h",
-          "text": "dans",
-          "startTime": 49.796,
-          "endTime": 50.215
-        },
-        {
-          "id": "syl-12-2-393pbii05",
-          "text": "la",
-          "startTime": 50.215,
-          "endTime": 50.572
-        },
-        {
-          "id": "syl-12-3-552y6mwnm",
-          "text": "nuit,",
-          "startTime": 50.572,
-          "endTime": 51.092
-        }
-      ],
-      "startTime": 48.819,
-      "endTime": 51.092,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-13-75kpdej2t",
-      "text": "Jéhovah ne nous quitte pas.",
-      "syllables": [
-        {
-          "id": "syl-13-0-ekqjt5oej",
-          "text": "Jéhovah",
-          "startTime": 52.138,
-          "endTime": 53.167
-        },
-        {
-          "id": "syl-13-1-2uro3edyz",
-          "text": "ne",
-          "startTime": 53.167,
-          "endTime": 53.501
-        },
-        {
-          "id": "syl-13-2-m9zq6690r",
-          "text": "nous",
-          "startTime": 53.501,
-          "endTime": 53.731
-        },
-        {
-          "id": "syl-13-3-wtsrygpg5",
-          "text": "quitte",
-          "startTime": 53.731,
-          "endTime": 54.147
-        },
-        {
-          "id": "syl-13-4-occ6sob86",
-          "text": "pas.",
-          "startTime": 54.147,
-          "endTime": 55.145
-        }
-      ],
-      "startTime": 52.138,
-      "endTime": 55.145,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-15-um5z1qyer",
-      "text": "Nous sommes à toi, Jéhovah,",
-      "syllables": [
-        {
-          "id": "syl-15-0-np0kyo974",
-          "text": "Nous",
-          "startTime": 56.436,
-          "endTime": 56.884
-        },
-        {
-          "id": "syl-15-1-uzakhzreu",
-          "text": "sommes",
-          "startTime": 56.884,
-          "endTime": 57.357
-        },
-        {
-          "id": "syl-15-2-qu9cml797",
-          "text": "à",
-          "startTime": 57.357,
-          "endTime": 57.828
-        },
-        {
-          "id": "syl-15-3-5xa9kccx0",
-          "text": "toi,",
-          "startTime": 57.828,
-          "endTime": 58.693
-        },
-        {
-          "id": "syl-15-4-0kcefhnnm",
-          "text": "Jéhovah,",
-          "startTime": 58.693,
-          "endTime": 59.503
-        }
-      ],
-      "startTime": 56.436,
-      "endTime": 59.503,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-16-rtdmad2vv",
-      "text": "Dans la lumière ou dans le froid.",
-      "syllables": [
-        {
-          "id": "syl-16-0-sngiqv0g0",
-          "text": "Dans",
-          "startTime": 60.255,
-          "endTime": 60.587
-        },
-        {
-          "id": "syl-16-1-ln889pr0f",
-          "text": "la",
-          "startTime": 60.587,
-          "endTime": 60.849
-        },
-        {
-          "id": "syl-16-2-hy6ze94co",
-          "text": "lumière",
-          "startTime": 60.849,
-          "endTime": 61.828
-        },
-        {
-          "id": "syl-16-3-nfk6shmzq",
-          "text": "ou",
-          "startTime": 61.828,
-          "endTime": 62.192
-        },
-        {
-          "id": "syl-16-4-3hv57le7p",
-          "text": "dans",
-          "startTime": 62.192,
-          "endTime": 62.439
-        },
-        {
-          "id": "syl-16-5-zyaxppnsx",
-          "text": "le",
-          "startTime": 62.439,
-          "endTime": 62.831
-        },
-        {
-          "id": "syl-16-6-qnvv4hmlq",
-          "text": "froid.",
-          "startTime": 62.831,
-          "endTime": 63.381
-        }
-      ],
-      "startTime": 60.255,
-      "endTime": 63.381,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-17-v6x92yk8t",
-      "text": "Quand tout vacille autour de nous,",
-      "syllables": [
-        {
-          "id": "syl-17-0-etal95x3j",
-          "text": "Quand",
-          "startTime": 63.954,
-          "endTime": 64.227
-        },
-        {
-          "id": "syl-17-1-al89s4jpb",
-          "text": "tout",
-          "startTime": 64.227,
-          "endTime": 64.466
-        },
-        {
-          "id": "syl-17-2-qd7oozjnf",
-          "text": "vacille",
-          "startTime": 64.466,
-          "endTime": 65.29
-        },
-        {
-          "id": "syl-17-3-9dyy11kvs",
-          "text": "autour",
-          "startTime": 65.29,
-          "endTime": 65.531
-        },
-        {
-          "id": "syl-17-4-febzohme4",
-          "text": "de",
-          "startTime": 65.531,
-          "endTime": 66.241
-        },
-        {
-          "id": "syl-17-5-9a4l9d5if",
-          "text": "nous,",
-          "startTime": 66.241,
-          "endTime": 66.545
-        }
-      ],
-      "startTime": 63.954,
-      "endTime": 66.545,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-18-eb4bpf7vw",
-      "text": "Ton nom nous garde encore debout.",
-      "syllables": [
-        {
-          "id": "syl-18-0-w2dzrwb46",
-          "text": "Ton",
-          "startTime": 67.328,
-          "endTime": 67.641
-        },
-        {
-          "id": "syl-18-1-fwtrty6ma",
-          "text": "nom",
-          "startTime": 67.641,
-          "endTime": 67.97
-        },
-        {
-          "id": "syl-18-2-gy0bl06k9",
-          "text": "nous",
-          "startTime": 67.97,
-          "endTime": 68.39
-        },
-        {
-          "id": "syl-18-3-ln3mmgkwj",
-          "text": "garde",
-          "startTime": 68.39,
-          "endTime": 68.84
-        },
-        {
-          "id": "syl-18-4-pga0cwbvt",
-          "text": "encore",
-          "startTime": 68.84,
-          "endTime": 69.253
-        },
-        {
-          "id": "syl-18-5-1xbzsdzm0",
-          "text": "debout.",
-          "startTime": 69.253,
-          "endTime": 70.04
-        }
-      ],
-      "startTime": 67.328,
-      "endTime": 70.04,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-20-57c8f242u",
-      "text": "Nous sommes à toi, Jéhovah,",
-      "syllables": [
-        {
-          "id": "syl-20-0-oiwaieivc",
-          "text": "Nous",
-          "startTime": 70.259,
-          "endTime": 71.13
-        },
-        {
-          "id": "syl-20-1-lkp91xncy",
-          "text": "sommes",
-          "startTime": 71.13,
-          "endTime": 71.65
-        },
-        {
-          "id": "syl-20-2-867gmp72t",
-          "text": "à",
-          "startTime": 71.65,
-          "endTime": 72.078
-        },
-        {
-          "id": "syl-20-3-9au7zr9ot",
-          "text": "toi,",
-          "startTime": 72.078,
-          "endTime": 72.839
-        },
-        {
-          "id": "syl-20-4-ne8jqn7x8",
-          "text": "Jéhovah,",
-          "startTime": 72.839,
-          "endTime": 73.784
-        }
-      ],
-      "startTime": 70.259,
-      "endTime": 73.784,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-21-ye1tf6pxg",
-      "text": "Nul ne pourra briser cela.",
-      "syllables": [
-        {
-          "id": "syl-21-0-u31i5l7nv",
-          "text": "Nul",
-          "startTime": 74.57,
-          "endTime": 75.008
-        },
-        {
-          "id": "syl-21-1-kcvno234z",
-          "text": "ne",
-          "startTime": 75.008,
-          "endTime": 75.334
-        },
-        {
-          "id": "syl-21-2-dxto9ojyp",
-          "text": "pourra",
-          "startTime": 75.334,
-          "endTime": 76.018
-        },
-        {
-          "id": "syl-21-3-t5keeltma",
-          "text": "briser",
-          "startTime": 76.018,
-          "endTime": 76.426
-        },
-        {
-          "id": "syl-21-4-m2yanaljc",
-          "text": "cela.",
-          "startTime": 76.426,
-          "endTime": 76.858
-        }
-      ],
-      "startTime": 74.57,
-      "endTime": 76.858,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-22-137xgjp2e",
-      "text": "Un même espoir, un même cœur,",
-      "syllables": [
-        {
-          "id": "syl-22-0-3l4qbhn5r",
-          "text": "Un",
-          "startTime": 77.843,
-          "endTime": 78.162
-        },
-        {
-          "id": "syl-22-1-khlq5o04j",
-          "text": "même",
-          "startTime": 78.162,
-          "endTime": 78.583
-        },
-        {
-          "id": "syl-22-2-nfihhkjod",
-          "text": "espoir,",
-          "startTime": 78.583,
-          "endTime": 79.336
-        },
-        {
-          "id": "syl-22-3-6ffgp4tm6",
-          "text": "un",
-          "startTime": 79.336,
-          "endTime": 79.886
-        },
-        {
-          "id": "syl-22-4-12oj71qvx",
-          "text": "même",
-          "startTime": 79.886,
-          "endTime": 80.241
-        },
-        {
-          "id": "syl-22-5-spl1ldgcb",
-          "text": "cœur,",
-          "startTime": 80.241,
-          "endTime": 80.814
-        }
-      ],
-      "startTime": 77.843,
-      "endTime": 80.814,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-23-vk2hul2g6",
-      "text": "Une seule foi plus forte que la peur.",
-      "syllables": [
-        {
-          "id": "syl-23-0-jz62xf3tb",
-          "text": "Une",
-          "startTime": 81.566,
-          "endTime": 81.972
-        },
-        {
-          "id": "syl-23-1-4fsn1657r",
-          "text": "seule",
-          "startTime": 81.972,
-          "endTime": 82.167
-        },
-        {
-          "id": "syl-23-2-2836blzwk",
-          "text": "foi",
-          "startTime": 82.167,
-          "endTime": 82.502
-        },
-        {
-          "id": "syl-23-3-jea0jyktb",
-          "text": "plus",
-          "startTime": 82.502,
-          "endTime": 82.878
-        },
-        {
-          "id": "syl-23-4-4wriue5ls",
-          "text": "forte",
-          "startTime": 82.878,
-          "endTime": 83.257
-        },
-        {
-          "id": "syl-23-5-1z5bxlntn",
-          "text": "que",
-          "startTime": 83.257,
-          "endTime": 83.736
-        },
-        {
-          "id": "syl-23-6-hbyj8i175",
-          "text": "la",
-          "startTime": 83.736,
-          "endTime": 84.04
-        },
-        {
-          "id": "syl-23-7-q07ys4t3o",
-          "text": "peur.",
-          "startTime": 84.045,
-          "endTime": 86.609
-        }
-      ],
-      "startTime": 81.566,
-      "endTime": 86.609,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-25-jx7t360xv",
-      "text": "On peut nous prendre nos chemins,",
-      "syllables": [
-        {
-          "id": "syl-25-0-019ljyxbt",
-          "text": "On",
-          "startTime": 100.202,
-          "endTime": 100.423
-        },
-        {
-          "id": "syl-25-1-zxzzb6l1n",
-          "text": "peut",
-          "startTime": 100.423,
-          "endTime": 100.589
-        },
-        {
-          "id": "syl-25-2-hd8cjuvzm",
-          "text": "nous",
-          "startTime": 100.589,
-          "endTime": 100.849
-        },
-        {
-          "id": "syl-25-3-a5wz1fyf6",
-          "text": "prendre",
-          "startTime": 100.849,
-          "endTime": 101.117
-        },
-        {
-          "id": "syl-25-4-0gv2l32b1",
-          "text": "nos",
-          "startTime": 101.117,
-          "endTime": 101.551
-        },
-        {
-          "id": "syl-25-5-v4qz3ystv",
-          "text": "chemins,",
-          "startTime": 101.551,
-          "endTime": 102.201
-        }
-      ],
-      "startTime": 100.202,
-      "endTime": 102.201,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-26-eyihijq3h",
-      "text": "Nous éloigner de ceux qu’on aime,",
-      "syllables": [
-        {
-          "id": "syl-26-0-c0yfnr24r",
-          "text": "Nous",
-          "startTime": 103.539,
-          "endTime": 103.956
-        },
-        {
-          "id": "syl-26-1-mw8y9z7ez",
-          "text": "éloigner",
-          "startTime": 103.956,
-          "endTime": 104.2
-        },
-        {
-          "id": "syl-26-2-ccgu9a60w",
-          "text": "de",
-          "startTime": 104.2,
-          "endTime": 105.203
-        },
-        {
-          "id": "syl-26-3-ylnlbun7t",
-          "text": "ceux",
-          "startTime": 105.203,
-          "endTime": 105.667
-        },
-        {
-          "id": "syl-26-4-pfe3y9w0w",
-          "text": "qu’on",
-          "startTime": 105.667,
-          "endTime": 105.886
-        },
-        {
-          "id": "syl-26-5-lywry1ocv",
-          "text": "aime,",
-          "startTime": 105.886,
-          "endTime": 106.581
-        }
-      ],
-      "startTime": 103.539,
-      "endTime": 106.581,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-27-egssjs7bt",
-      "text": "Mais nul ne peut fermer nos mains",
-      "syllables": [
-        {
-          "id": "syl-27-0-25kabnrcm",
-          "text": "Mais",
-          "startTime": 106.816,
-          "endTime": 107.038
-        },
-        {
-          "id": "syl-27-1-x1nvx0kpy",
-          "text": "nul",
-          "startTime": 107.038,
-          "endTime": 107.462
-        },
-        {
-          "id": "syl-27-2-4evkatays",
-          "text": "ne",
-          "startTime": 107.462,
-          "endTime": 107.754
-        },
-        {
-          "id": "syl-27-3-y4guwqoun",
-          "text": "peut",
-          "startTime": 107.759,
-          "endTime": 108.203
-        },
-        {
-          "id": "syl-27-4-la0gjkwum",
-          "text": "fermer",
-          "startTime": 108.203,
-          "endTime": 108.55
-        },
-        {
-          "id": "syl-27-5-9r3fnr800",
-          "text": "nos",
-          "startTime": 108.55,
-          "endTime": 109.252
-        },
-        {
-          "id": "syl-27-6-x17nw8913",
-          "text": "mains",
-          "startTime": 109.252,
-          "endTime": 109.479
-        }
-      ],
-      "startTime": 106.816,
-      "endTime": 109.479,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-28-8c5o06h0z",
-      "text": "Sur l’espérance que tu sèmes.",
-      "syllables": [
-        {
-          "id": "syl-28-0-ey0gqzp5n",
-          "text": "Sur",
-          "startTime": 110.284,
-          "endTime": 110.626
-        },
-        {
-          "id": "syl-28-1-cmpaofz06",
-          "text": "l’espérance",
-          "startTime": 110.626,
-          "endTime": 111.693
-        },
-        {
-          "id": "syl-28-2-16ob771bo",
-          "text": "que",
-          "startTime": 111.693,
-          "endTime": 112.382
-        },
-        {
-          "id": "syl-28-3-vmh2dhnqt",
-          "text": "tu",
-          "startTime": 112.382,
-          "endTime": 112.796
-        },
-        {
-          "id": "syl-28-4-fu8irfj5u",
-          "text": "sèmes.",
-          "startTime": 112.796,
-          "endTime": 113.337
-        }
-      ],
-      "startTime": 110.284,
-      "endTime": 113.337,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-30-kierrgp58",
-      "text": "Quand l’un de nous tombe à genoux,",
-      "syllables": [
-        {
-          "id": "syl-30-0-3y6hi14nh",
-          "text": "Quand",
-          "startTime": 113.452,
-          "endTime": 113.668
-        },
-        {
-          "id": "syl-30-1-cd6kj4m9e",
-          "text": "l’un",
-          "startTime": 113.668,
-          "endTime": 113.858
-        },
-        {
-          "id": "syl-30-2-t6xadsonc",
-          "text": "de",
-          "startTime": 113.858,
-          "endTime": 114.069
-        },
-        {
-          "id": "syl-30-3-hnloqperf",
-          "text": "nous",
-          "startTime": 114.069,
-          "endTime": 114.277
-        },
-        {
-          "id": "syl-30-4-lv1e4lgau",
-          "text": "tombe",
-          "startTime": 114.277,
-          "endTime": 114.475
-        },
-        {
-          "id": "syl-30-5-f3ww180bx",
-          "text": "à",
-          "startTime": 114.475,
-          "endTime": 114.723
-        },
-        {
-          "id": "syl-30-6-513bcvptw",
-          "text": "genoux,",
-          "startTime": 114.723,
-          "endTime": 115.043
-        }
-      ],
-      "startTime": 113.452,
-      "endTime": 115.043,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-31-9pp69ycqo",
-      "text": "Des milliers se lèvent partout.",
-      "syllables": [
-        {
-          "id": "syl-31-0-oewaqf3ez",
-          "text": "Des",
-          "startTime": 116.854,
-          "endTime": 117.24
-        },
-        {
-          "id": "syl-31-1-2oi11ntxj",
-          "text": "milliers",
-          "startTime": 117.24,
-          "endTime": 117.608
-        },
-        {
-          "id": "syl-31-2-0s51pylfx",
-          "text": "se",
-          "startTime": 117.628,
-          "endTime": 117.911
-        },
-        {
-          "id": "syl-31-3-w09d8ikg6",
-          "text": "lèvent",
-          "startTime": 117.911,
-          "endTime": 118.379
-        },
-        {
-          "id": "syl-31-4-xiz4bnali",
-          "text": "partout.",
-          "startTime": 118.379,
-          "endTime": 119.005
-        }
-      ],
-      "startTime": 116.854,
-      "endTime": 119.005,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-33-52e905ewz",
-      "text": "Et d’une rive à l’autre rive,",
-      "syllables": [
-        {
-          "id": "syl-33-0-lqmeuyeib",
-          "text": "Et",
-          "startTime": 120.587,
-          "endTime": 120.871
-        },
-        {
-          "id": "syl-33-1-w0rrp1mbw",
-          "text": "d’une",
-          "startTime": 120.871,
-          "endTime": 121.108
-        },
-        {
-          "id": "syl-33-2-obotyws3p",
-          "text": "rive",
-          "startTime": 121.108,
-          "endTime": 121.303
-        },
-        {
-          "id": "syl-33-3-p29ja0q2w",
-          "text": "à",
-          "startTime": 121.303,
-          "endTime": 121.579
-        },
-        {
-          "id": "syl-33-4-agdsiz60f",
-          "text": "l’autre",
-          "startTime": 121.579,
-          "endTime": 121.913
-        },
-        {
-          "id": "syl-33-5-nlgyvsavj",
-          "text": "rive,",
-          "startTime": 121.913,
-          "endTime": 122.504
-        }
-      ],
-      "startTime": 120.587,
-      "endTime": 122.504,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-34-c7m98t5nw",
-      "text": "La même foi demeure vive.",
-      "syllables": [
-        {
-          "id": "syl-34-0-fdqi431p6",
-          "text": "La",
-          "startTime": 124.157,
-          "endTime": 124.398
-        },
-        {
-          "id": "syl-34-1-6b56j372s",
-          "text": "même",
-          "startTime": 124.398,
-          "endTime": 124.636
-        },
-        {
-          "id": "syl-34-2-97ooo271g",
-          "text": "foi",
-          "startTime": 124.636,
-          "endTime": 124.855
-        },
-        {
-          "id": "syl-34-3-k41y0sng2",
-          "text": "demeure",
-          "startTime": 124.855,
-          "endTime": 125.1
-        },
-        {
-          "id": "syl-34-4-3dyzpb6jl",
-          "text": "vive.",
-          "startTime": 125.1,
-          "endTime": 126.206
-        }
-      ],
-      "startTime": 124.157,
-      "endTime": 126.206,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-36-png27j9iv",
-      "text": "Nous connaissons ta voix.",
-      "syllables": [
-        {
-          "id": "syl-36-0-bbqtez5qn",
-          "text": "Nous",
-          "startTime": 127.797,
-          "endTime": 128.302
-        },
-        {
-          "id": "syl-36-1-e15jiktmd",
-          "text": "connaissons",
-          "startTime": 128.302,
-          "endTime": 128.536
-        },
-        {
-          "id": "syl-36-2-3d5r7bfpr",
-          "text": "ta",
-          "startTime": 128.536,
-          "endTime": 129.053
-        },
-        {
-          "id": "syl-36-3-at1n8uvb8",
-          "text": "voix.",
-          "startTime": 129.053,
-          "endTime": 129.636
-        }
-      ],
-      "startTime": 127.797,
-      "endTime": 129.636,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-37-12jvmczhb",
-      "text": "Nous savons où nous allons.",
-      "syllables": [
-        {
-          "id": "syl-37-0-ht677blsm",
-          "text": "Nous",
-          "startTime": 131.441,
-          "endTime": 131.678
-        },
-        {
-          "id": "syl-37-1-p0ttcscm3",
-          "text": "savons",
-          "startTime": 131.678,
-          "endTime": 132.217
-        },
-        {
-          "id": "syl-37-2-5nkvwvvih",
-          "text": "où",
-          "startTime": 132.217,
-          "endTime": 132.45
-        },
-        {
-          "id": "syl-37-3-gcq2coh26",
-          "text": "nous",
-          "startTime": 132.45,
-          "endTime": 132.674
-        },
-        {
-          "id": "syl-37-4-gx1owggn1",
-          "text": "allons.",
-          "startTime": 132.674,
-          "endTime": 133.636
-        }
-      ],
-      "startTime": 131.441,
-      "endTime": 133.636,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-38-qjezr4vlp",
-      "text": "Nous sommes ton peuple,",
-      "syllables": [
-        {
-          "id": "syl-38-0-fblqpb3g6",
-          "text": "Nous",
-          "startTime": 135.165,
-          "endTime": 135.655
-        },
-        {
-          "id": "syl-38-1-3x4wxq7pm",
-          "text": "sommes",
-          "startTime": 135.655,
-          "endTime": 136.004
-        },
-        {
-          "id": "syl-38-2-qkr5q9pzo",
-          "text": "ton",
-          "startTime": 136.004,
-          "endTime": 136.45
-        },
-        {
-          "id": "syl-38-3-jp1l2c4vl",
-          "text": "peuple,",
-          "startTime": 136.45,
-          "endTime": 137.108
-        }
-      ],
-      "startTime": 135.165,
-      "endTime": 137.108,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-39-uieupeyj9",
-      "text": "Et ton nom, nous le porterons.",
-      "syllables": [
-        {
-          "id": "syl-39-0-iql1sr4hb",
-          "text": "Et",
-          "startTime": 137.907,
-          "endTime": 138.125
-        },
-        {
-          "id": "syl-39-1-r16vrlx46",
-          "text": "ton",
-          "startTime": 138.125,
-          "endTime": 138.345
-        },
-        {
-          "id": "syl-39-2-19gnm0t9x",
-          "text": "nom,",
-          "startTime": 138.345,
-          "endTime": 138.824
-        },
-        {
-          "id": "syl-39-3-5bf1aq2cv",
-          "text": "nous",
-          "startTime": 138.824,
-          "endTime": 139.165
-        },
-        {
-          "id": "syl-39-4-ei4t43g3r",
-          "text": "le",
-          "startTime": 139.165,
-          "endTime": 139.585
-        },
-        {
-          "id": "syl-39-5-rym9fry3a",
-          "text": "porterons.",
-          "startTime": 139.585,
-          "endTime": 141.55
-        }
-      ],
-      "startTime": 137.907,
-      "endTime": 141.55,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-41-ykyjyzk0e",
-      "text": "Nous sommes à toi, Jéhovah,",
-      "syllables": [
-        {
-          "id": "syl-41-0-5ak7izmtj",
-          "text": "Nous",
-          "startTime": 142.367,
-          "endTime": 142.977
-        },
-        {
-          "id": "syl-41-1-oe84sgq97",
-          "text": "sommes",
-          "startTime": 142.977,
-          "endTime": 143.23
-        },
-        {
-          "id": "syl-41-2-54489rrat",
-          "text": "à",
-          "startTime": 143.23,
-          "endTime": 143.549
-        },
-        {
-          "id": "syl-41-3-nj9we721l",
-          "text": "toi,",
-          "startTime": 143.549,
-          "endTime": 144.129
-        },
-        {
-          "id": "syl-41-4-3foieag2l",
-          "text": "Jéhovah,",
-          "startTime": 144.129,
-          "endTime": 145.191
-        }
-      ],
-      "startTime": 142.367,
-      "endTime": 145.191,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-42-ico0socp1",
-      "text": "Dans la lumière ou dans le froid.",
-      "syllables": [
-        {
-          "id": "syl-42-0-vr4m7ub9f",
-          "text": "Dans",
-          "startTime": 145.9,
-          "endTime": 146.179
-        },
-        {
-          "id": "syl-42-1-t22htg762",
-          "text": "la",
-          "startTime": 146.179,
-          "endTime": 146.394
-        },
-        {
-          "id": "syl-42-2-ju7ber15m",
-          "text": "lumière",
-          "startTime": 146.394,
-          "endTime": 147.492
-        },
-        {
-          "id": "syl-42-3-zfnktmqr8",
-          "text": "ou",
-          "startTime": 147.492,
-          "endTime": 147.855
-        },
-        {
-          "id": "syl-42-4-8nh4w4glh",
-          "text": "dans",
-          "startTime": 147.855,
-          "endTime": 148.277
-        },
-        {
-          "id": "syl-42-5-gr6ur0ebw",
-          "text": "le",
-          "startTime": 148.277,
-          "endTime": 148.69
-        },
-        {
-          "id": "syl-42-6-8a10lr6xx",
-          "text": "froid.",
-          "startTime": 148.69,
-          "endTime": 148.95
-        }
-      ],
-      "startTime": 145.9,
-      "endTime": 148.95,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-43-jcx7ptgu5",
-      "text": "Quand tout vacille autour de nous,",
-      "syllables": [
-        {
-          "id": "syl-43-0-fk4x73tmd",
-          "text": "Quand",
-          "startTime": 149.688,
-          "endTime": 149.885
-        },
-        {
-          "id": "syl-43-1-my9l22wzv",
-          "text": "tout",
-          "startTime": 149.885,
-          "endTime": 150.038
-        },
-        {
-          "id": "syl-43-2-qs9cun9xs",
-          "text": "vacille",
-          "startTime": 150.038,
-          "endTime": 150.52
-        },
-        {
-          "id": "syl-43-3-p81jin9kx",
-          "text": "autour",
-          "startTime": 150.52,
-          "endTime": 151.434
-        },
-        {
-          "id": "syl-43-4-r2ep9rq2q",
-          "text": "de",
-          "startTime": 151.434,
-          "endTime": 151.999
-        },
-        {
-          "id": "syl-43-5-0wuugqtsa",
-          "text": "nous,",
-          "startTime": 151.999,
-          "endTime": 152.529
-        }
-      ],
-      "startTime": 149.688,
-      "endTime": 152.529,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-44-173jpbtfo",
-      "text": "Ton nom nous garde encore debout.",
-      "syllables": [
-        {
-          "id": "syl-44-0-g7msw3zrw",
-          "text": "Ton",
-          "startTime": 153.22,
-          "endTime": 153.413
-        },
-        {
-          "id": "syl-44-1-vlwm712gt",
-          "text": "nom",
-          "startTime": 153.413,
-          "endTime": 153.633
-        },
-        {
-          "id": "syl-44-2-ae4qsnthk",
-          "text": "nous",
-          "startTime": 153.633,
-          "endTime": 154.082
-        },
-        {
-          "id": "syl-44-3-wjeghdugn",
-          "text": "garde",
-          "startTime": 154.082,
-          "endTime": 154.751
-        },
-        {
-          "id": "syl-44-4-13ju0gl7i",
-          "text": "encore",
-          "startTime": 154.751,
-          "endTime": 155.084
-        },
-        {
-          "id": "syl-44-5-27c7znpr4",
-          "text": "debout.",
-          "startTime": 155.084,
-          "endTime": 155.914
-        }
-      ],
-      "startTime": 153.22,
-      "endTime": 155.914,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-46-kdmtddvby",
-      "text": "Nous sommes à toi, Jéhovah,",
-      "syllables": [
-        {
-          "id": "syl-46-0-0aw8b2um7",
-          "text": "Nous",
-          "startTime": 156.867,
-          "endTime": 157.157
-        },
-        {
-          "id": "syl-46-1-hwbxjso2b",
-          "text": "sommes",
-          "startTime": 157.157,
-          "endTime": 157.531
-        },
-        {
-          "id": "syl-46-2-l5kt7gteu",
-          "text": "à",
-          "startTime": 157.531,
-          "endTime": 157.914
-        },
-        {
-          "id": "syl-46-3-ejylpxi7p",
-          "text": "toi,",
-          "startTime": 157.914,
-          "endTime": 158.642
-        },
-        {
-          "id": "syl-46-4-vkx9y7mox",
-          "text": "Jéhovah,",
-          "startTime": 158.642,
-          "endTime": 158.902
-        }
-      ],
-      "startTime": 156.867,
-      "endTime": 158.902,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-47-xiu2rapbd",
-      "text": "Nul ne pourra briser cela.",
-      "syllables": [
-        {
-          "id": "syl-47-0-khym0azhn",
-          "text": "Nul",
-          "startTime": 160.268,
-          "endTime": 160.705
-        },
-        {
-          "id": "syl-47-1-zudz30dfh",
-          "text": "ne",
-          "startTime": 160.705,
-          "endTime": 161.043
-        },
-        {
-          "id": "syl-47-2-vn2vvkxbe",
-          "text": "pourra",
-          "startTime": 161.043,
-          "endTime": 161.387
-        },
-        {
-          "id": "syl-47-3-pihf9dyyh",
-          "text": "briser",
-          "startTime": 161.387,
-          "endTime": 162.598
-        },
-        {
-          "id": "syl-47-4-2n3vox4kn",
-          "text": "cela.",
-          "startTime": 162.598,
-          "endTime": 163.448
-        }
-      ],
-      "startTime": 160.268,
-      "endTime": 163.448,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-48-iipjsobp1",
-      "text": "Un même espoir, un même cœur,",
-      "syllables": [
-        {
-          "id": "syl-48-0-47gjwtpbk",
-          "text": "Un",
-          "startTime": 163.927,
-          "endTime": 164.233
-        },
-        {
-          "id": "syl-48-1-plkmd1p3j",
-          "text": "même",
-          "startTime": 164.233,
-          "endTime": 164.622
-        },
-        {
-          "id": "syl-48-2-kalveszvw",
-          "text": "espoir,",
-          "startTime": 164.622,
-          "endTime": 165.525
-        },
-        {
-          "id": "syl-48-3-cy9wx13t4",
-          "text": "un",
-          "startTime": 165.525,
-          "endTime": 165.86
-        },
-        {
-          "id": "syl-48-4-8ltrpk6qu",
-          "text": "même",
-          "startTime": 165.86,
-          "endTime": 166.547
-        },
-        {
-          "id": "syl-48-5-mpyv0nmyr",
-          "text": "cœur,",
-          "startTime": 166.547,
-          "endTime": 167.1
-        }
-      ],
-      "startTime": 163.927,
-      "endTime": 167.1,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-49-7rrdmo6nt",
-      "text": "Une seule foi plus forte que la peur.",
-      "syllables": [
-        {
-          "id": "syl-49-0-1rm5ny1vk",
-          "text": "Une",
-          "startTime": 167.505,
-          "endTime": 167.84
-        },
-        {
-          "id": "syl-49-1-9m96zy0tb",
-          "text": "seule",
-          "startTime": 167.84,
-          "endTime": 168.27
-        },
-        {
-          "id": "syl-49-2-u39pi18vy",
-          "text": "foi",
-          "startTime": 168.27,
-          "endTime": 168.56
-        },
-        {
-          "id": "syl-49-3-t7chyq9a4",
-          "text": "plus",
-          "startTime": 168.56,
-          "endTime": 169.292
-        },
-        {
-          "id": "syl-49-4-7bdmjtow2",
-          "text": "forte",
-          "startTime": 169.292,
-          "endTime": 169.511
-        },
-        {
-          "id": "syl-49-5-ggmrryubn",
-          "text": "que",
-          "startTime": 169.511,
-          "endTime": 169.763
-        },
-        {
-          "id": "syl-49-6-fyhi3pc7g",
-          "text": "la",
-          "startTime": 169.763,
-          "endTime": 170.331
-        },
-        {
-          "id": "syl-49-7-eli1stnd1",
-          "text": "peur.",
-          "startTime": 170.331,
-          "endTime": 172.89
-        }
-      ],
-      "startTime": 167.505,
-      "endTime": 172.89,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-51-v77zyytdn",
-      "text": "Si je dois marcher dans la nuit,",
-      "syllables": [
-        {
-          "id": "syl-51-0-xul6mz5wf",
-          "text": "Si",
-          "startTime": 187.037,
-          "endTime": 187.219
-        },
-        {
-          "id": "syl-51-1-7c4u8qc0t",
-          "text": "je",
-          "startTime": 187.219,
-          "endTime": 187.4
-        },
-        {
-          "id": "syl-51-2-7dfvkf8ql",
-          "text": "dois",
-          "startTime": 187.4,
-          "endTime": 187.822
-        },
-        {
-          "id": "syl-51-3-r2dctf9bc",
-          "text": "marcher",
-          "startTime": 187.822,
-          "endTime": 188.425
-        },
-        {
-          "id": "syl-51-4-81s8b673s",
-          "text": "dans",
-          "startTime": 188.425,
-          "endTime": 188.625
-        },
-        {
-          "id": "syl-51-5-7pc3935iz",
-          "text": "la",
-          "startTime": 188.625,
-          "endTime": 188.874
-        },
-        {
-          "id": "syl-51-6-n77poumnq",
-          "text": "nuit,",
-          "startTime": 188.874,
-          "endTime": 189.224
-        }
-      ],
-      "startTime": 187.037,
-      "endTime": 189.224,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-52-o3l11r8pc",
-      "text": "Je marcherai sans fuir.",
-      "syllables": [
-        {
-          "id": "syl-52-0-wb7k570qt",
-          "text": "Je",
-          "startTime": 189.735,
-          "endTime": 190.103
-        },
-        {
-          "id": "syl-52-1-5nhrhp4j7",
-          "text": "marcherai",
-          "startTime": 190.103,
-          "endTime": 191.046
-        },
-        {
-          "id": "syl-52-2-ixl8qpwag",
-          "text": "sans",
-          "startTime": 191.046,
-          "endTime": 191.432
-        },
-        {
-          "id": "syl-52-3-8ajelol0h",
-          "text": "fuir.",
-          "startTime": 191.432,
-          "endTime": 191.997
-        }
-      ],
-      "startTime": 189.735,
-      "endTime": 191.997,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-54-walfmje36",
-      "text": "Si ma voix devient plus petite,",
-      "syllables": [
-        {
-          "id": "syl-54-0-ekyc04qeu",
-          "text": "Si",
-          "startTime": 192.958,
-          "endTime": 193.401
-        },
-        {
-          "id": "syl-54-1-3npcphmje",
-          "text": "ma",
-          "startTime": 193.401,
-          "endTime": 193.682
-        },
-        {
-          "id": "syl-54-2-5472kr7c6",
-          "text": "voix",
-          "startTime": 193.682,
-          "endTime": 194.206
-        },
-        {
-          "id": "syl-54-3-zhijtpdxd",
-          "text": "devient",
-          "startTime": 194.206,
-          "endTime": 194.586
-        },
-        {
-          "id": "syl-54-4-6p1bqdujw",
-          "text": "plus",
-          "startTime": 194.586,
-          "endTime": 195.169
-        },
-        {
-          "id": "syl-54-5-3q4d5x4b1",
-          "text": "petite,",
-          "startTime": 195.169,
-          "endTime": 195.573
-        }
-      ],
-      "startTime": 192.958,
-      "endTime": 195.573,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-55-0f22l95bj",
-      "text": "Alors nous chanterons plus fort.",
-      "syllables": [
-        {
-          "id": "syl-55-0-ve0wtcxss",
-          "text": "Alors",
-          "startTime": 196.462,
-          "endTime": 196.767
-        },
-        {
-          "id": "syl-55-1-lgrab5bqx",
-          "text": "nous",
-          "startTime": 196.767,
-          "endTime": 196.938
-        },
-        {
-          "id": "syl-55-2-ue4c1lhab",
-          "text": "chanterons",
-          "startTime": 196.938,
-          "endTime": 197.974
-        },
-        {
-          "id": "syl-55-3-ie690yki6",
-          "text": "plus",
-          "startTime": 197.974,
-          "endTime": 198.498
-        },
-        {
-          "id": "syl-55-4-z907bao9f",
-          "text": "fort.",
-          "startTime": 198.498,
-          "endTime": 199.441
-        }
-      ],
-      "startTime": 196.462,
-      "endTime": 199.441,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-57-1hjezjh6z",
-      "text": "Nous chanterons encore.",
-      "syllables": [
-        {
-          "id": "syl-57-0-7am70wcp9",
-          "text": "Nous",
-          "startTime": 199.641,
-          "endTime": 199.839
-        },
-        {
-          "id": "syl-57-1-2i7zojkh8",
-          "text": "chanterons",
-          "startTime": 199.839,
-          "endTime": 200.325
-        },
-        {
-          "id": "syl-57-2-4imx14mzs",
-          "text": "encore.",
-          "startTime": 200.325,
-          "endTime": 201.859
-        }
-      ],
-      "startTime": 199.641,
-      "endTime": 201.859,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-59-n0skc8s2d",
-      "text": "Si l’on veut nous faire taire,",
-      "syllables": [
-        {
-          "id": "syl-59-0-g8o53hyx3",
-          "text": "Si",
-          "startTime": 202.175,
-          "endTime": 202.398
-        },
-        {
-          "id": "syl-59-1-qv0c17vom",
-          "text": "l’on",
-          "startTime": 202.398,
-          "endTime": 202.527
-        },
-        {
-          "id": "syl-59-2-ggeqn5sfi",
-          "text": "veut",
-          "startTime": 202.527,
-          "endTime": 202.665
-        },
-        {
-          "id": "syl-59-3-3sjiqjoq2",
-          "text": "nous",
-          "startTime": 202.665,
-          "endTime": 203.441
-        },
-        {
-          "id": "syl-59-4-3wy34kpfa",
-          "text": "faire",
-          "startTime": 203.441,
-          "endTime": 203.939
-        },
-        {
-          "id": "syl-59-5-960vwwocx",
-          "text": "taire,",
-          "startTime": 203.939,
-          "endTime": 204.6
-        }
-      ],
-      "startTime": 202.175,
-      "endTime": 204.6,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-60-bkiem1c48",
-      "text": "Notre foi saura répondre.",
-      "syllables": [
-        {
-          "id": "syl-60-0-uzwew6dm8",
-          "text": "Notre",
-          "startTime": 205.299,
-          "endTime": 205.589
-        },
-        {
-          "id": "syl-60-1-ox7gj9z36",
-          "text": "foi",
-          "startTime": 205.589,
-          "endTime": 205.967
-        },
-        {
-          "id": "syl-60-2-l1f5ontgj",
-          "text": "saura",
-          "startTime": 205.967,
-          "endTime": 206.717
-        },
-        {
-          "id": "syl-60-3-p9kvrxmg0",
-          "text": "répondre.",
-          "startTime": 206.717,
-          "endTime": 207.609
-        }
-      ],
-      "startTime": 205.299,
-      "endTime": 207.609,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-62-b8bllilm9",
-      "text": "Car même au cœur de l’épreuve,",
-      "syllables": [
-        {
-          "id": "syl-62-0-p3x7n85k8",
-          "text": "Car",
-          "startTime": 208.674,
-          "endTime": 208.878
-        },
-        {
-          "id": "syl-62-1-amn4wg0ct",
-          "text": "même",
-          "startTime": 208.878,
-          "endTime": 209.019
-        },
-        {
-          "id": "syl-62-2-f9i3gaz7n",
-          "text": "au",
-          "startTime": 209.019,
-          "endTime": 209.751
-        },
-        {
-          "id": "syl-62-3-3m2y7460s",
-          "text": "cœur",
-          "startTime": 209.751,
-          "endTime": 210.486
-        },
-        {
-          "id": "syl-62-4-l6siwldi2",
-          "text": "de",
-          "startTime": 210.486,
-          "endTime": 211.14
-        },
-        {
-          "id": "syl-62-5-behjjyp2g",
-          "text": "l’épreuve,",
-          "startTime": 211.14,
-          "endTime": 211.939
-        }
-      ],
-      "startTime": 208.674,
-      "endTime": 211.939,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-63-9zx0hvshf",
-      "text": "Notre amour ne peut se rompre.",
-      "syllables": [
-        {
-          "id": "syl-63-0-yehdsk6ej",
-          "text": "Notre",
-          "startTime": 212.983,
-          "endTime": 213.236
-        },
-        {
-          "id": "syl-63-1-ksnd1x028",
-          "text": "amour",
-          "startTime": 213.236,
-          "endTime": 213.712
-        },
-        {
-          "id": "syl-63-2-g15a13az2",
-          "text": "ne",
-          "startTime": 213.712,
-          "endTime": 214.212
-        },
-        {
-          "id": "syl-63-3-l0mhd7kkq",
-          "text": "peut",
-          "startTime": 214.212,
-          "endTime": 214.561
-        },
-        {
-          "id": "syl-63-4-4t9nwsd0e",
-          "text": "se",
-          "startTime": 214.561,
-          "endTime": 214.989
-        },
-        {
-          "id": "syl-63-5-lzxq1t533",
-          "text": "rompre.",
-          "startTime": 214.989,
-          "endTime": 215.68
-        }
-      ],
-      "startTime": 212.983,
-      "endTime": 215.68,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-65-i13tabe3o",
-      "text": "Un peuple.",
-      "syllables": [
-        {
-          "id": "syl-65-0-wl5xsckit",
-          "text": "Un",
-          "startTime": 218.562,
-          "endTime": 218.858
-        },
-        {
-          "id": "syl-65-1-l8nw01unv",
-          "text": "peuple.",
-          "startTime": 218.858,
-          "endTime": 219.416
-        }
-      ],
-      "startTime": 218.562,
-      "endTime": 219.416,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-66-5dsooi64e",
-      "text": "Une foi.",
-      "syllables": [
-        {
-          "id": "syl-66-0-k2iv5t59v",
-          "text": "Une",
-          "startTime": 220.187,
-          "endTime": 220.474
-        },
-        {
-          "id": "syl-66-1-lcq41gwr6",
-          "text": "foi.",
-          "startTime": 220.474,
-          "endTime": 221.179
-        }
-      ],
-      "startTime": 220.187,
-      "endTime": 221.179,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-67-jc1orznft",
-      "text": "Une espérance.",
-      "syllables": [
-        {
-          "id": "syl-67-0-51frvme3a",
-          "text": "Une",
-          "startTime": 221.622,
-          "endTime": 221.84
-        },
-        {
-          "id": "syl-67-1-0d5477dkc",
-          "text": "espérance.",
-          "startTime": 221.84,
-          "endTime": 222.669
-        }
-      ],
-      "startTime": 221.622,
-      "endTime": 222.669,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-69-4507007t3",
-      "text": "Un cœur.",
-      "syllables": [
-        {
-          "id": "syl-69-0-ksgbo2983",
-          "text": "Un",
-          "startTime": 223.263,
-          "endTime": 224.265
-        },
-        {
-          "id": "syl-69-1-s346jx6zh",
-          "text": "cœur.",
-          "startTime": 224.265,
-          "endTime": 224.854
-        }
-      ],
-      "startTime": 223.263,
-      "endTime": 224.854,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-70-y3h72ebv3",
-      "text": "Une voix.",
-      "syllables": [
-        {
-          "id": "syl-70-0-grgba89km",
-          "text": "Une",
-          "startTime": 225.31,
-          "endTime": 225.659
-        },
-        {
-          "id": "syl-70-1-dxa21iat2",
-          "text": "voix.",
-          "startTime": 225.659,
-          "endTime": 226.409
-        }
-      ],
-      "startTime": 225.31,
-      "endTime": 226.409,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-71-hjk013kja",
-      "text": "Une confiance.",
-      "syllables": [
-        {
-          "id": "syl-71-0-17x0bz5cz",
-          "text": "Une",
-          "startTime": 227.097,
-          "endTime": 228.943
-        },
-        {
-          "id": "syl-71-1-pe6r4y7wa",
-          "text": "confiance.",
-          "startTime": 228.943,
-          "endTime": 231.911
-        }
-      ],
-      "startTime": 227.097,
-      "endTime": 231.911,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-73-qxaoqo73n",
-      "text": "Nous sommes à toi, Jéhovah,",
-      "syllables": [
-        {
-          "id": "syl-73-0-k8qq1bg6x",
-          "text": "Nous",
-          "startTime": 232.182,
-          "endTime": 232.579
-        },
-        {
-          "id": "syl-73-1-uxps89kjv",
-          "text": "sommes",
-          "startTime": 232.579,
-          "endTime": 232.861
-        },
-        {
-          "id": "syl-73-2-8ax83717x",
-          "text": "à",
-          "startTime": 232.861,
-          "endTime": 233.349
-        },
-        {
-          "id": "syl-73-3-0kv0j164x",
-          "text": "toi,",
-          "startTime": 233.349,
-          "endTime": 234.084
-        },
-        {
-          "id": "syl-73-4-29uv362o8",
-          "text": "Jéhovah,",
-          "startTime": 234.084,
-          "endTime": 235.554
-        }
-      ],
-      "startTime": 232.182,
-      "endTime": 235.554,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-74-wzojzrk82",
-      "text": "Dans la lumière ou dans le froid.",
-      "syllables": [
-        {
-          "id": "syl-74-0-0inqlyqgi",
-          "text": "Dans",
-          "startTime": 235.71,
-          "endTime": 235.897
-        },
-        {
-          "id": "syl-74-1-rv64azwgu",
-          "text": "la",
-          "startTime": 235.897,
-          "endTime": 236.238
-        },
-        {
-          "id": "syl-74-2-gi8umic10",
-          "text": "lumière",
-          "startTime": 236.238,
-          "endTime": 237.349
-        },
-        {
-          "id": "syl-74-3-wf6vtwtxm",
-          "text": "ou",
-          "startTime": 237.349,
-          "endTime": 237.567
-        },
-        {
-          "id": "syl-74-4-fhqezxfef",
-          "text": "dans",
-          "startTime": 237.567,
-          "endTime": 237.902
-        },
-        {
-          "id": "syl-74-5-tdpujahhs",
-          "text": "le",
-          "startTime": 237.902,
-          "endTime": 238.321
-        },
-        {
-          "id": "syl-74-6-jemo8h1f1",
-          "text": "froid.",
-          "startTime": 238.321,
-          "endTime": 239.113
-        }
-      ],
-      "startTime": 235.71,
-      "endTime": 239.113,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-75-uck2d8evu",
-      "text": "Quand tout vacille autour de nous,",
-      "syllables": [
-        {
-          "id": "syl-75-0-9lxtq2umj",
-          "text": "Quand",
-          "startTime": 239.411,
-          "endTime": 239.696
-        },
-        {
-          "id": "syl-75-1-q39mmp8nt",
-          "text": "tout",
-          "startTime": 239.696,
-          "endTime": 239.856
-        },
-        {
-          "id": "syl-75-2-qc5958asp",
-          "text": "vacille",
-          "startTime": 239.856,
-          "endTime": 240.77
-        },
-        {
-          "id": "syl-75-3-5i4kj96jl",
-          "text": "autour",
-          "startTime": 240.77,
-          "endTime": 241.037
-        },
-        {
-          "id": "syl-75-4-gyru0g53j",
-          "text": "de",
-          "startTime": 241.037,
-          "endTime": 241.873
-        },
-        {
-          "id": "syl-75-5-o78zzmf52",
-          "text": "nous,",
-          "startTime": 241.873,
-          "endTime": 242.163
-        }
-      ],
-      "startTime": 239.411,
-      "endTime": 242.163,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-76-56zvrnrad",
-      "text": "Ton nom nous garde encore debout.",
-      "syllables": [
-        {
-          "id": "syl-76-0-fvc9n6ii2",
-          "text": "Ton",
-          "startTime": 242.76,
-          "endTime": 243.008
-        },
-        {
-          "id": "syl-76-1-ut9gwl71y",
-          "text": "nom",
-          "startTime": 243.008,
-          "endTime": 243.387
-        },
-        {
-          "id": "syl-76-2-x57kkopym",
-          "text": "nous",
-          "startTime": 243.387,
-          "endTime": 243.87
-        },
-        {
-          "id": "syl-76-3-u711h7ruw",
-          "text": "garde",
-          "startTime": 243.87,
-          "endTime": 244.267
-        },
-        {
-          "id": "syl-76-4-1ms0yizud",
-          "text": "encore",
-          "startTime": 244.267,
-          "endTime": 244.958
-        },
-        {
-          "id": "syl-76-5-e77tq4nr5",
-          "text": "debout.",
-          "startTime": 244.958,
-          "endTime": 245.582
-        }
-      ],
-      "startTime": 242.76,
-      "endTime": 245.582,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-78-y2mra59je",
-      "text": "Nous sommes à toi, Jéhovah,",
-      "syllables": [
-        {
-          "id": "syl-78-0-60r7qtweh",
-          "text": "Nous",
-          "startTime": 246.039,
-          "endTime": 246.534
-        },
-        {
-          "id": "syl-78-1-8m0g76na2",
-          "text": "sommes",
-          "startTime": 246.534,
-          "endTime": 247.013
-        },
-        {
-          "id": "syl-78-2-hdhov4abi",
-          "text": "à",
-          "startTime": 247.013,
-          "endTime": 247.5
-        },
-        {
-          "id": "syl-78-3-zg2h02k6m",
-          "text": "toi,",
-          "startTime": 247.5,
-          "endTime": 248.369
-        },
-        {
-          "id": "syl-78-4-n2mnc7wmr",
-          "text": "Jéhovah,",
-          "startTime": 248.369,
-          "endTime": 249.378
-        }
-      ],
-      "startTime": 246.039,
-      "endTime": 249.378,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-79-ty6651sg1",
-      "text": "Nul ne pourra briser cela.",
-      "syllables": [
-        {
-          "id": "syl-79-0-89oti8tid",
-          "text": "Nul",
-          "startTime": 249.791,
-          "endTime": 250.04
-        },
-        {
-          "id": "syl-79-1-v48ceu6hc",
-          "text": "ne",
-          "startTime": 250.04,
-          "endTime": 250.628
-        },
-        {
-          "id": "syl-79-2-0zr0utp58",
-          "text": "pourra",
-          "startTime": 250.628,
-          "endTime": 251.485
-        },
-        {
-          "id": "syl-79-3-h9xetowg8",
-          "text": "briser",
-          "startTime": 251.485,
-          "endTime": 252.094
-        },
-        {
-          "id": "syl-79-4-o3nszbbhc",
-          "text": "cela.",
-          "startTime": 252.094,
-          "endTime": 252.922
-        }
-      ],
-      "startTime": 249.791,
-      "endTime": 252.922,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-80-0p9xejwgv",
-      "text": "D’une extrémité de la terre à l’autre,",
-      "syllables": [
-        {
-          "id": "syl-80-0-nr84szjq6",
-          "text": "D’une",
-          "startTime": 253.762,
-          "endTime": 254.037
-        },
-        {
-          "id": "syl-80-1-5oqcrbsjg",
-          "text": "extrémité",
-          "startTime": 254.037,
-          "endTime": 254.197
-        },
-        {
-          "id": "syl-80-2-2jpx3zczy",
-          "text": "de",
-          "startTime": 254.197,
-          "endTime": 255.15
-        },
-        {
-          "id": "syl-80-3-ece5jrzg6",
-          "text": "la",
-          "startTime": 255.15,
-          "endTime": 255.567
-        },
-        {
-          "id": "syl-80-4-4ffl2uu9s",
-          "text": "terre",
-          "startTime": 255.567,
-          "endTime": 255.892
-        },
-        {
-          "id": "syl-80-5-cu2g4o3if",
-          "text": "à",
-          "startTime": 255.892,
-          "endTime": 256.13
-        },
-        {
-          "id": "syl-80-6-temt8k6mv",
-          "text": "l’autre,",
-          "startTime": 256.13,
-          "endTime": 256.769
-        }
-      ],
-      "startTime": 253.762,
-      "endTime": 256.769,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-81-vgl95u9ts",
-      "text": "Nous chanterons encore pour toi.",
-      "syllables": [
-        {
-          "id": "syl-81-0-6rru06nkn",
-          "text": "Nous",
-          "startTime": 257.232,
-          "endTime": 257.444
-        },
-        {
-          "id": "syl-81-1-i42q0lzc0",
-          "text": "chanterons",
-          "startTime": 257.444,
-          "endTime": 258.384
-        },
-        {
-          "id": "syl-81-2-xubim12pu",
-          "text": "encore",
-          "startTime": 258.384,
-          "endTime": 258.967
-        },
-        {
-          "id": "syl-81-3-52wsd2xho",
-          "text": "pour",
-          "startTime": 258.967,
-          "endTime": 259.835
-        },
-        {
-          "id": "syl-81-4-01ew37rjv",
-          "text": "toi.",
-          "startTime": 259.835,
-          "endTime": 260.358
-        }
-      ],
-      "startTime": 257.232,
-      "endTime": 260.358,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-83-zquyo81q1",
-      "text": "Nous sommes à toi, Jéhovah…",
-      "syllables": [
-        {
-          "id": "syl-83-0-qikiziusz",
-          "text": "Nous",
-          "startTime": 260.965,
-          "endTime": 261.247
-        },
-        {
-          "id": "syl-83-1-zz3zlx3ci",
-          "text": "sommes",
-          "startTime": 261.247,
-          "endTime": 261.498
-        },
-        {
-          "id": "syl-83-2-xu0v07281",
-          "text": "à",
-          "startTime": 261.498,
-          "endTime": 262.149
-        },
-        {
-          "id": "syl-83-3-ij7v9x74t",
-          "text": "toi,",
-          "startTime": 262.149,
-          "endTime": 262.39
-        },
-        {
-          "id": "syl-83-4-n9bt6cmva",
-          "text": "Jéhovah…",
-          "startTime": 262.39,
-          "endTime": 263.78
-        }
-      ],
-      "startTime": 260.965,
-      "endTime": 263.78,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-84-ido4lcb4m",
-      "text": "Dans la lumière, (lumière) dans le froid (le froid) …",
-      "syllables": [
-        {
-          "id": "syl-84-0-8ysi0eidp",
-          "text": "Dans",
-          "startTime": 265.957,
-          "endTime": 266.217
-        },
-        {
-          "id": "syl-84-1-l7qwnpyfx",
-          "text": "la",
-          "startTime": 266.217,
-          "endTime": 266.607
-        },
-        {
-          "id": "syl-84-2-9qfzqvtf8",
-          "text": "lumière, (lumière)",
-          "startTime": 266.607,
-          "endTime": 269.701
-        },
-        {
-          "id": "syl-84-3-bpnb28cwo",
-          "text": "dans",
-          "startTime": 269.701,
-          "endTime": 270.151
-        },
-        {
-          "id": "syl-84-4-gor0mjfcd",
-          "text": "le",
-          "startTime": 270.151,
-          "endTime": 270.477
-        },
-        {
-          "id": "syl-84-5-k5b9syupg",
-          "text": "froid (le froid) …",
-          "startTime": 270.477,
-          "endTime": 273.186
-        }
-      ],
-      "startTime": 265.957,
-      "endTime": 273.186,
-      "isVerseStart": false
-    },
-    {
-      "id": "line-86-0yv8yhurb",
-      "text": "Aujourd’hui, demain,",
-      "syllables": [
-        {
-          "id": "syl-86-0-zeylpngep",
-          "text": "Aujourd’hui,",
-          "startTime": 280.04,
-          "endTime": 281.406
-        },
-        {
-          "id": "syl-86-1-efw1nvv2y",
-          "text": "demain,",
-          "startTime": 281.406,
-          "endTime": 282.052
-        }
-      ],
-      "startTime": 280.04,
-      "endTime": 282.052,
-      "isVerseStart": true
-    },
-    {
-      "id": "line-87-4s362mh6f",
-      "text": "toujours à toi.",
-      "syllables": [
-        {
-          "id": "syl-87-0-ra6a1b4yp",
-          "text": "toujours",
-          "startTime": 283.882,
-          "endTime": 284.987
-        },
-        {
-          "id": "syl-87-1-rzybn5pj5",
-          "text": "à",
-          "startTime": 284.987,
-          "endTime": 285.227
-        },
-        {
-          "id": "syl-87-2-pq1ixvnvp",
-          "text": "toi.",
-          "startTime": 285.227,
-          "endTime": 285.837
-        }
-      ],
-      "startTime": 283.882,
-      "endTime": 285.837,
-      "isVerseStart": false
-    }
-  ]
+    "bgImageName": null
+  }
 }

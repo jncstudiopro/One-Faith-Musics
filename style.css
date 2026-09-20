@@ -63,3 +63,17 @@ body:has(.playlist-player:not([hidden])){padding-bottom:155px}
 .legal-back{display:inline-block;margin-bottom:28px;color:var(--gold)}
 @media(max-width:1050px){.playlist-player>.copyright-notice{grid-row:3;margin-top:0}}
 @media(max-width:650px){body:has(.playlist-player:not([hidden])){padding-bottom:275px}.playlist-player>.copyright-notice{grid-row:auto;font-size:9px}.legal-page{margin-top:28px}.legal-page h2{font-size:22px}}
+/* Balayage progressif des mots dans le mode karaoké Easy Kara. */
+.singing-mode .timed-lyrics span{
+  --karaoke-progress:0%;
+  --karaoke-word-base:var(--karaoke-base-color,#f7f9fa);
+  display:inline-block;
+  color:transparent;
+  background:linear-gradient(90deg,var(--karaoke-active-color,#34d59a) 0 var(--karaoke-progress),var(--karaoke-word-base) var(--karaoke-progress) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  text-decoration:none;
+}
+.singing-mode .timed-lyrics .up-next span{--karaoke-word-base:#aeb9c2}
+.singing-mode .timed-lyrics span.active,.singing-mode .timed-lyrics span.sung{color:transparent;text-decoration:none}
+@media (prefers-reduced-motion:reduce){.singing-mode .timed-lyrics span{background:none;color:var(--karaoke-word-base)}.singing-mode .timed-lyrics span.active,.singing-mode .timed-lyrics span.sung{color:var(--karaoke-active-color,#34d59a)}}

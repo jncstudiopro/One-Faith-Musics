@@ -215,17 +215,28 @@ async function loadTiming(player,url,signal){
     container.innerHTML=lines.map(line=>`<p>${(line.syllables||[]).map(segment=>`<span>${esc(clean(segment.text))}</span>`).join(' ')}</p>`).join('');
     if(signal.aborted)return;
     const rows=[...container.children];let previousLine=-1;
-    if(singing){
+if(singing){
+      const validColor=(value,fallback)=>typeof value==='string'&&CSS.supports('color',value)?value:fallback;
+      container.style.setProperty('--karaoke-active-color',validColor(json.styleConfig?.activeColor,'#34d59a'));
+      container.style.setProperty('--karaoke-base-color',validColor(json.styleConfig?.fillColor,'#f7f9fa'));
+      const wordProgress=(segment,time)=>{const start=Number(segment.startTime),end=Number(segment.endTime);if(!Number.isFinite(start)||!Number.isFinite(end)||end<=start)return 0;return Math.max(0,Math.min(1,(time-start)/(end-start)));};
+      const paintWord=(element,segment,time)=>{const progress=wordProgress(segment,time);element.style.setProperty('--karaoke-progress',`${(progress*100).toFixed(2)}%`);element.classList.toggle('active',progress>0&&progress<1);element.classList.toggle('sung',progress>=1);};
       const updateStage=()=>{
         const time=player.currentTime;
-        let index=lines.findIndex(line=>time<line.endTime);
-        if(index<0)index=lines.length-1;
-        rows.forEach((row,i)=>{row.hidden=i!==index&&i!==index+1&&i!==index+2;row.classList.toggle('up-next',i>index);row.classList.toggle('current-line',i===index);(lines[i].syllables||[]).forEach((segment,j)=>{row.children[j].classList.toggle('active',time>=segment.startTime&&time<segment.endTime);row.children[j].classList.toggle('sung',time>=segment.endTime);});});
+        let index=lines.findIndex(line=>Number.isFinite(Number(line.endTime))&&time<Number(line.endTime));
+        if(index<0)index=Math.max(0,lines.findLastIndex(line=>Number.isFinite(Number(line.startTime))&&time>=Number(line.startTime)));
+        rows.forEach((row,i)=>{row.hidden=i!==index&&i!==index+1&&i!==index+2;row.classList.toggle('up-next',i>index);row.classList.toggle('current-line',i===index);(lines[i].syllables||[]).forEach((segment,j)=>paintWord(row.children[j],segment,time));});
         if(previousLine!==index){previousLine=index;fitStage();}
       };
       const fitStage=()=>{container.style.fontSize='';let size=parseFloat(getComputedStyle(container).fontSize);while((container.scrollHeight>container.clientHeight+1||container.scrollWidth>container.clientWidth+1)&&size>16){size-=1;container.style.fontSize=size+'px';}};
-      const observer=new ResizeObserver(fitStage);observer.observe($('player-extra'));signal.addEventListener('abort',()=>observer.disconnect(),{once:true});
-      for(const event of ['timeupdate','seeked','loadedmetadata','play','ended'])player.addEventListener(event,updateStage,{signal});
+      let animationFrame=0;
+      const stopAnimation=()=>{if(animationFrame)cancelAnimationFrame(animationFrame);animationFrame=0;};
+      const animate=()=>{updateStage();animationFrame=player.paused||player.ended?0:requestAnimationFrame(animate);};
+      const startAnimation=()=>{stopAnimation();animate();};
+      const observer=new ResizeObserver(fitStage);observer.observe($('player-extra'));
+      signal.addEventListener('abort',()=>{observer.disconnect();stopAnimation();},{once:true});
+      player.addEventListener('play',startAnimation,{signal});
+      for(const event of ['pause','seeked','loadedmetadata','ended'])player.addEventListener(event,updateStage,{signal});
       updateStage();return;
     }
     const update=()=>{const time=player.currentTime;let current=-1;lines.forEach((line,i)=>{const active=time>=line.startTime&&time<line.endTime;rows[i].classList.toggle('current-line',active);if(active)current=i;(line.syllables||[]).forEach((seg,j)=>{rows[i].children[j].classList.toggle('active',time>=seg.startTime&&time<seg.endTime);rows[i].children[j].classList.toggle('sung',active&&time>=seg.endTime);});});if(current>=0&&current!==previousLine){const row=rows[current];container.scrollTop+=row.getBoundingClientRect().top-container.getBoundingClientRect().top-container.clientHeight/2+row.clientHeight/2;}previousLine=current;};
