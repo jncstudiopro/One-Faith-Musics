@@ -32,6 +32,7 @@ const translations={
 '2 colonnes':['2 columns','2 columnas'],
 '3 colonnes':['3 columns','3 columnas'],
 'Écouter la chanson':['Listen','Escuchar la canción'],
+'Tout ajouter':['Add all','Añadir todo'],
 'Style musical':['Musical style','Estilo musical'],
 'Dernière mise à jour':['Last updated','Última actualización'],
 'Version audio mise à jour le':['Audio version updated on','Versión de audio actualizada el'],
@@ -116,10 +117,11 @@ window.translatePage=()=>{
   document.title={fr:'One Faith Musics — Des mélodies pour la foi',en:'One Faith Musics — Melodies of faith',es:'One Faith Musics — Melodías de fe'}[language];
 };
 const SITE_LANGUAGE_KEY='one-faith-musics-site-language';
+const SONG_LANGUAGE_KEY='one-faith-musics-content-language';
 const savedSiteLanguage=(()=>{try{return localStorage.getItem(SITE_LANGUAGE_KEY);}catch{return null;}})();
 const pathSiteLanguage=location.pathname.match(/\/(fr|en|es)\/(?:index\.html)?$/)?.[1];
 const activeSiteLanguage=pathSiteLanguage||(['fr','en','es'].includes(savedSiteLanguage)?savedSiteLanguage:'fr');
 document.documentElement.lang=activeSiteLanguage;document.getElementById('site-language').value=activeSiteLanguage;
 try{localStorage.setItem(SITE_LANGUAGE_KEY,activeSiteLanguage);}catch{}
-document.getElementById('site-language').addEventListener('change',event=>{const language=event.target.value;try{localStorage.setItem(SITE_LANGUAGE_KEY,language);}catch{}const root=/\/(?:fr|en|es)\/(?:index\.html)?$/.test(location.pathname)?new URL('../',location.href):new URL('./',location.href);const destination=new URL(`${language}/`,root);const song=new URLSearchParams(location.search).get('song');if(song)destination.searchParams.set('song',song);location.assign(destination);});
+document.getElementById('site-language').addEventListener('change',event=>{const language=event.target.value;try{localStorage.setItem(SITE_LANGUAGE_KEY,language);localStorage.setItem(SONG_LANGUAGE_KEY,language);}catch{}const root=/\/(?:fr|en|es)\/(?:index\.html)?$/.test(location.pathname)?new URL('../',location.href):new URL('./',location.href);const destination=new URL(`${language}/`,root);const song=new URLSearchParams(location.search).get('song');if(song)destination.searchParams.set('song',song);location.assign(destination);});
 window.translatePage();

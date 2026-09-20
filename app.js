@@ -8,7 +8,6 @@ const CURRENT_YEAR=new Date().getFullYear();
 const CONTENT_LANGUAGE_KEY='one-faith-musics-content-language';
 const PAGE_SIZE_KEY='one-faith-musics-page-size';
 const COLUMNS_KEY='one-faith-musics-columns';
-const PLAYLIST_KEY='one-faith-musics-playlist';
 const SHUFFLE_KEY='one-faith-musics-shuffle';
 const REPEAT_KEY='one-faith-musics-repeat';
 const readPreference=(key,fallback)=>{try{return localStorage.getItem(key)||fallback;}catch{return fallback;}};
@@ -140,15 +139,19 @@ $('reset-filters').addEventListener('click',()=>{state.language='all';savePrefer
 
 const playlistAudio=$('playlist-audio');
 let playlistAbort=null;
-let playlistIndex=-1;
+const PLAYLIST_SESSION_KEY='one-faith-musics-session-playlist-v2';
+
+function readPlaylist(){try{const value=JSON.parse(sessionStorage.getItem(PLAYLIST_SESSION_KEY)||'[]');return Array.isArray(value)?value.filter(entry=>entry&&songs.some(song=>song.id===entry.songId)&&Object.hasOwn(names,entry.lang)):[];}catch{return [];}}
 let playlist=readPlaylist();
+let playlistIndex=playlist.length?0:-1;
+
+
 let playerPanelOpen=false;
 let shuffle=readPreference(SHUFFLE_KEY,'false')==='true';
 let repeat=['off','all','one'].includes(readPreference(REPEAT_KEY,'off'))?readPreference(REPEAT_KEY,'off'):'off';
-function readPlaylist(){try{const value=JSON.parse(localStorage.getItem(PLAYLIST_KEY)||'[]');return Array.isArray(value)?value.filter(entry=>entry&&songs.some(song=>song.id===entry.songId)&&Object.hasOwn(names,entry.lang)):[];}catch{return [];}}
 function playlistEntry(song,lang=versionOf(song).lang){const version=song.versions[lang];return version&&audioSourceAvailable(version)?{songId:song.id,lang}:null;}
 function playlistSong(entry){return songs.find(song=>song.id===entry?.songId);}
-function savePlaylist(){try{localStorage.setItem(PLAYLIST_KEY,JSON.stringify(playlist));}catch{}renderPlaylist();}
+function savePlaylist(){try{sessionStorage.setItem(PLAYLIST_SESSION_KEY,JSON.stringify(playlist));}catch{}renderPlaylist();}
 function playlistLabel(){return repeat==='one'?'Répétition : une':repeat==='all'?'Répétition : toutes':'Répétition : non';}
 function renderPlaylist(){
   const current=playlistSong(playlist[playlistIndex]);
@@ -169,7 +172,13 @@ async function loadPlaylistTrack(index,autoplay=true){
 }
 function nextPlaylist(manual=false){if(!playlist.length)return;if(shuffle&&playlist.length>1){let next=playlistIndex;while(next===playlistIndex)next=Math.floor(Math.random()*playlist.length);loadPlaylistTrack(next);return;}if(playlistIndex<playlist.length-1){loadPlaylistTrack(playlistIndex+1);return;}if(repeat==='all'||manual)loadPlaylistTrack(0);}
 function previousPlaylist(){if(!playlist.length)return;if(playlistAudio.currentTime>4){playlistAudio.currentTime=0;return;}loadPlaylistTrack(playlistIndex>0?playlistIndex-1:playlist.length-1);}
-$('play-visible').addEventListener('click',()=>{const entries=pageSongs.map(song=>playlistEntry(song)).filter(Boolean);if(entries.length)replacePlaylist(entries);});
+$('play-visible').addEventListener('click',()=>{
+  const entries=pageSongs.map(song=>playlistEntry(song)).filter(Boolean);let added=0;
+  for(const entry of entries){if(!playlist.some(item=>item.songId===entry.songId&&item.lang===entry.lang)){playlist.push(entry);added++;}}
+  if(playlistIndex<0&&playlist.length)playlistIndex=0;
+  savePlaylist();
+  $('playlist-status').textContent=added?`${added} chanson${added===1?'':'s'} ajoutée${added===1?'':'s'} depuis cette page.`:'Les chansons de cette page sont déjà dans votre liste.';
+});
 $('show-playlist').addEventListener('click',()=>{if(!playlist.length)return;playerPanelOpen=true;$('playlist-player').hidden=false;const open=$('playlist-queue').hidden;$('playlist-queue').hidden=!open;$('queue-toggle').setAttribute('aria-expanded',String(open));});
 $('queue-toggle').addEventListener('click',()=>{const open=$('playlist-queue').hidden;$('playlist-queue').hidden=!open;$('queue-toggle').setAttribute('aria-expanded',String(open));});
 $('close-queue').addEventListener('click',()=>{$('playlist-queue').hidden=true;$('queue-toggle').setAttribute('aria-expanded','false');$('queue-toggle').focus({preventScroll:true});});
