@@ -12,6 +12,8 @@ const translations={
 'Langue du site':['Site language','Idioma del sitio'],
 'LA FOI EN MUSIQUE':['FAITH IN MUSIC','LA FE EN MÚSICA'],
 'Les chansons ↗':['Songs ↗','Canciones ↗'],
+'Les chansons':['Songs','Canciones'],
+'Conditions d’utilisation':['Terms of use','Condiciones de uso'],
 'Aller aux chansons':['Skip to songs','Ir a las canciones'],
 'DERNIÈRE SORTIE':['LATEST RELEASE','ÚLTIMO LANZAMIENTO'],
 'Des mélodies.':['Melodies.','Melodías.'],
@@ -115,7 +117,9 @@ window.translatePage=()=>{
 };
 const SITE_LANGUAGE_KEY='one-faith-musics-site-language';
 const savedSiteLanguage=(()=>{try{return localStorage.getItem(SITE_LANGUAGE_KEY);}catch{return null;}})();
-if(['fr','en','es'].includes(savedSiteLanguage)){document.documentElement.lang=savedSiteLanguage;document.getElementById('site-language').value=savedSiteLanguage;}
-document.getElementById('site-language').addEventListener('change',event=>{document.documentElement.lang=event.target.value;try{localStorage.setItem(SITE_LANGUAGE_KEY,event.target.value);}catch{}render();});
-if(['fr','en','es'].includes(savedSiteLanguage))render();
+const pathSiteLanguage=location.pathname.match(/\/(fr|en|es)\/(?:index\.html)?$/)?.[1];
+const activeSiteLanguage=pathSiteLanguage||(['fr','en','es'].includes(savedSiteLanguage)?savedSiteLanguage:'fr');
+document.documentElement.lang=activeSiteLanguage;document.getElementById('site-language').value=activeSiteLanguage;
+try{localStorage.setItem(SITE_LANGUAGE_KEY,activeSiteLanguage);}catch{}
+document.getElementById('site-language').addEventListener('change',event=>{const language=event.target.value;try{localStorage.setItem(SITE_LANGUAGE_KEY,language);}catch{}const root=/\/(?:fr|en|es)\/(?:index\.html)?$/.test(location.pathname)?new URL('../',location.href):new URL('./',location.href);const destination=new URL(`${language}/`,root);const song=new URLSearchParams(location.search).get('song');if(song)destination.searchParams.set('song',song);location.assign(destination);});
 window.translatePage();

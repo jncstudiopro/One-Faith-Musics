@@ -1,0 +1,12 @@
+# Copies locales provenant de l’ancienne organisation par type de média.
+# Le contenu officiel est désormais rangé sous fr/, en/, es/, etc.
+/assets/fr/
+/assets/en/
+/assets/es/
+/assets/social/fr/
+/assets/social/en/
+/assets/social/es/
+/lyrics/fr/
+/lyrics/en/
+/lyrics/es/
+/downloads/
