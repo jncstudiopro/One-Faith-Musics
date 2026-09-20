@@ -31,7 +31,7 @@ const translations={
 'Présentation':['Layout','Presentación'],
 '2 colonnes':['2 columns','2 columnas'],
 '3 colonnes':['3 columns','3 columnas'],
-'Écouter la chanson':['Listen to the song','Escuchar la canción'],
+'Écouter la chanson':['Listen','Escuchar la canción'],
 'Style musical':['Musical style','Estilo musical'],
 'Dernière mise à jour':['Last updated','Última actualización'],
 'Version audio mise à jour le':['Audio version updated on','Versión de audio actualizada el'],

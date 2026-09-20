@@ -23,22 +23,22 @@ window.JEHOVAH_CATALOGUE = [
                                     "karaokeYoutube":  "3UrzZzgdWjs",
                                     "karaokeAudio":  null,
                                     "lyrics":  "Quand tout devient silence,\r\nQuand la nuit couvre l’horizon,\r\nIl reste une espérance,\r\nPlus forte encore que nos prisons.\r\n\r\nQuand les portes se referment,\r\nQuand on veut ébranler ma foi,\r\nJe sais qu’au loin des frères veillent,\r\nEt qu’ils prient encore avec moi.\r\n\r\nMême séparés,\r\nNous marchons d’un même pas.\r\nMême dans la nuit,\r\nJéhovah ne nous quitte pas.\r\n\r\nNous sommes à toi, Jéhovah,\r\nDans la lumière ou dans le froid.\r\nQuand tout vacille autour de nous,\r\nTon nom nous garde encore debout.\r\n\r\nNous sommes à toi, Jéhovah,\r\nNul ne pourra briser cela.\r\nUn même espoir, un même cœur,\r\nUne seule foi plus forte que la peur.\r\n\r\nOn peut nous prendre nos chemins,\r\nNous éloigner de ceux qu’on aime,\r\nMais nul ne peut fermer nos mains\r\nSur l’espérance que tu sèmes.\r\n\r\nQuand l’un de nous tombe à genoux,\r\nDes milliers se lèvent partout.\r\n\r\nEt d’une rive à l’autre rive,\r\nLa même foi demeure vive.\r\n\r\nNous connaissons ta voix.\r\nNous savons où nous allons.\r\nNous sommes ton peuple,\r\nEt ton nom, nous le porterons.\r\n\r\nNous sommes à toi, Jéhovah,\r\nDans la lumière ou dans le froid.\r\nQuand tout vacille autour de nous,\r\nTon nom nous garde encore debout.\r\n\r\nNous sommes à toi, Jéhovah,\r\nNul ne pourra briser cela.\r\nUn même espoir, un même cœur,\r\nUne seule foi plus forte que la peur.\r\n\r\nSi je dois marcher dans la nuit,\r\nJe marcherai sans fuir.\r\n\r\nSi ma voix devient plus petite,\r\nAlors nous chanterons plus fort.\r\nNous chanterons encore.\r\n\r\nSi l’on veut nous faire taire,\r\nNotre foi saura répondre.\r\n\r\nCar même au cœur de l’épreuve,\r\nNotre amour ne peut se rompre.\r\n\r\nUn peuple. Une foi. Une espérance.\r\nUn cœur. Une voix. Une confiance.\r\n\r\nNous sommes à toi, Jéhovah,\r\nDans la lumière ou dans le froid.\r\nQuand tout vacille autour de nous,\r\nTon nom nous garde encore debout.\r\n\r\nNous sommes à toi, Jéhovah,\r\nNul ne pourra briser cela.\r\nD’une extrémité de la terre à l’autre,\r\nNous chanterons encore pour toi.\r\n\r\nNous sommes à toi, Jéhovah (Jéhovah)…\r\nDans la lumière (lumière), dans le froid (le froid)…\r\n\r\nAujourd’hui, demain, toujours à toi.",
-                                    "timing":  "fr/lyrics/nous-sommes.json",
+                                    "timing":  "lyrics/nous-sommes-fr.json",
                                     "downloads":  {
                                                       "mp4":  null,
                                                       "mp3":  null,
                                                       "score":  null
                                                   },
-                                    "karaokeTiming":  "fr/lyrics/nous-sommes.json",
+                                    "karaokeTiming":  "lyrics/nous-sommes-fr.json",
                                     "karaokeProYoutube":  null,
                                     "karaokeProAudio":  null,
-                                    "karaokeProTiming":  "fr/lyrics/nous-sommes.json",
-                                    "lastUpdated":  null,
+                                    "karaokeProTiming":  "lyrics/nous-sommes-fr.json",
+                                    "lastUpdated":  "2026-09-15",
                                     "karaokeAudioId":  null,
                                     "karaokeProAudioId":  null,
                                     "title":  "Nous sommes à toi Jéhovah",
                                     "image":  "fr/assets/nous-sommes.webp",
-                                    "portrait":  true,
+                                    "portrait":  false,
                                     "description":  "Une même foi nous unit, même dans l’épreuve. Un chant d’appartenance et d’espérance, tourné vers Jéhovah.",
                                     "album":  "Une même foi",
                                     "style":  "Pop inspirante",
@@ -381,7 +381,7 @@ window.JEHOVAH_CATALOGUE = [
         "description":  "",
         "album":  "Une même foi",
         "tags":  [
-
+                     "Une même foi"
                  ],
         "versions":  {
                          "en":  {
@@ -417,8 +417,122 @@ window.JEHOVAH_CATALOGUE = [
                                                       "mp3":  null,
                                                       "score":  null
                                                   }
+                                },
+                         "fr":  {
+                                    "title":  "We belong to you Jehovah !",
+                                    "image":  "en/assets/we-belong-to-you-jehovah.png",
+                                    "portrait":  false,
+                                    "description":  "",
+                                    "album":  "Une même foi",
+                                    "style":  "",
+                                    "tags":  [
+                                                 "Une même foi"
+                                             ],
+                                    "albumId":  "une-meme-foi",
+                                    "releaseDate":  "2026-09-20",
+                                    "lastUpdated":  "2026-09-20",
+                                    "youtube":  null,
+                                    "audio":  null,
+                                    "audioId":  "1-we-belong-to-you-jehovah",
+                                    "karaokeYoutube":  null,
+                                    "karaokeAudio":  null,
+                                    "karaokeAudioId":  null,
+                                    "karaokeProYoutube":  null,
+                                    "karaokeProAudio":  null,
+                                    "karaokeProAudioId":  null,
+                                    "lyrics":  null,
+                                    "timing":  null,
+                                    "karaokeTiming":  null,
+                                    "karaokeProTiming":  null,
+                                    "downloads":  {
+                                                      "mp4":  null,
+                                                      "mp3":  null,
+                                                      "score":  null
+                                                  }
                                 }
                      },
-        "trackNumber":  1
+        "trackNumber":  1,
+        "style":  ""
+    },
+    {
+        "id":  "somos-tuyos-jehova",
+        "title":  "¡Somos tuyos, Jehová!",
+        "image":  "es/assets/somos-tuyos-jehova.png",
+        "portrait":  false,
+        "description":  "",
+        "album":  "Una misma fe",
+        "tags":  [
+                     "Una misma fe"
+                 ],
+        "versions":  {
+                         "es":  {
+                                    "title":  "¡Somos tuyos, Jehová!",
+                                    "image":  "es/assets/somos-tuyos-jehova.png",
+                                    "portrait":  false,
+                                    "description":  "Una misma fe nos une, incluso en la prueba. Una canción de pertenencia y esperanza, centrada en Jehová.",
+                                    "album":  "Una misma fe",
+                                    "style":  "Pop inspirador",
+                                    "tags":  [
+                                                 "Unidad",
+                                                 "Esperanza",
+                                                 "Una misma fe"
+                                             ],
+                                    "albumId":  "une-meme-foi",
+                                    "releaseDate":  "2026-09-20",
+                                    "lastUpdated":  "2026-09-20",
+                                    "youtube":  null,
+                                    "audio":  null,
+                                    "audioId":  "1-somos-tuyos-jehova",
+                                    "karaokeYoutube":  null,
+                                    "karaokeAudio":  null,
+                                    "karaokeAudioId":  null,
+                                    "karaokeProYoutube":  null,
+                                    "karaokeProAudio":  null,
+                                    "karaokeProAudioId":  null,
+                                    "lyrics":  null,
+                                    "timing":  null,
+                                    "karaokeTiming":  null,
+                                    "karaokeProTiming":  null,
+                                    "downloads":  {
+                                                      "mp4":  null,
+                                                      "mp3":  null,
+                                                      "score":  null
+                                                  }
+                                },
+                         "fr":  {
+                                    "title":  "¡Somos tuyos, Jehová!",
+                                    "image":  "es/assets/somos-tuyos-jehova.png",
+                                    "portrait":  false,
+                                    "description":  "",
+                                    "album":  "Una misma fe",
+                                    "style":  "",
+                                    "tags":  [
+                                                 "Una misma fe"
+                                             ],
+                                    "albumId":  "una-misma-fe",
+                                    "releaseDate":  null,
+                                    "lastUpdated":  null,
+                                    "youtube":  null,
+                                    "audio":  null,
+                                    "audioId":  "1-somos-tuyos-jehova",
+                                    "karaokeYoutube":  null,
+                                    "karaokeAudio":  null,
+                                    "karaokeAudioId":  null,
+                                    "karaokeProYoutube":  null,
+                                    "karaokeProAudio":  null,
+                                    "karaokeProAudioId":  null,
+                                    "lyrics":  null,
+                                    "timing":  null,
+                                    "karaokeTiming":  null,
+                                    "karaokeProTiming":  null,
+                                    "downloads":  {
+                                                      "mp4":  null,
+                                                      "mp3":  null,
+                                                      "score":  null
+                                                  }
+                                }
+                     },
+        "trackNumber":  1,
+        "style":  ""
     }
 ];
