@@ -470,5 +470,62 @@ window.JEHOVAH_CATALOGUE = [
                      },
         "trackNumber":  1,
         "style":  ""
+    },
+    {
+        "id":  "nous-tenons-debout",
+        "title":  "Nous tenons debout",
+        "image":  "fr/assets/nous-tenons-debout.png",
+        "portrait":  false,
+        "description":  "Une chanson de foi et de courage face à l’épreuve, où la prière, l’unité et l’espérance permettent de rester debout malgré la peur et l’opposition.",
+        "album":  "Une même foi",
+        "tags":  [
+                     "Foi",
+                     "Persécution",
+                     "Espérance",
+                     "Courage",
+                     "Unité",
+                     "Une même foi"
+                 ],
+        "versions":  {
+                         "fr":  {
+                                    "title":  "Nous tenons debout",
+                                    "image":  "fr/assets/nous-tenons-debout.png",
+                                    "portrait":  false,
+                                    "description":  "Une chanson de foi et de courage face à l’épreuve, où la prière, l’unité et l’espérance permettent de rester debout malgré la peur et l’opposition.",
+                                    "album":  "Une même foi",
+                                    "style":  "Rock orchestral mélodique",
+                                    "tags":  [
+                                                 "Foi",
+                                                 "Persécution",
+                                                 "Espérance",
+                                                 "Courage",
+                                                 "Unité",
+                                                 "Une même foi"
+                                             ],
+                                    "albumId":  "une-meme-foi",
+                                    "releaseDate":  "2026-09-23",
+                                    "lastUpdated":  null,
+                                    "youtube":  null,
+                                    "audio":  null,
+                                    "audioId":  null,
+                                    "karaokeYoutube":  null,
+                                    "karaokeAudio":  null,
+                                    "karaokeAudioId":  null,
+                                    "karaokeProYoutube":  null,
+                                    "karaokeProAudio":  null,
+                                    "karaokeProAudioId":  null,
+                                    "lyrics":  null,
+                                    "timing":  null,
+                                    "karaokeTiming":  null,
+                                    "karaokeProTiming":  null,
+                                    "downloads":  {
+                                                      "mp4":  null,
+                                                      "mp3":  null,
+                                                      "score":  null
+                                                  }
+                                }
+                     },
+        "style":  "Rock orchestral mélodique",
+        "trackNumber":  1
     }
 ];
