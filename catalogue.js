@@ -476,7 +476,7 @@ window.JEHOVAH_CATALOGUE = [
           "Une même foi"
         ],
         "albumId": "une-meme-foi",
-        "releaseDate": "2026-09-23",
+        "releaseDate": "2026-09-27",
         "lastUpdated": null,
         "audio": null,
         "audioId": null,
