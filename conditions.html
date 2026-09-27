@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="site-version" content="1.0044">
+  <meta name="site-version" content="1.0049">
   <meta name="description" content="Conditions d’utilisation et politique de droits d’auteur de One Faith Musics.">
   <title>Conditions d’utilisation — One Faith Musics</title>
-  <link rel="stylesheet" href="style.css?v=1.0044">
+  <link rel="stylesheet" href="style.css?v=1.0049">
 </head>
 <body>
 <main class="legal-page">
@@ -14,7 +14,7 @@
   <header>
     <p class="eyebrow">One Faith Musics</p>
     <h1>Conditions d’utilisation et politique de droits d’auteur</h1>
-    <p class="legal-date">Dernière mise à jour : 15 septembre 2026</p>
+    <p class="legal-date">Dernière mise à jour : 27 septembre 2026</p>
     <p>© <span class="current-year"></span> One Faith Musics. Tous droits réservés.</p>
   </header>
 
@@ -42,9 +42,10 @@
 
   <section><h2>4. Licence d’utilisation limitée</h2>
     <p>Sous réserve du respect des présentes Conditions, One Faith Musics accorde une permission limitée, non exclusive, révocable, non transférable et non sous-licenciable permettant :</p>
-    <ul><li>d’accéder au site;</li><li>d’écouter les chansons au moyen du lecteur fourni;</li><li>de consulter les paroles et autres contenus;</li><li>d’effectuer une écoute privée;</li><li>d’effectuer une écoute publique gratuite et non commerciale;</li><li>de télécharger certains fichiers uniquement lorsqu’un téléchargement est expressément proposé;</li><li>d’utiliser un fichier téléchargé conformément aux conditions prévues dans le présent document.</li></ul>
+    <ul><li>d’accéder au site;</li><li>d’écouter les chansons au moyen du lecteur fourni;</li><li>de consulter les paroles et autres contenus;</li><li>d’effectuer une écoute privée;</li><li>d’effectuer une écoute publique gratuite et non commerciale;</li><li>d’utiliser la fonction intégrée d’écoute hors connexion lorsqu’elle est proposée;</li><li>de télécharger certains fichiers uniquement lorsqu’un téléchargement est expressément proposé;</li><li>d’utiliser un fichier téléchargé conformément aux conditions prévues dans le présent document.</li></ul>
     <p>Aucun autre droit n’est accordé.</p>
-    <p>Le fait qu’un fichier audio soit techniquement transmis à un appareil pour permettre sa lecture en ligne ne constitue pas une autorisation de téléchargement, d’extraction ou de conservation de ce fichier.</p>
+    <p>Le fait que des données audio soient techniquement transmises ou conservées sous une forme protégée sur un appareil pour permettre leur lecture en ligne ou hors connexion ne constitue pas une autorisation de téléchargement, d’extraction ou de conservation d’un fichier audio utilisable séparément.</p>
+    <p>La fonction d’écoute hors connexion demeure une fonction du lecteur One Faith Musics. Les données qu’elle conserve ne peuvent être transférées, extraites, converties, partagées ni utilisées dans un autre lecteur.</p>
   </section>
 
   <section><h2>5. Téléchargement non autorisé</h2>
@@ -116,6 +117,7 @@
     <p>Ces mécanismes ne constituent pas une autorisation de téléchargement.</p>
     <p>Il est interdit de :</p>
     <ul><li>rechercher systématiquement ces adresses;</li><li>les extraire pour conserver un fichier;</li><li>les partager;</li><li>les republier;</li><li>tenter de prolonger artificiellement leur validité;</li><li>contourner leur expiration;</li><li>automatiser leur récupération;</li><li>modifier les requêtes pour accéder à des ressources non proposées;</li><li>exploiter ces mécanismes afin de contourner les restrictions du site.</li></ul>
+    <p>Lorsque l’utilisateur choisit l’écoute hors connexion, le site peut conserver dans le stockage privé du navigateur des données audio chiffrées et des renseignements techniques nécessaires à leur lecture. Ces données peuvent être supprimées par l’utilisateur, le navigateur ou l’appareil et leur disponibilité permanente n’est pas garantie.</p>
   </section>
 
   <section><h2>14. Modification, adaptation et création dérivée</h2>
@@ -264,7 +266,7 @@
   <section><h2>Avis de droit d’auteur</h2>
     <p>© <span class="current-year"></span> One Faith Musics. Tous droits réservés.</p>
     <p>Écoute privée et diffusion publique gratuite et non commerciale autorisées.</p>
-    <p>Sauf lorsqu’un téléchargement est expressément proposé, aucun téléchargement, extraction ou conservation des fichiers audio n’est autorisé.</p>
+    <p>Sauf lorsqu’un téléchargement est expressément proposé, aucun téléchargement ni extraction des fichiers audio n’est autorisé. La mémorisation protégée commandée par la fonction d’écoute hors connexion du site demeure limitée au lecteur One Faith Musics.</p>
     <p>Lorsqu’un téléchargement est expressément proposé, le fichier peut être conservé pour usage personnel, transféré entre les appareils personnels de l’utilisateur et gravé sur un support physique.</p>
     <p>Une copie peut également être remise occasionnellement et gratuitement à une personne déterminée de l’entourage de l’utilisateur pour son usage personnel.</p>
     <p>Toute reproduction ou distribution organisée, systématique, collective ou massive demeure interdite.</p>
@@ -274,6 +276,7 @@
 </main>
 <script>
 document.querySelectorAll('.current-year').forEach(element=>{element.textContent=new Date().getFullYear();});
+if(new URLSearchParams(location.search).has('embedded'))document.documentElement.classList.add('embedded-legal');
 (()=>{const current=document.querySelector('meta[name="site-version"]')?.content;if(!current)return;fetch(`site-version.json?t=${Date.now()}`,{cache:'no-store'}).then(response=>response.ok?response.json():null).then(data=>{if(data?.version&&data.version!==current){const url=new URL(location.href);if(url.searchParams.get('v')!==data.version){url.searchParams.set('v',data.version);location.replace(url.href);}}}).catch(()=>{});})();
 </script>
 </body>
