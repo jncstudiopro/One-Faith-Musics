@@ -16,6 +16,8 @@ const translations={
 'Les chansons ↗':['Songs ↗','Canciones ↗'],
 'Les chansons':['Songs','Canciones'],
 'Conditions d’utilisation':['Terms of use','Condiciones de uso'],
+'voir conditions d’utilisation':['see terms of use','ver condiciones de uso'],
+'© One Faith Musics — Tous droits réservés. Écoute au moyen de ce lecteur uniquement. Aucun téléchargement, enregistrement, copie, redistribution ou réutilisation n’est autorisé (':['© One Faith Musics — All rights reserved. Listening through this player only. No downloading, recording, copying, redistribution or reuse is permitted (','© One Faith Musics — Todos los derechos reservados. Solo se permite escuchar mediante este reproductor. No se permite descargar, grabar, copiar, redistribuir ni reutilizar ('],
 'Aller aux chansons':['Skip to songs','Ir a las canciones'],
 'DERNIÈRE SORTIE':['LATEST RELEASE','ÚLTIMO LANZAMIENTO'],
 'Des mélodies.':['Melodies.','Melodías.'],
@@ -102,6 +104,8 @@ const translatedTags={'Unité':['Unity','Unidad'],'Espérance':['Hope','Esperanz
 const originalText=new WeakMap();
 function translateText(value,language){
   if(language==='fr')return value;const i=language==='en'?0:1;
+  const copyrightSource='© One Faith Musics — Tous droits réservés. Écoute au moyen de ce lecteur uniquement. Aucun téléchargement, enregistrement, copie, redistribution ou réutilisation n’est autorisé (';
+  if(value.endsWith(copyrightSource))return value.slice(0,-copyrightSource.length)+translations[copyrightSource][i];
   if(translations[value])return translations[value][i];
   const count=value.match(/^(\d+) chansons?$/);if(count)return `${count[1]} ${language==='en'?(count[1]==='1'?'song':'songs'):(count[1]==='1'?'canción':'canciones')}`;
   if(value.startsWith('# '))return '# '+(translatedTags[value.slice(2)]?.[i]||value.slice(2));
@@ -129,6 +133,6 @@ const savedSiteLanguage=(()=>{try{return localStorage.getItem(SITE_LANGUAGE_KEY)
 const pathSiteLanguage=location.pathname.match(/\/(fr|en|es)\/(?:index\.html)?$/)?.[1];
 const activeSiteLanguage=pathSiteLanguage||(['fr','en','es'].includes(savedSiteLanguage)?savedSiteLanguage:'fr');
 document.documentElement.lang=activeSiteLanguage;document.getElementById('site-language').value=activeSiteLanguage;
-try{localStorage.setItem(SITE_LANGUAGE_KEY,activeSiteLanguage);}catch{}
+if(pathSiteLanguage||['fr','en','es'].includes(savedSiteLanguage)){try{localStorage.setItem(SITE_LANGUAGE_KEY,activeSiteLanguage);}catch{}}
 document.getElementById('site-language').addEventListener('change',event=>{const language=event.target.value;try{localStorage.setItem(SITE_LANGUAGE_KEY,language);localStorage.setItem(SONG_LANGUAGE_KEY,language);}catch{}const root=/\/(?:fr|en|es)\/(?:index\.html)?$/.test(location.pathname)?new URL('../',location.href):new URL('./',location.href);const destination=new URL(`${language}/`,root);const song=new URLSearchParams(location.search).get('song');if(song)destination.searchParams.set('song',song);location.assign(destination);});
 window.translatePage();

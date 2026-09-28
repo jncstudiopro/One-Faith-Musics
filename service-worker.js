@@ -1,7 +1,7 @@
 'use strict';
 const VERSION=new URL(self.location.href).searchParams.get('v')||'1';
 const CACHE=`one-faith-musics-shell-${VERSION}`;
-const SHELL=['./','./index.html','./style.css','./offline-audio.js','./app.js','./i18n.js','./catalogue.js','./conditions.html','./assets/favicon.svg','./fr/','./en/','./es/'];
+const SHELL=['./','./index.html','./style.css','./offline-audio.js','./app.js','./i18n.js','./catalogue.js','./conditions.html','./fr/conditions.html','./en/conditions.html','./es/conditions.html','./assets/favicon.svg','./fr/','./en/','./es/'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('one-faith-musics-shell-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));});
 self.addEventListener('fetch',event=>{
