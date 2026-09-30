@@ -38,7 +38,7 @@ const r2Part=value=>typeof value==='string'&&(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).test
 const r2SourceAvailable=(version,trackId)=>r2Part(trackId)&&r2Part(version.albumId);
 const audioSourceAvailable=version=>!!(safeUrl(version.audio)||r2SourceAvailable(version,version.audioId));
 const audioCacheKey=(version,language,audioId,kind)=>`${language}|${version.albumId||'direct'}|${audioId||kind}|${kind}`;
-const audioRevision=(version,audioId)=>`${version.lastUpdated||''}|${audioId||''}`;
+const audioRevision=(version,audioId)=>`${version.audioVersion||version.lastUpdated||''}|${audioId||''}`;
 async function signedAudioUrl(trackId,language,albumId,signal){
   if(!r2Part(trackId)||!Object.hasOwn(names,language)||!r2Part(albumId))throw Error('Emplacement audio invalide.');
   const query=new URLSearchParams({id:trackId,language,album:albumId});
@@ -55,6 +55,20 @@ async function preparedAudioUrl(version,language,audioId,directAudio,kind,signal
   if(!window.OFMAudioStore)return getSource();
   const result=await window.OFMAudioStore.source({id:audioCacheKey(version,language,audioId,kind),revision:audioRevision(version,audioId),signal,getSource,onStatus});
   return result.url;
+}
+const pendingAudioRefreshes=new Set();
+async function refreshCachedAudioVersions(){
+  if(!navigator.onLine||!window.OFMAudioStore?.storedRevision)return;
+  for(const song of songs){for(const [language,version] of Object.entries(song.versions||{})){
+    for(const [kind,audioId,directAudio] of [['song',version.audioId,version.audio],['karaoke',version.karaokeAudioId,version.karaokeAudio],['karaoke-pro',version.karaokeProAudioId,version.karaokeProAudio]]){
+      if(!safeUrl(directAudio)&&!r2SourceAvailable(version,audioId))continue;
+      const id=audioCacheKey(version,language,audioId,kind);const revision=audioRevision(version,audioId);
+      if(!revision||pendingAudioRefreshes.has(id))continue;
+      const savedRevision=await window.OFMAudioStore.storedRevision(id);if(!savedRevision||savedRevision===revision)continue;
+      pendingAudioRefreshes.add(id);
+      try{const source=await preparedAudioUrl(version,language,audioId,directAudio,kind);window.OFMAudioStore.release(source);}catch{}finally{pendingAudioRefreshes.delete(id);}
+    }
+  }}
 }
 const audioRenewals=new WeakMap();
 function signedAudioContext(player){try{const url=new URL(player.currentSrc||player.src);const value=new URLSearchParams(url.hash.slice(1)).get('ofm');if(!value)return null;const [language,albumId,trackId,expiresAt]=value.split('|');return {language,albumId,trackId,expiresAt:Number(expiresAt)};}catch{return null;}}
@@ -90,6 +104,30 @@ function enforceTerms(){
   $('refuse-terms').addEventListener('click',()=>{try{localStorage.setItem(TERMS_KEY,'refused');}catch{}status.hidden=false;status.textContent='Vous avez refusé les conditions. Le lecteur et le catalogue ne sont pas accessibles. Vous pourrez les accepter plus tard avec le bouton ci-dessus.';window.translatePage?.();});
 }
 if(!chooseInitialLanguage())enforceTerms();
+let availableSiteVersion='';let updateReloadScheduled=false;
+const audioIsPlaying=()=>[...document.querySelectorAll('audio')].some(audio=>!audio.paused&&!audio.ended);
+function reloadToLatestSite(){
+  if(updateReloadScheduled)return;updateReloadScheduled=true;
+  const url=new URL(location.href);if(url.searchParams.get('v')!==availableSiteVersion)url.searchParams.set('v',availableSiteVersion);
+  location.replace(url.href);
+}
+function reloadWhenPlaybackEnds(){
+  if(audioIsPlaying()){document.addEventListener('ended',()=>reloadToLatestSite(),{capture:true,once:true});return;}
+  setTimeout(()=>{if(audioIsPlaying())reloadWhenPlaybackEnds();else reloadToLatestSite();},900);
+}
+function announceSiteUpdate(version){
+  if(availableSiteVersion===version)return;availableSiteVersion=version;
+  let notice=$('site-update-notice');if(!notice){notice=document.createElement('aside');notice.id='site-update-notice';notice.className='site-update-notice';notice.setAttribute('role','status');document.body.append(notice);}
+  notice.innerHTML='<span>Une mise à jour est prête. Cette page va se recharger pour afficher la version la plus récente.</span><button type="button">Mettre à jour</button>';
+  notice.querySelector('button').addEventListener('click',reloadToLatestSite);window.translatePage?.();
+  reloadWhenPlaybackEnds();
+}
+async function checkForSiteUpdate(){
+  if(!navigator.onLine)return;
+  try{const response=await fetch(new URL(`site-version.json?t=${Date.now()}`,SITE_ROOT_URL),{cache:'no-store'});if(!response.ok)return;const data=await response.json();if(data?.version&&data.version!==SITE_VERSION)announceSiteUpdate(data.version);}catch{}
+}
+addEventListener('focus',checkForSiteUpdate);addEventListener('online',checkForSiteUpdate);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)checkForSiteUpdate();});setInterval(checkForSiteUpdate,60000);
 const hasReleaseDate=v=>!!(v&&v.releaseDate);
 const versionOf=s=>{const lang=state.language==='all'?Object.keys(s.versions).filter(l=>hasReleaseDate(s.versions[l])).sort((a,b)=>releaseSortKey(s.versions[b].releaseDate).localeCompare(releaseSortKey(s.versions[a].releaseDate)))[0]:state.language;return {lang,version:s.versions[lang]};};
 const detailsOf=(song,language=state.language)=>{const version=song.versions?.[language]||{};return {title:version.title||song.title||song.id,image:version.image||song.image||'assets/favicon.svg',portrait:version.portrait??song.portrait??false,description:version.description??song.description??'',album:version.album??song.album??'',style:version.style??song.style??'',tags:Array.isArray(version.tags)?version.tags:(Array.isArray(song.tags)?song.tags:[])};};
@@ -327,6 +365,7 @@ async function hydrateCatalogueLyrics(){
   if(changed)render();
 }
 if('serviceWorker'in navigator)navigator.serviceWorker.register(new URL(`service-worker.js?v=${SITE_VERSION}`,SITE_ROOT_URL),{scope:SITE_ROOT_URL.pathname}).catch(()=>{});
-render();hydrateCatalogueLyrics();
+render();hydrateCatalogueLyrics();refreshCachedAudioVersions();checkForSiteUpdate();
+addEventListener('online',refreshCachedAudioVersions);
 // Discourage ordinary saving from media controls without blocking text selection.
 document.addEventListener('dragstart',event=>{if(event.target.closest('.cover img,.audio-art'))event.preventDefault();});

@@ -16,6 +16,8 @@ const translations={
 'Les chansons ↗':['Songs ↗','Canciones ↗'],
 'Les chansons':['Songs','Canciones'],
 'Conditions d’utilisation':['Terms of use','Condiciones de uso'],
+'Une mise à jour est prête. Cette page va se recharger pour afficher la version la plus récente.':['An update is ready. This page will reload to show the latest version.','Hay una actualización disponible. Esta página se recargará para mostrar la versión más reciente.'],
+'Mettre à jour':['Update now','Actualizar'],
 'voir conditions d’utilisation':['see terms of use','ver condiciones de uso'],
 '© One Faith Musics — Tous droits réservés. Écoute au moyen de ce lecteur uniquement. Aucun téléchargement, enregistrement, copie, redistribution ou réutilisation n’est autorisé (':['© One Faith Musics — All rights reserved. Listening through this player only. No downloading, recording, copying, redistribution or reuse is permitted (','© One Faith Musics — Todos los derechos reservados. Solo se permite escuchar mediante este reproductor. No se permite descargar, grabar, copiar, redistribuir ni reutilizar ('],
 'Aller aux chansons':['Skip to songs','Ir a las canciones'],

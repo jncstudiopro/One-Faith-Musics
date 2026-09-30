@@ -16,6 +16,7 @@
   async function cachedRecord(id,revision){const record=await read('tracks',id);return record&&record.revision===revision?record:null;}
   async function decryptRecord(record){const key=await encryptionKey();const bytes=await crypto.subtle.decrypt({name:'AES-GCM',iv:new Uint8Array(record.iv)},key,record.data);const url=URL.createObjectURL(new Blob([bytes],{type:record.type||'audio/mpeg'}));activeUrls.add(url);return url;}
   async function has(id,revision){if(!supported())return false;try{return !!(await cachedRecord(id,revision));}catch{return false;}}
+  async function storedRevision(id){if(!supported())return null;try{return (await read('tracks',id))?.revision||null;}catch{return null;}}
   async function source({id,revision,signal,getSource,onStatus=()=>{}}){
     if(!supported())return {url:await getSource(),cached:false,protected:false};
     const existing=await cachedRecord(id,revision);
@@ -35,5 +36,5 @@
   }
   function release(url){if(typeof url==='string'&&url.startsWith('blob:')){URL.revokeObjectURL(url);activeUrls.delete(url);}}
   addEventListener('pagehide',()=>{for(const url of activeUrls)URL.revokeObjectURL(url);activeUrls.clear();});
-  window.OFMAudioStore={has,source,release};
+  window.OFMAudioStore={has,storedRevision,source,release};
 })();
