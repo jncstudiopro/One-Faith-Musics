@@ -477,7 +477,7 @@ window.JEHOVAH_CATALOGUE = [
                                              ],
                                     "albumId":  "une-meme-foi",
                                     "releaseDate":  "2026-09-27",
-                                    "lastUpdated":  "2026-09-27",
+                                    "lastUpdated":  "2026-10-02",
                                     "audio":  null,
                                     "audioId":  "8-nous-tenons-debout",
                                     "karaokeAudio":  null,
@@ -492,7 +492,8 @@ window.JEHOVAH_CATALOGUE = [
                                                       "mp4":  null,
                                                       "mp3":  null,
                                                       "score":  null
-                                                  }
+                                                  },
+                                    "audioVersion":  "2026-10-02.1"
                                 }
                      },
         "style":  "Rock orchestral mélodique moderne",
