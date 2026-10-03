@@ -66,7 +66,7 @@ window.JEHOVAH_CATALOGUE = [
                                     "releaseDate":  "2026-09-12",
                                     "audio":  null,
                                     "karaokeAudio":  null,
-                                    "lyrics":  null,
+                                    "lyrics":  "Des siècles d’histoires, tant de voix,\r\nEt pourtant, toujours la même foi.\r\n\r\nAbel, Hénoch, puis Noé,\r\nOnt choisi de rester droits.\r\nAbraham partit sans trembler,\r\nSara marcha dans la foi.\r\n\r\nIsaac, Rébecca, puis Jacob,\r\nOnt vu tant d’années passer.\r\nJoseph, très loin de sa maison,\r\nGarda sa foi sans se briser.\r\n\r\nMoïse marcha devant tous,\r\nJosué reprit le chemin.\r\nCaleb tint bon jusqu’au bout,\r\nRahab choisit le bon soutien.\r\n\r\nDébora parla sans détour,\r\nBarak avança à son tour.\r\nGédéon trouva du courage,\r\nRuth resta fidèle au voyage.\r\n\r\nTant de noms, une même foi,\r\nTant de chemins, un même choix.\r\nDes jours de paix, des jours de combat,\r\nMais tous voulaient servir Jéhovah.\r\n\r\nDes hommes, des femmes, jeunes ou vieux,\r\nTous différents et c’est tant mieux.\r\nLe temps passe, leur exemple est là :\r\nÀ notre tour de servir Jéhovah.\r\n\r\nAnne pria, Samuel entendit,\r\nDavid chanta dans le danger.\r\nJonathan resta son ami,\r\nNathan osa le corriger.\r\n\r\nÉlie tint bon sous la menace,\r\nÉlisée marcha sur ses traces.\r\nJob traversa bien des douleurs,\r\nEt servit Jéhovah de tout cœur.\r\n\r\nIsaïe parla sans détour,\r\nJérémie pleura bien des jours.\r\nDaniel pria malgré la loi,\r\nEsther avança dans la foi.\r\n\r\nMardochée refusa de plier,\r\nÉzékias sut supplier.\r\nJosias choisit de servir,\r\nTous nous apprennent à tenir.\r\n\r\nÉzéchiel parla en exil,\r\nEsdras enseigna sans faiblir.\r\nNéhémie releva la ville,\r\nSans jamais cesser de servir.\r\n\r\nZacharie et Élisabeth\r\nAttendirent dans l’espérance.\r\nMarie agit avec confiance,\r\nJoseph veilla avec constance.\r\n\r\nS’ils avaient su, bien avant nous,\r\nQu’un jour leurs noms seraient chantés,\r\nIls auraient peut-être souri\r\nEn nous entendant les nommer.\r\n\r\nEt l’un d’eux aurait dit tout bas :\r\nVous croyez avoir terminé ?\r\nRegardez tous ceux qui manquent encore…\r\nIl reste des couplets à chanter !\r\n\r\nTant de noms, une même foi,\r\nTant de chemins, un même choix.\r\nDes jours de paix, des jours de combat,\r\nMais tous voulaient servir Jéhovah.\r\n\r\nDes hommes, des femmes, jeunes ou vieux,\r\nTous différents et c’est tant mieux.\r\nLe temps passe, leur exemple est là :\r\nÀ notre tour de servir Jéhovah.\r\n\r\nJean prépara le chemin,\r\nJésus fut fidèle jusqu’à la fin.\r\nPierre et André quittèrent leurs filets,\r\nJacques et Jean les ont suivis.\r\n\r\nThomas continua d’avancer,\r\nMatthieu répondit lui aussi !\r\nMarthe, Marie et puis Lazare,\r\nEux aussi ont gardé la foi.\r\n\r\nÉtienne resta résolu,\r\nBarnabé sut encourager.\r\nPaul alla de ville en ville,\r\nTimothée apprit à ses côtés.\r\n\r\nLuc et Marc se rendaient utiles,\r\nTite continua de prêcher.\r\nAquilas, Priscille et Lydie,\r\nApollos parlait avec ardeur.\r\n\r\nTant de noms, une même foi,\r\nTant de chemins, un même choix.\r\nDes jours de paix, des jours de combat,\r\nMais tous voulaient servir Jéhovah.\r\n\r\nDes hommes, des femmes, jeunes ou vieux,\r\nTous différents et c’est tant mieux.\r\nLe temps passe, leur exemple est là :\r\nMaintenant, c’est à nous de servir Jéhovah.\r\n\r\nTant de voix nous parlent encore,\r\nTant de foi à garder en nous.\r\nÀ notre tour, avançons plus fort,\r\nServons Jéhovah de tout cœur !",
                                     "timing":  null,
                                     "downloads":  {
                                                       "mp4":  null,
@@ -79,7 +79,7 @@ window.JEHOVAH_CATALOGUE = [
                                     "karaokeAudioId":  null,
                                     "karaokeProAudioId":  null,
                                     "karaokeTiming":  null,
-                                    "lastUpdated":  null,
+                                    "lastUpdated":  "2026-09-15",
                                     "title":  "Tant de noms, une même foi",
                                     "image":  "fr/assets/une-meme-foi.webp",
                                     "portrait":  false,
@@ -90,7 +90,8 @@ window.JEHOVAH_CATALOGUE = [
                                                  "Foi",
                                                  "Unité",
                                                  "Une même foi"
-                                             ]
+                                             ],
+                                    "audioVersion":  "2026-09-15.1"
                                 }
                      },
         "style":  "Folk français dansante au violon."
@@ -430,7 +431,7 @@ window.JEHOVAH_CATALOGUE = [
                                     "karaokeAudioId":  null,
                                     "karaokeProAudio":  null,
                                     "karaokeProAudioId":  null,
-                                    "lyrics":  null,
+                                    "lyrics":  "Cuando todo calla,\r\nCuando la noche oscura,\r\nLa fe nunca falla,\r\nMás fuerte que atadura.\r\n\r\nCuando las puertas cierran,\r\nSi siembran en mí el temor,\r\nSé que mis hermanos velan,\r\nY oran por mí con fervor.\r\n\r\nAunque separados,\r\nMarchamos al compás.\r\nAun en la noche,\r\nJehová no nos dejará.\r\n\r\nSomos tuyos, Jehová,\r\nEn la luz o bajo el frío.\r\nSi todo tiembla alrededor,\r\nTu nombre nos da valor.\r\n\r\nSomos tuyos, Jehová,\r\nNada nos separará.\r\nUn mismo sueño, un corazón,\r\nUna fe más fuerte que el temor.\r\n\r\nPueden quitarnos el andar,\r\nDe los nuestros separar,\r\n\r\nPero no pueden apagar\r\nLa esperanza que haces brotar.\r\n\r\nSi uno cae de rodillas,\r\n\r\nMiles se alzan en las filas.\r\n\r\nDe orilla a orilla va,\r\nLa misma fe vivirá.\r\n\r\nConocemos tu voz.\r\nSabemos adónde ir.\r\nSomos tu pueblo,\r\nTu nombre vamos a decir.\r\n\r\nSomos tuyos, Jehová,\r\nEn la luz o bajo el frío.\r\nSi todo tiembla alrededor,\r\nTu nombre nos da valor.\r\n\r\nSomos tuyos, Jehová,\r\nNada nos separará.\r\nUn mismo sueño, un corazón,\r\nUna fe más fuerte que el temor.\r\n\r\nSi debo andar en la noche,\r\n\r\nCaminaré sin huir.\r\n\r\nSi mi voz apenas se oye,\r\n\r\nEntonces cantaremos más.\r\n\r\nCantaremos aún.\r\n\r\nSi nos quieren silenciar,\r\n\r\nNuestra fe responderá.\r\n\r\nEn la prueba, sin temor,\r\nNo se rompe nuestro amor.\r\n\r\nPueblo.\r\nLa fe.\r\nEsperanza.\r\n\r\nUnión.\r\nLa voz.\r\nConfianza.\r\n\r\nSomos tuyos, Jehová,\r\nEn la luz o bajo el frío.\r\nSi todo tiembla alrededor,\r\nTu nombre nos da valor.\r\n\r\nSomos tuyos, Jehová,\r\nNada nos separará.\r\nDe un extremo de la tierra al otro,\r\nCantaremos siempre por ti.\r\n\r\nSomos tuyos, Jehová…\r\n\r\nEn plena luz,\r\ncon frío…\r\n\r\nAhora,\r\ndespués,\r\nsiempre tuyos.",
                                     "timing":  null,
                                     "karaokeTiming":  null,
                                     "karaokeProTiming":  null,
@@ -438,7 +439,8 @@ window.JEHOVAH_CATALOGUE = [
                                                       "mp4":  null,
                                                       "mp3":  null,
                                                       "score":  null
-                                                  }
+                                                  },
+                                    "audioVersion":  "2026-09-20.1"
                                 }
                      },
         "trackNumber":  1,
