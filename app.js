@@ -257,6 +257,14 @@ function resetShuffleCycle(current=playlistIndex){shuffleRemaining=playlist.map(
 function savePlaylist(){try{sessionStorage.setItem(PLAYLIST_SESSION_KEY,JSON.stringify(playlist));}catch{}if(shuffle)resetShuffleCycle();renderPlaylist();}
 function playlistLabel(){return repeat==='one'?'Répétition : une':repeat==='all'?'Répétition : toutes':'Répétition : non';}
 let playlistLyricsKey='',playlistTimingLines=[],playlistLyricsAutoScrollUntil=0,playlistLyricsCurrentLine=-1;
+function syncPlaylistLyricsScrollbar(){
+  const content=$('playlist-lyrics-content'),track=$('playlist-lyrics-scrollbar'),thumb=$('playlist-lyrics-scroll-thumb');
+  if(!content||!track||!thumb)return;const trackHeight=track.clientHeight,ratio=content.scrollHeight?content.clientHeight/content.scrollHeight:1;
+  const thumbHeight=Math.max(36,Math.min(trackHeight,trackHeight*ratio)),scrollRange=Math.max(1,content.scrollHeight-content.clientHeight),thumbRange=Math.max(0,trackHeight-thumbHeight);
+  thumb.style.height=`${thumbHeight}px`;thumb.style.transform=`translateY(${thumbRange*Math.min(1,content.scrollTop/scrollRange)}px)`;
+  track.setAttribute('aria-valuemin','0');track.setAttribute('aria-valuemax','100');track.setAttribute('aria-valuenow',String(Math.round(100*Math.min(1,content.scrollTop/scrollRange))));
+}
+function setPlaylistLyricsScrollFromPointer(clientY,offset=0){const content=$('playlist-lyrics-content'),track=$('playlist-lyrics-scrollbar'),thumb=$('playlist-lyrics-scroll-thumb');const trackRect=track.getBoundingClientRect(),thumbRange=Math.max(0,track.clientHeight-thumb.offsetHeight),ratio=thumbRange?Math.max(0,Math.min(1,(clientY-trackRect.top-offset)/thumbRange)):0;content.scrollTop=ratio*Math.max(0,content.scrollHeight-content.clientHeight);}
 async function updatePlaylistLyrics(song,entry){
   const toggle=$('playlist-lyrics-toggle'),panel=$('playlist-lyrics'),title=$('playlist-lyrics-title'),content=$('playlist-lyrics-content');
   if(!song||!entry){toggle.hidden=true;panel.hidden=true;toggle.setAttribute('aria-expanded','false');playlistTimingLines=[];playlistLyricsKey='';return;}
@@ -337,8 +345,18 @@ $('play-visible').addEventListener('click',()=>{
 $('show-playlist').addEventListener('click',()=>{if(!playlist.length)return;playerPanelOpen=true;$('playlist-player').hidden=false;const open=$('playlist-queue').hidden;$('playlist-queue').hidden=!open;if(open){$('playlist-lyrics').hidden=true;$('playlist-lyrics-toggle').setAttribute('aria-expanded','false');}$('queue-toggle').setAttribute('aria-expanded',String(open));});
 $('queue-toggle').addEventListener('click',()=>{const open=$('playlist-queue').hidden;$('playlist-queue').hidden=!open;if(open){$('playlist-lyrics').hidden=true;$('playlist-lyrics-toggle').setAttribute('aria-expanded','false');}$('queue-toggle').setAttribute('aria-expanded',String(open));});
 $('close-queue').addEventListener('click',()=>{$('playlist-queue').hidden=true;$('queue-toggle').setAttribute('aria-expanded','false');$('queue-toggle').focus({preventScroll:true});});
-$('playlist-lyrics-toggle').addEventListener('click',()=>{const open=$('playlist-lyrics').hidden;$('playlist-lyrics').hidden=!open;if(open){$('playlist-queue').hidden=true;$('queue-toggle').setAttribute('aria-expanded','false');$('playlist-lyrics-content').scrollTop=0;}$('playlist-lyrics-toggle').setAttribute('aria-expanded',String(open));});
+$('playlist-lyrics-toggle').addEventListener('click',()=>{const open=$('playlist-lyrics').hidden;$('playlist-lyrics').hidden=!open;if(open){$('playlist-queue').hidden=true;$('queue-toggle').setAttribute('aria-expanded','false');$('playlist-lyrics-content').scrollTop=0;requestAnimationFrame(syncPlaylistLyricsScrollbar);}$('playlist-lyrics-toggle').setAttribute('aria-expanded',String(open));});
 $('close-playlist-lyrics').addEventListener('click',()=>{$('playlist-lyrics').hidden=true;$('playlist-lyrics-toggle').setAttribute('aria-expanded','false');$('playlist-lyrics-toggle').focus({preventScroll:true});});
+const scrollPlaylistLyrics=direction=>{const content=$('playlist-lyrics-content');playlistLyricsAutoScrollUntil=Date.now()+8000;content.scrollBy({top:direction*Math.max(100,content.clientHeight*.8),behavior:'smooth'});};
+$('playlist-lyrics-up').addEventListener('click',()=>scrollPlaylistLyrics(-1));$('playlist-lyrics-down').addEventListener('click',()=>scrollPlaylistLyrics(1));
+const lyricsTrack=$('playlist-lyrics-scrollbar'),lyricsThumb=$('playlist-lyrics-scroll-thumb');let lyricsDragOffset=null;
+$('playlist-lyrics-content').addEventListener('scroll',syncPlaylistLyricsScrollbar,{passive:true});
+lyricsTrack.addEventListener('pointerdown',event=>{if(event.target===lyricsThumb)return;setPlaylistLyricsScrollFromPointer(event.clientY,lyricsThumb.offsetHeight/2);playlistLyricsAutoScrollUntil=Date.now()+8000;});
+lyricsThumb.addEventListener('pointerdown',event=>{lyricsDragOffset=event.clientY-lyricsThumb.getBoundingClientRect().top;lyricsThumb.setPointerCapture(event.pointerId);event.preventDefault();});
+lyricsThumb.addEventListener('pointermove',event=>{if(lyricsDragOffset===null)return;setPlaylistLyricsScrollFromPointer(event.clientY,lyricsDragOffset);playlistLyricsAutoScrollUntil=Date.now()+8000;});
+lyricsThumb.addEventListener('pointerup',()=>{lyricsDragOffset=null;});lyricsThumb.addEventListener('pointercancel',()=>{lyricsDragOffset=null;});
+lyricsTrack.addEventListener('keydown',event=>{if(!['ArrowUp','ArrowDown','PageUp','PageDown','Home','End'].includes(event.key))return;event.preventDefault();const content=$('playlist-lyrics-content');if(event.key==='Home')content.scrollTop=0;else if(event.key==='End')content.scrollTop=content.scrollHeight;else content.scrollBy({top:(event.key==='ArrowUp'||event.key==='PageUp'?-1:1)*(event.key.startsWith('Page')?content.clientHeight:60)});playlistLyricsAutoScrollUntil=Date.now()+8000;});
+addEventListener('resize',syncPlaylistLyricsScrollbar);
 $('playlist-toggle').addEventListener('click',()=>{if(!playlist.length)return;if(!playlistAudio.src){loadPlaylistTrack(Math.max(0,playlistIndex));return;}playlistAudio.paused?playlistAudio.play():playlistAudio.pause();});
 $('playlist-next').addEventListener('click',()=>nextPlaylist(true));
 $('playlist-previous').addEventListener('click',previousPlaylist);
