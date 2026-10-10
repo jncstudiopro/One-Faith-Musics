@@ -526,7 +526,7 @@ window.JEHOVAH_CATALOGUE = [
                                     "albumId":  "une-meme-foi",
                                     "releaseDate":  "2026-10-09",
                                     "lastUpdated":  "2026-10-09",
-                                    "audioVersion":  "2026-10-09.1",
+                                    "audioVersion":  "2026-10-09.2",
                                     "audio":  null,
                                     "audioId":  "9-ton-amour-me-ranimera",
                                     "karaokeAudio":  null,
