@@ -557,5 +557,52 @@ window.JEHOVAH_CATALOGUE = [
                      },
         "style":  "Méditerranéen hispano-tzigane",
         "trackNumber":  9
+    },
+    {
+        "id":  "ill-choose-you-all-over-again",
+        "title":  "I\u0027ll Choose You All Over Again",
+        "image":  "en/assets/ill-choose-you-all-over-again.png",
+        "portrait":  false,
+        "description":  "",
+        "album":  "One Faith",
+        "tags":  [
+
+                 ],
+        "versions":  {
+                         "en":  {
+                                    "title":  "I\u0027ll Choose You All Over Again",
+                                    "image":  "en/assets/ill-choose-you-all-over-again.png",
+                                    "portrait":  false,
+                                    "description":  "A love built over time, through its twists and turns, imperfections, and forgiveness. A simple promise: to keep choosing each other, day after day, with tenderness, respect, and faithfulness.",
+                                    "album":  "One Faith",
+                                    "style":  "Conscious romantic song",
+                                    "tags":  [
+                                                 "Love",
+                                                 "Couple",
+                                                 "Faithfulness",
+                                                 "One Faith"
+                                             ],
+                                    "albumId":  "une-meme-foi",
+                                    "releaseDate":  "2026-10-10",
+                                    "lastUpdated":  "2026-10-10",
+                                    "audioVersion":  "2026-10-10.1",
+                                    "audio":  null,
+                                    "audioId":  "6-ill-choose-you-all-over-again",
+                                    "karaokeAudio":  null,
+                                    "karaokeAudioId":  null,
+                                    "karaokeProAudio":  null,
+                                    "karaokeProAudioId":  null,
+                                    "lyrics":  null,
+                                    "timing":  null,
+                                    "karaokeTiming":  null,
+                                    "karaokeProTiming":  null,
+                                    "downloads":  {
+                                                      "mp4":  null,
+                                                      "mp3":  null,
+                                                      "score":  null
+                                                  }
+                                }
+                     },
+        "trackNumber":  6
     }
 ];
