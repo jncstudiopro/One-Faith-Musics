@@ -2,6 +2,7 @@
 window.JEHOVAH_CATALOGUE = [
     {
         "id":  "nous-sommes",
+        "translationGroup":  "nous-sommes-a-toi",
         "title":  "Nous sommes à toi Jéhovah",
         "image":  "fr/assets/nous-sommes.webp",
         "portrait":  true,
@@ -356,6 +357,7 @@ window.JEHOVAH_CATALOGUE = [
     },
     {
         "id":  "we-belong-to-you-jehovah",
+        "translationGroup":  "nous-sommes-a-toi",
         "title":  "We belong to you Jehovah !",
         "image":  "en/assets/we-belong-to-you-jehovah.png",
         "portrait":  false,
@@ -402,6 +404,7 @@ window.JEHOVAH_CATALOGUE = [
     },
     {
         "id":  "somos-tuyos-jehova",
+        "translationGroup":  "nous-sommes-a-toi",
         "title":  "¡Somos tuyos, Jehová!",
         "image":  "es/assets/somos-tuyos-jehova.png",
         "portrait":  false,
