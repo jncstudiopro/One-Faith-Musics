@@ -510,7 +510,11 @@ window.JEHOVAH_CATALOGUE = [
         "description":  "Supplication intime qui part de la détresse pour avancer peu à peu vers la confiance et l’espérance. Portée par des sonorités méditerranéennes, la guitare et l’accordéon accompagnent une voix qui implore Jéhovah, lui confie son fardeau et retrouve la force d’avancer.",
         "album":  "Une même foi",
         "tags":  [
-                     "Une même foi"
+                     "Prière",
+                     "Espérance",
+                     "Pardon",
+                     "Persévérance",
+                     "une même foi"
                  ],
         "versions":  {
                          "fr":  {
@@ -521,7 +525,11 @@ window.JEHOVAH_CATALOGUE = [
                                     "album":  "Une même foi",
                                     "style":  "Méditerranéen hispano-tzigane",
                                     "tags":  [
-                                                 "Une même foi"
+                                                 "Prière",
+                                                 "Espérance",
+                                                 "Pardon",
+                                                 "Persévérance",
+                                                 "une même foi"
                                              ],
                                     "albumId":  "une-meme-foi",
                                     "releaseDate":  "2026-10-09",
