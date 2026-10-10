@@ -83,9 +83,12 @@ body:has(.playlist-player:not([hidden])){padding-bottom:155px}
 .playlist-lyrics-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:10px;border-bottom:1px solid var(--line)}
 .playlist-lyrics-heading strong{font:500 22px/1.2 var(--serif);color:var(--text)}
 .playlist-lyrics-heading button{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;background:#ffffff08;color:var(--text);font-size:22px}
-.playlist-lyrics-content{max-height:calc(min(58vh,560px) - 75px);overflow:auto;overscroll-behavior:contain;padding:14px 8px 8px;white-space:pre-line;font-size:15px;line-height:1.8;color:var(--text)}
+.playlist-lyrics-content{height:min(48vh,460px);min-height:110px;max-height:calc(58vh - 75px);overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y;cursor:text;padding:14px 8px 8px;white-space:pre-line;font-size:15px;line-height:1.8;color:var(--text)}
+.playlist-lyrics-content.playlist-timed-lyrics{white-space:normal}
+.playlist-lyric-line{margin:0;padding:7px 8px;border-radius:4px;color:var(--muted);scroll-margin-block:35px}
+.playlist-lyric-line.current-lyric-line{color:var(--gold);background:#e3bd7710}
 .playlist-player .playlist-buttons button[hidden]{display:none}
-@media(max-width:650px){.playlist-lyrics{left:5vw;width:90vw;max-height:55vh;padding:14px}.playlist-lyrics-content{max-height:calc(55vh - 72px);font-size:14px}.playlist-lyrics-heading strong{font-size:19px}}
+@media(max-width:650px){.playlist-lyrics{left:5vw;width:90vw;max-height:55vh;padding:14px}.playlist-lyrics-content{height:42vh;max-height:calc(55vh - 72px);min-height:100px;font-size:14px}.playlist-lyrics-heading strong{font-size:19px}}
 
 /* Consentement obligatoire et écoute hors connexion. */
 .offline-ready{border-color:#58c89a;color:#8fe1bd;background:#2d8b6420}

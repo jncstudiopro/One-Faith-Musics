@@ -256,14 +256,43 @@ function playlistSong(entry){return songs.find(song=>song.id===entry?.songId);}
 function resetShuffleCycle(current=playlistIndex){shuffleRemaining=playlist.map((_,index)=>index).filter(index=>index!==current);for(let i=shuffleRemaining.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[shuffleRemaining[i],shuffleRemaining[j]]=[shuffleRemaining[j],shuffleRemaining[i]];}}
 function savePlaylist(){try{sessionStorage.setItem(PLAYLIST_SESSION_KEY,JSON.stringify(playlist));}catch{}if(shuffle)resetShuffleCycle();renderPlaylist();}
 function playlistLabel(){return repeat==='one'?'Répétition : une':repeat==='all'?'Répétition : toutes':'Répétition : non';}
-let playlistLyricsKey='';
+let playlistLyricsKey='',playlistTimingLines=[],playlistLyricsAutoScrollUntil=0,playlistLyricsCurrentLine=-1;
 async function updatePlaylistLyrics(song,entry){
   const toggle=$('playlist-lyrics-toggle'),panel=$('playlist-lyrics'),title=$('playlist-lyrics-title'),content=$('playlist-lyrics-content');
-  if(!song||!entry){toggle.hidden=true;panel.hidden=true;toggle.setAttribute('aria-expanded','false');return;}
+  if(!song||!entry){toggle.hidden=true;panel.hidden=true;toggle.setAttribute('aria-expanded','false');playlistTimingLines=[];playlistLyricsKey='';return;}
   const version=song.versions[entry.lang],details=detailsOf(song,entry.lang),timing=version.timing||version.karaokeTiming||version.karaokeProTiming||'';
-  const key=`${song.id}:${entry.lang}`;toggle.hidden=!(version.lyrics||timing);if(toggle.hidden){panel.hidden=true;toggle.setAttribute('aria-expanded','false');playlistLyricsKey='';return;}
-  title.textContent=details.title;if(key===playlistLyricsKey)return;playlistLyricsKey=key;content.lang=entry.lang;content.textContent=version.lyrics||'Chargement des paroles…';content.scrollTop=0;
-  if(!version.lyrics&&timing){try{const response=await fetch(versionedStaticUrl(timing));if(!response.ok)throw Error();const text=lyricsFromTiming(await response.json());if(playlistLyricsKey===key)content.textContent=text||'Paroles indisponibles.';}catch{if(playlistLyricsKey===key)content.textContent='Paroles indisponibles.';}}
+  const key=`${song.id}:${entry.lang}`;toggle.hidden=!(version.lyrics||timing);if(toggle.hidden){panel.hidden=true;toggle.setAttribute('aria-expanded','false');playlistLyricsKey='';playlistTimingLines=[];return;}
+  title.textContent=details.title;if(key===playlistLyricsKey)return;playlistLyricsKey=key;playlistTimingLines=[];playlistLyricsCurrentLine=-1;playlistLyricsAutoScrollUntil=0;content.lang=entry.lang;content.classList.remove('playlist-timed-lyrics');content.textContent=version.lyrics||'Chargement des paroles…';content.scrollTop=0;
+  if(timing){
+    try{
+      const response=await fetch(versionedStaticUrl(timing));
+      if(!response.ok)throw Error('Fichier de synchronisation indisponible.');
+      const json=await response.json();
+      if(playlistLyricsKey!==key)return;
+      const lines=Array.isArray(json?.lines)?json.lines.filter(line=>line?.text||line?.syllables?.length):[];
+      if(lines.length){
+        playlistTimingLines=lines;
+        content.replaceChildren(...lines.map((line,index)=>{
+          const p=document.createElement('p');
+          p.className='playlist-lyric-line';
+          p.dataset.lineIndex=String(index);
+          p.textContent=String(line.text||line.syllables.map(part=>part.text||'').join(' ')).replace(/\[[^\]]*\]/g,'').trim();
+          return p;
+        }));
+        content.classList.add('playlist-timed-lyrics');
+        content.scrollTop=0;
+        updatePlaylistLyricsPosition();
+        return;
+      }
+    }catch(error){if(playlistLyricsKey!==key)return;}
+  }
+  if(!version.lyrics)content.textContent='Paroles indisponibles.';
+}
+function updatePlaylistLyricsPosition(){
+  if(!playlistTimingLines.length)return;const time=playlistAudio.currentTime;let active=-1;
+  for(let index=0;index<playlistTimingLines.length;index++){const line=playlistTimingLines[index];if(time>=Number(line.startTime||line.syllables?.[0]?.startTime||0)&&time<Number(line.endTime||line.syllables?.at(-1)?.endTime||0)){active=index;break;}}
+  if(active<0||active===playlistLyricsCurrentLine)return;playlistLyricsCurrentLine=active;const content=$('playlist-lyrics-content'),row=content.querySelector(`[data-line-index="${active}"]`);content.querySelector('.current-lyric-line')?.classList.remove('current-lyric-line');row?.classList.add('current-lyric-line');
+  if(row&&Date.now()>playlistLyricsAutoScrollUntil){const top=row.getBoundingClientRect().top-content.getBoundingClientRect().top+content.scrollTop;content.scrollTo({top:Math.max(0,top-content.clientHeight/2+row.clientHeight/2),behavior:'smooth'});}
 }
 function updateMediaMetadata(song,entry){
   if(!('mediaSession'in navigator)||!song||!entry)return;const details=detailsOf(song,entry.lang);
@@ -321,6 +350,8 @@ $('queue-items').addEventListener('click',event=>{const play=event.target.closes
 playlistAudio.addEventListener('play',()=>{$('playlist-toggle').textContent='❚❚';$('playlist-toggle').setAttribute('aria-label','Pause');try{if('mediaSession'in navigator)navigator.mediaSession.playbackState='playing';}catch{}updateMediaPosition();});
 playlistAudio.addEventListener('pause',()=>{$('playlist-toggle').textContent='▶';$('playlist-toggle').setAttribute('aria-label','Lecture');try{if('mediaSession'in navigator)navigator.mediaSession.playbackState='paused';}catch{}updateMediaPosition();});
 for(const eventName of ['timeupdate','durationchange','seeked'])playlistAudio.addEventListener(eventName,updateMediaPosition);
+playlistAudio.addEventListener('timeupdate',updatePlaylistLyricsPosition);playlistAudio.addEventListener('seeked',updatePlaylistLyricsPosition);
+for(const eventName of ['wheel','touchstart','pointerdown','keydown'])$('playlist-lyrics-content').addEventListener(eventName,()=>{playlistLyricsAutoScrollUntil=Date.now()+8000;},{passive:true});
 playlistAudio.addEventListener('ended',()=>{if(repeat==='one'){playlistAudio.currentTime=0;playlistAudio.play();}else nextPlaylist(false);});
 playlistAudio.addEventListener('error',()=>{$('playlist-status').textContent='La piste ne peut pas être lue.';});
 renderPlaylist();
