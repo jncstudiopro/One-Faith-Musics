@@ -480,7 +480,7 @@ window.JEHOVAH_CATALOGUE = [
                                              ],
                                     "albumId":  "une-meme-foi",
                                     "releaseDate":  "2026-09-27",
-                                    "lastUpdated":  "2026-10-02",
+                                    "lastUpdated":  "2026-10-09",
                                     "audio":  null,
                                     "audioId":  "8-nous-tenons-debout",
                                     "karaokeAudio":  null,
@@ -496,10 +496,55 @@ window.JEHOVAH_CATALOGUE = [
                                                       "mp3":  null,
                                                       "score":  null
                                                   },
-                                    "audioVersion":  "2026-10-02.1"
+                                    "audioVersion":  "2026-10-09.1"
                                 }
                      },
         "style":  "Rock orchestral mélodique moderne",
         "trackNumber":  8
+    },
+    {
+        "id":  "ton-amour-me-ranimera",
+        "title":  "Ton amour me ranimera",
+        "image":  "fr/assets/ton-amour-me-ranimera.png",
+        "portrait":  false,
+        "description":  "Supplication intime qui part de la détresse pour avancer peu à peu vers la confiance et l’espérance. Portée par des sonorités méditerranéennes, la guitare et l’accordéon accompagnent une voix qui implore Jéhovah, lui confie son fardeau et retrouve la force d’avancer.",
+        "album":  "Une même foi",
+        "tags":  [
+                     "Une même foi"
+                 ],
+        "versions":  {
+                         "fr":  {
+                                    "title":  "Ton amour me ranimera",
+                                    "image":  "fr/assets/ton-amour-me-ranimera.png",
+                                    "portrait":  false,
+                                    "description":  "Supplication intime qui part de la détresse pour avancer peu à peu vers la confiance et l’espérance. Portée par des sonorités méditerranéennes, la guitare et l’accordéon accompagnent une voix qui implore Jéhovah, lui confie son fardeau et retrouve la force d’avancer.",
+                                    "album":  "Une même foi",
+                                    "style":  "Méditerranéen hispano-tzigane",
+                                    "tags":  [
+                                                 "Une même foi"
+                                             ],
+                                    "albumId":  "une-meme-foi",
+                                    "releaseDate":  "2026-10-09",
+                                    "lastUpdated":  "2026-10-09",
+                                    "audioVersion":  "2026-10-09.1",
+                                    "audio":  null,
+                                    "audioId":  "9-ton-amour-me-ranimera",
+                                    "karaokeAudio":  null,
+                                    "karaokeAudioId":  null,
+                                    "karaokeProAudio":  null,
+                                    "karaokeProAudioId":  null,
+                                    "lyrics":  "[1ère partie]\r\n\r\nÀ voix basse, je t’appelle,\r\nJéhovah, écoute ma voix.\r\nPère, scrute mon cœur,\r\nTu sais ce que je tais en moi.\r\n\r\nJe sais pourtant que tu es là,\r\nMême si je ne te trouve pas.\r\nTends-moi la main, je la saisirai,\r\nAvec toi, je marcherai.\r\n\r\n[Refrain]\r\n\r\nJe sais que tu es là (je sais que tu es là)\r\nMême au cœur de ma nuit.\r\nToi qui relèves la tête,\r\nTon amour va me ranimer.\r\n\r\nTu ne m’oublies pas,\r\nTa lumière guide mes pas.\r\nJe te donne mon fardeau,\r\nReste près de moi, Jéhovah.\r\n\r\n[2e partie]\r\n\r\nJe vois ta bonté autour de moi,\r\nDans un geste, dans une voix.\r\nQuelques mots apaisent mon cœur,\r\nUne présence calme mes peurs.\r\n\r\nMerci pour Jésus, ton Fils,\r\nJ’ai tant besoin de lui dans ma vie.\r\nQuand mes fautes me font douter,\r\nGrâce à lui, je peux espérer.\r\n\r\n[Refrain]\r\n\r\nJe sais que tu es là,\r\nMême au cœur de ma nuit.\r\nToi qui relèves la tête,\r\nTon amour va me ranimer.\r\n\r\nLe poids se fait moins lourd,\r\nTa main me tient toujours.\r\n(Jéhovah), je lève les yeux,\r\nEt je te vois un peu mieux.\r\n\r\n[Pont]\r\n\r\nJe t’aime, Jéhovah,\r\n(Merci pour ton amour)\r\nTa paix grandit en moi,\r\n(Et la nuit cède au jour.)\r\n\r\nJe veux voir tes promesses\r\n(S’accomplir sous mes yeux)\r\nVoir ceux que tu réveilleras,\r\nEt partager ce jour avec eux.\r\n\r\n[Refrain final]\r\n\r\n(Je sais que tu es là)\r\n(Même au cœur de ma nuit.)\r\nToi qui relèves la tête (ohh qui relève la tête)\r\n(Ton amour va me ranimer.)\r\n\r\nJe ne vois pas toute la route,\r\nMais je sais où tu me conduis.\r\nJe suivrai ta voix jusqu’au bout,\r\nAvec toi, j’y arriverai.\r\n\r\n[Outro]\r\n\r\nJe te suis, Jéhovah.\r\nAvec toi, j’y arriverai.\r\n\r\nJe te suis, Jéhovah.\r\nAvec toi, j’y arriverai.",
+                                    "timing":  null,
+                                    "karaokeTiming":  null,
+                                    "karaokeProTiming":  null,
+                                    "downloads":  {
+                                                      "mp4":  null,
+                                                      "mp3":  null,
+                                                      "score":  null
+                                                  }
+                                }
+                     },
+        "style":  "Méditerranéen hispano-tzigane",
+        "trackNumber":  9
     }
 ];
