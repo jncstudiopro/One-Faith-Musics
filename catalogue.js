@@ -251,6 +251,7 @@ window.JEHOVAH_CATALOGUE = [
     },
     {
         "id":  "je-te-choisirai-encore",
+        "translationGroup":  "je-te-choisirai-encore",
         "title":  "Je te choisirai encore",
         "image":  "fr/assets/je-te-choisirai-encore.webp",
         "portrait":  false,
@@ -560,6 +561,7 @@ window.JEHOVAH_CATALOGUE = [
     },
     {
         "id":  "ill-choose-you-all-over-again",
+        "translationGroup":  "je-te-choisirai-encore",
         "title":  "I\u0027ll Choose You All Over Again",
         "image":  "en/assets/ill-choose-you-all-over-again.png",
         "portrait":  false,
@@ -585,7 +587,7 @@ window.JEHOVAH_CATALOGUE = [
                                     "albumId":  "une-meme-foi",
                                     "releaseDate":  "2026-10-10",
                                     "lastUpdated":  "2026-10-10",
-                                    "audioVersion":  "2026-10-10.1",
+                                    "audioVersion":  "2026-10-10.2",
                                     "audio":  null,
                                     "audioId":  "6-ill-choose-you-all-over-again",
                                     "karaokeAudio":  null,
