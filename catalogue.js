@@ -638,7 +638,7 @@ window.JEHOVAH_CATALOGUE = [
                                                  "Gratitude",
                                                  "La guitare de mon cœur"
                                              ],
-                                    "albumId":  "une-meme-foi",
+                                    "albumId":  "la-guitare-de-mon-coeur",
                                     "releaseDate":  "2026-11-18",
                                     "lastUpdated":  "2026-11-18",
                                     "audioVersion":  "2026-11-18.1",
