@@ -606,5 +606,60 @@ window.JEHOVAH_CATALOGUE = [
                                 }
                      },
         "trackNumber":  6
+    },
+    {
+        "id":  "pour-toute-ta-gloire",
+        "title":  "Pour toute ta gloire",
+        "image":  "fr/assets/pour-toute-ta-gloire.png",
+        "portrait":  false,
+        "description":  "« Pour toute ta gloire » retrace avec reconnaissance le chemin parcouru par le peuple de Jéhovah, depuis les premiers chercheurs de vérité et le rétablissement du culte pur jusqu’à la naissance du Royaume en 1914 et l’essor d’une fraternité mondiale unie.\r\n\r\nMalgré les oppositions et les épreuves, quelques voix sont devenues des millions, témoignant de la direction bienveillante de Jéhovah.\r\n\r\nPortée par une pop acoustique chaleureuse et entraînante, cette chanson célèbre notre histoire, notre unité et notre profonde gratitude envers celui à qui revient toute la gloire : Jéhovah.",
+        "album":  "La guitare de mon coeur",
+        "tags":  [
+                     "Temps de la fin",
+                     "Culte pur rétabli",
+                     "Règne du Christ",
+                     "Histoire",
+                     "Gratitude",
+                     "La guitare de mon cœur"
+                 ],
+        "versions":  {
+                         "fr":  {
+                                    "title":  "Pour toute ta gloire",
+                                    "image":  "fr/assets/pour-toute-ta-gloire.png",
+                                    "portrait":  false,
+                                    "description":  "« Pour toute ta gloire » retrace avec reconnaissance le chemin parcouru par le peuple de Jéhovah, depuis les premiers chercheurs de vérité et le rétablissement du culte pur jusqu’à la naissance du Royaume en 1914 et l’essor d’une fraternité mondiale unie.\r\n\r\nMalgré les oppositions et les épreuves, quelques voix sont devenues des millions, témoignant de la direction bienveillante de Jéhovah.\r\n\r\nPortée par une pop acoustique chaleureuse et entraînante, cette chanson célèbre notre histoire, notre unité et notre profonde gratitude envers celui à qui revient toute la gloire : Jéhovah.",
+                                    "album":  "La guitare de mon coeur",
+                                    "style":  "Pop acoustique entraînante, aux influences folk",
+                                    "tags":  [
+                                                 "Temps de la fin",
+                                                 "Culte pur rétabli",
+                                                 "Règne du Christ",
+                                                 "Histoire",
+                                                 "Gratitude",
+                                                 "La guitare de mon cœur"
+                                             ],
+                                    "albumId":  "une-meme-foi",
+                                    "releaseDate":  "2026-11-18",
+                                    "lastUpdated":  "2026-11-18",
+                                    "audioVersion":  "2026-11-18.1",
+                                    "audio":  null,
+                                    "audioId":  "1-pour-toute-ta-gloire",
+                                    "karaokeAudio":  null,
+                                    "karaokeAudioId":  null,
+                                    "karaokeProAudio":  null,
+                                    "karaokeProAudioId":  null,
+                                    "lyrics":  "[Couplet 1]\r\n\r\nQuelques cœurs cherchaient ton visage,\r\nSous les mots qui noircissaient ton nom.\r\nIls refusaient cette sombre image :\r\nDes tourments sans fin pour horizon.\r\n\r\nPeu à peu, le voile s’est levé,\r\nTa bonté reprenait ses droits.\r\nDe cœur en cœur, ta vérité\r\nTrouvait toujours de nouvelles voix.\r\n\r\n[Refrain]\r\n\r\nJéhovah, tu nous as portés,\r\nPas à pas, tu nous as guidés.\r\nDe quelques voix à tant de chants,\r\nTon nom résonne maintenant.\r\n\r\nTout ce que nous sommes vient de toi,\r\nCe chemin garde l’éclat de tes pas.\r\nJéhovah, nos cœurs te le crient :\r\nToute la gloire te revient.\r\n\r\n[Couplet 2]\r\n\r\nPuis Jésus s’est mis à régner,\r\nQuand le monde sombrait dans le feu.\r\nTon peuple marchait sans plier,\r\nLes yeux tournés vers les cieux.\r\n\r\nOn voulait faire taire les voix,\r\nMais ton nom trouvait d’autres échos.\r\nQuand l’obstacle fermait la voie,\r\nTu ouvrais des chemins nouveaux.\r\n\r\n[Refrain]\r\n\r\nJéhovah, tu nous as portés,\r\nPas à pas, tu nous as guidés.\r\nDe quelques voix à tant de chants,\r\nTon nom résonne maintenant.\r\n\r\nTout ce que nous sommes vient de toi,\r\nCe chemin garde l’éclat de tes pas.\r\nJéhovah, nos cœurs te le crient :\r\nToute la gloire te revient.\r\n\r\n[Pont]\r\n\r\nEt nous voici, Jéhovah,\r\nTant de visages, un seul élan.\r\nTant de langues portent ton nom,\r\nUn même cœur bat maintenant.\r\n\r\nD’une île au bout du continent,\r\nNos voix se répondent maintenant.\r\nCe qui tenait dans quelques mains\r\nGrandit encore entre tes mains.\r\n\r\n[Refrain]\r\n\r\nJéhovah, tu nous as portés,\r\nPas à pas, tu nous as guidés.\r\nJésus règne, ton peuple est là,\r\nUni d’un seul cœur devant toi.\r\n\r\nTant de voix, un même amour,\r\nTon nom porté de jour en jour.\r\nTout ce que nous sommes vient de toi :\r\nToute la gloire revient à toi.\r\n\r\nToute la gloire revient à toi,\r\nJéhovah, elle revient à toi.",
+                                    "timing":  null,
+                                    "karaokeTiming":  null,
+                                    "karaokeProTiming":  null,
+                                    "downloads":  {
+                                                      "mp4":  null,
+                                                      "mp3":  null,
+                                                      "score":  null
+                                                  }
+                                }
+                     },
+        "style":  "Pop acoustique entraînante, aux influences folk",
+        "trackNumber":  1
     }
 ];
