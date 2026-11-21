@@ -661,5 +661,60 @@ window.JEHOVAH_CATALOGUE = [
                      },
         "style":  "Pop acoustique entraînante, aux influences folk",
         "trackNumber":  1
+    },
+    {
+        "id":  "les-six-cordes-de-leternite",
+        "title":  "Les six cordes de l\u0027éternité",
+        "image":  "fr/assets/les-six-cordes-de-leternite.png",
+        "portrait":  false,
+        "description":  "Les six cordes de l’éternité » nous transporte dans le monde nouveau promis par Jéhovah, où le temps n’est plus un maître, mais un précieux cadeau.\n\n\r\n\r\nÀ travers les plaisirs simples du quotidien, les rencontres improvisées entre amis, le partage d’un repas et les mélodies d’une vieille guitare, cette chanson imagine la douceur d’une vie libérée de la précipitation et des inquiétudes.\n\n\r\n\r\nPortée par une folk-pop acoustique entraînante, aux influences latines et manouches, elle laisse une place privilégiée à la guitare, dont les six cordes expriment la joie de vivre, la sérénité et la profonde gratitude envers Jéhovah pour le merveilleux don de la vie éternelle.",
+        "album":  "La guitare de mon coeur",
+        "tags":  [
+                     "Joie de vivre",
+                     "Paix",
+                     "Éternité",
+                     "Amitié",
+                     "Paradis",
+                     "La guitare de mon coeur"
+                 ],
+        "versions":  {
+                         "fr":  {
+                                    "title":  "Les six cordes de l\u0027éternité",
+                                    "image":  "fr/assets/les-six-cordes-de-leternite.png",
+                                    "portrait":  false,
+                                    "description":  "Les six cordes de l’éternité » nous transporte dans le monde nouveau promis par Jéhovah, où le temps n’est plus un maître, mais un précieux cadeau.\n\n\r\n\r\nÀ travers les plaisirs simples du quotidien, les rencontres improvisées entre amis, le partage d’un repas et les mélodies d’une vieille guitare, cette chanson imagine la douceur d’une vie libérée de la précipitation et des inquiétudes.\n\n\r\n\r\nPortée par une folk-pop acoustique entraînante, aux influences latines et manouches, elle laisse une place privilégiée à la guitare, dont les six cordes expriment la joie de vivre, la sérénité et la profonde gratitude envers Jéhovah pour le merveilleux don de la vie éternelle.",
+                                    "album":  "La guitare de mon coeur",
+                                    "style":  "Folk-pop ensoleillée à tendance manouche.",
+                                    "tags":  [
+                                                 "Joie de vivre",
+                                                 "Paix",
+                                                 "Éternité",
+                                                 "Amitié",
+                                                 "Paradis",
+                                                 "La guitare de mon coeur"
+                                             ],
+                                    "albumId":  "la-guitare-de-mon-coeur",
+                                    "releaseDate":  "2026-11-19",
+                                    "lastUpdated":  null,
+                                    "audioVersion":  null,
+                                    "audio":  null,
+                                    "audioId":  "2-les-six-cordes-de-leternite",
+                                    "karaokeAudio":  null,
+                                    "karaokeAudioId":  null,
+                                    "karaokeProAudio":  null,
+                                    "karaokeProAudioId":  null,
+                                    "lyrics":  "[Verse 1]\r\n\r\nIl pleut depuis ce matin,\r\nTant mieux, les fleurs en avaient besoin.\r\nJ’avais du travail plein les mains,\r\nVoilà des amis sur le chemin.\r\n\r\nOn sort le pain, quelques fruits,\r\nQuelqu’un apporte encore un plat.\r\nJe pensais finir avant midi,\r\nLe reste attendra sans souci.\r\n\r\n[Chorus]\r\n\r\nOn a le temps, on a demain,\r\nOn a la vie entre les mains.\r\nRien ne presse, on prend le temps,\r\nOn laisse filer les heures doucement.\r\n\r\nOn rit un peu, on reste là,\r\nOn remercie Jéhovah.\r\nSi tout n’est pas fait aujourd’hui,\r\nDemain sera tout aussi joli.\r\n\r\n[Instrumental Interlude – 8 bars, melodic folk guitar and bass, no vocals]\r\n\r\n[Verse 2 – Part A]\r\n\r\nJ’ai cueilli bien trop de pommes,\r\nAlors j’en donne aux voisins.\r\nLe chemin paraît un peu long,\r\nL’air du verger sent tellement bon.\r\n\r\nJe voulais rentrer avant le soir,\r\nPuis quelqu’un sort sa vieille guitare.\r\n\r\n[solo]\r\n\r\nLe soleil descend doucement,\r\nOn reste encore un petit moment.\r\n\r\n[Chorus]\r\n\r\nOn a le temps, on a demain,\r\nOn a la vie entre les mains.\r\nRien ne presse, on prend le temps,\r\nOn laisse filer les heures doucement.\r\n\r\nOn rit un peu, on reste là,\r\nOn remercie Jéhovah.\r\nSi tout n’est pas fait aujourd’hui,\r\nDemain sera tout aussi joli.\r\n\r\n[Instrumental Break – 4 bars, warm melodic guitar, no vocals]\r\n\r\n[Bridge]\r\n\r\nJ’avais pourtant tout prévu,\r\nLe jour en décide autrement.\r\nEt quand le soir est enfin venu,\r\nJe souris tout simplement.\r\n\r\n[Final Chorus]\r\n\r\nOn a le temps, on a demain,\r\nOn a la vie entre les mains.\r\nLe jour s’achève et tout va bien,\r\nOn recommencera demain.",
+                                    "timing":  null,
+                                    "karaokeTiming":  null,
+                                    "karaokeProTiming":  null,
+                                    "downloads":  {
+                                                      "mp4":  null,
+                                                      "mp3":  null,
+                                                      "score":  null
+                                                  }
+                                }
+                     },
+        "style":  "Folk-pop ensoleillée à tendance manouche.",
+        "trackNumber":  2
     }
 ];
